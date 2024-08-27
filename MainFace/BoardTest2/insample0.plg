@@ -1,0 +1,151 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: insample0 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\Bin\SharedDebug\main\insample0-ft232/insample0.res" /d "_DEBUG" "D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\insample0.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPF9B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "Include" /I "MsOffice" /I "CxImage2\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\..\Bin\SharedDebug\main\insample0-ft232/insample0.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\main\insample0-ft232/" /Fd"..\..\Bin\SharedDebug\main\insample0-ft232/" /FD /GZ /c 
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\Calc.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DetectDialog.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgAutoTestLNS.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgAutoTestMain.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgAutoTestMCI.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgAutoTestPower.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgAutoTestSCN.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgAutoTestSPR.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgAutoTestTab.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgAutoTestVAC.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgDiagLog.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgDiagLogGraph.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\DlgDisplay.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\FT232HDevice.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\insample0.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\insample0Dlg.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\MacButtons.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\MCIBasicFunctionsDlg.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\MsOffice\MsWord9.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageSL.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageVS.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\TabDialog.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPF9B.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPF9C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "Include" /I "MsOffice" /I "CxImage2\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\..\Bin\SharedDebug\main\insample0-ft232/insample0.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\main\insample0-ft232/" /Fd"..\..\Bin\SharedDebug\main\insample0-ft232/" /FD /GZ /c 
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPF9C.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPF9D.tmp" with contents
+[
+Winmm.lib winusb.lib ftd2xx.lib png.lib mng.lib jasper.lib jpeg.lib zlib.lib tiff.lib libdcr.lib cximage.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\..\Bin/BrdTest2.pdb" /debug /machine:I386 /out:"..\..\Bin/BrdTest2.exe" /pdbtype:sept /libpath:"..\Bin" /libpath:"CxImage2\Lib" 
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\Calc.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DetectDialog.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgAutoTestLNS.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgAutoTestMain.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgAutoTestMCI.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgAutoTestPower.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgAutoTestSCN.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgAutoTestSPR.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgAutoTestTab.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgAutoTestVAC.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgDiagLog.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgDiagLogGraph.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\DlgDisplay.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\FT232HDevice.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\insample0.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\insample0Dlg.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\MacButtons.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\MCIBasicFunctionsDlg.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\MsWord9.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\PageMCI.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\PageSL.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\PageVS.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\StdAfx.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\TabDialog.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\main\insample0-ft232\insample0.res"
+".\VCAIOUSB.lib"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPF9D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Calc.cpp
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\Calc.cpp(347) : warning C4102: 'M1' : unreferenced label
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\Calc.cpp(310) : warning C4102: 'M3' : unreferenced label
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\Calc.cpp(620) : warning C4102: 'ME1' : unreferenced label
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\Calc.cpp(599) : warning C4101: 'MP' : unreferenced local variable
+DetectDialog.cpp
+DlgAutoTestLNS.cpp
+DlgAutoTestMain.cpp
+DlgAutoTestMCI.cpp
+DlgAutoTestPower.cpp
+DlgAutoTestSCN.cpp
+DlgAutoTestSPR.cpp
+DlgAutoTestTab.cpp
+DlgAutoTestVAC.cpp
+DlgDiagLog.cpp
+DlgDiagLogGraph.cpp
+DlgDisplay.cpp
+FT232HDevice.cpp
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\FT232HDevice.cpp(361) : warning C4018: '>' : signed/unsigned mismatch
+insample0.cpp
+insample0Dlg.cpp
+MacButtons.cpp
+MCIBasicFunctionsDlg.cpp
+MsWord9.cpp
+PageMCI.cpp
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(1878) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2374) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2374) : warning C4018: '<' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2376) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2376) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2534) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2534) : warning C4018: '<' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2536) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2536) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2700) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2700) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2701) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2701) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2728) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2728) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2730) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2730) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2799) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2799) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2826) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2826) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2828) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(2828) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(3291) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(3291) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(3292) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(3292) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(3319) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(3319) : warning C4018: '!=' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(3321) : warning C4018: '==' : signed/unsigned mismatch
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\Insample0-FT232\PageMCI.cpp(3321) : warning C4018: '==' : signed/unsigned mismatch
+Generating Code...
+Compiling...
+PageSL.cpp
+PageVS.cpp
+TabDialog.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin/BrdTest2.lib and object ..\..\Bin/BrdTest2.exp
+
+
+
+<h3>Results</h3>
+BrdTest2.exe - 0 error(s), 36 warning(s)
+</pre>
+</body>
+</html>

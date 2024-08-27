@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WSM30KVTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPFC7A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include\FEG" /I "..\..\CtrlLayer\HVPower_WSM30KV" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\..\Bin\SharedDebug\WSM30KVTest/WSM30KVTest.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\WSM30KVTest/" /Fd"..\..\Bin\SharedDebug\WSM30KVTest/" /FD /GZ /c 
+"D:\ASrcNow\SEM\Others\202101-Localization\Src-BD\MainFace\WSM30KVTest\WSM30KVTest.cpp"
+"D:\ASrcNow\SEM\Others\202101-Localization\Src-BD\MainFace\WSM30KVTest\WSM30KVTestDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPFC7A.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPFC7B.tmp" with contents
+[
+HVPower_WSM30KV.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\..\Bin/WSM30KVTest.pdb" /debug /machine:I386 /out:"..\..\Bin/WSM30KVTest.exe" /pdbtype:sept /libpath:"..\..\Bin" 
+"\ASrcNow\SEM\Others\202101-Localization\Src-BD\Bin\SharedDebug\WSM30KVTest\StdAfx.obj"
+"\ASrcNow\SEM\Others\202101-Localization\Src-BD\Bin\SharedDebug\WSM30KVTest\WSM30KVTest.obj"
+"\ASrcNow\SEM\Others\202101-Localization\Src-BD\Bin\SharedDebug\WSM30KVTest\WSM30KVTestDlg.obj"
+"\ASrcNow\SEM\Others\202101-Localization\Src-BD\Bin\SharedDebug\WSM30KVTest\WSM30KVTest.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPFC7B.tmp"
+<h3>Output Window</h3>
+Compiling...
+WSM30KVTest.cpp
+Generating Code...
+Compiling...
+WSM30KVTestDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+WSM30KVTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

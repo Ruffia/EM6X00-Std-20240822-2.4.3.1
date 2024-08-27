@@ -1,0 +1,195 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BoardVAC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+BoardVAC.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_BSD - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_BSD.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_Camera - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_Camera.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC600 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC600.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC600Wnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC600Wnd.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC6600 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC6600.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC6600Wnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP8C3F.tmp" with contents
+[
+Options_StageMC6600.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/Options_StageMC6600Wnd.pdb" /debug /machine:I386 /def:".\Options_StageMC6600Wnd.def" /out:"..\..\Bin/Options_StageMC6600Wnd.dll" /implib:"..\..\Bin/Options_StageMC6600Wnd.lib" /pdbtype:sept /libpath:"..\..\Bin" 
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\DlgDriverInit.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\DlgInput.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\DlgSetup.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\ExportStageMC6600Func.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\Options_StageMC6600Wnd.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\PanelStage.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\PanelStagePos.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\StdAfx.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\Options_StageMC6600Wnd.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP8C3F.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library ..\..\Bin/Options_StageMC6600Wnd.lib and object ..\..\Bin/Options_StageMC6600Wnd.exp
+
+
+
+<h3>Results</h3>
+Options_StageMC6600Wnd.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StagePod - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StagePod.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageVince - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageVince.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SEMClient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SEMClient.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SEMServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SEMServer.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemControl - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemControl.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemControlCardAdapter - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemControlCardAdapter.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCore - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCore.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanelManager - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanelManager.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreMsgComm - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreMsgComm.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemScan - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemScan.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VACStateMachine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VACStateMachine.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VirtualMCICard - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VirtualMCICard.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

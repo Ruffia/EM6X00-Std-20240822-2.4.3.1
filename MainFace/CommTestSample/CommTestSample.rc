@@ -1,0 +1,386 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CommTestSample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CommTestSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CommTestSample"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CommTestSample 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2018",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_COMMTESTSAMPLE_DIALOG DIALOGEX 0, 0, 391, 537
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CommTestSample"
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,211,7,13,14,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,211,23,13,14,NOT WS_VISIBLE
+    CONTROL         "IPAddress1",IDC_IPADDR,"SysIPAddress32",WS_TABSTOP,7,7,
+                    91,14
+    PUSHBUTTON      "Connect",IDC_BUTTON_Connect,100,7,50,19
+    PUSHBUTTON      "Disconnect",IDC_BUTTON_Disconnect,154,7,50,19
+    PUSHBUTTON      "Magnification",IDC_RADIO_Query_Mag,7,127,76,14,BS_RIGHT | 
+                    BS_MULTILINE
+    PUSHBUTTON      "Rotate Angle (deg)",IDC_RADIO_Query_RotAngle,7,202,76,
+                    14,BS_RIGHT | BS_MULTILINE
+    PUSHBUTTON      "WD (mm)",IDC_RADIO_Query_WD,7,186,76,14,BS_RIGHT | 
+                    BS_MULTILINE
+    PUSHBUTTON      "Stigmator",IDC_RADIO_Query_Stigmator,7,220,76,14,
+                    BS_RIGHT | BS_MULTILINE
+    PUSHBUTTON      "High Voltage (KV)",IDC_RADIO_Query_HV,7,298,76,14,
+                    BS_RIGHT | BS_MULTILINE
+    PUSHBUTTON      "Filament (A)",IDC_RADIO_Query_Fila,7,314,76,14,BS_RIGHT | 
+                    BS_MULTILINE
+    PUSHBUTTON      "Status",IDC_RADIO_Stage_Status,187,31,62,14,BS_RIGHT
+    PUSHBUTTON      "Grating (nm)",IDC_RADIO_Stage_Grating,187,49,62,14,
+                    BS_RIGHT
+    PUSHBUTTON      "Range (mm)",IDC_RADIO_Stage_Range,187,67,62,14,BS_RIGHT
+    PUSHBUTTON      "Position (mm)",IDC_RADIO_Stage_Position,187,84,62,14,
+                    BS_RIGHT | BS_MULTILINE
+    EDITTEXT        IDC_EDIT_Log,182,140,202,207,ES_MULTILINE | WS_VSCROLL
+    PUSHBUTTON      "Set",IDC_BUTTON_Stage_Position_Set,226,102,23,15
+    EDITTEXT        IDC_EDIT_Stage_Position_X,255,86,24,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Stage_Position_Y,281,86,24,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WD,87,186,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_Stage_Grating,255,50,39,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_Stage_Range,255,68,39,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_Stage_Status,255,33,39,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "nm",IDC_STATIC,296,52,18,10
+    LTEXT           "mm",IDC_STATIC,296,70,18,10
+    EDITTEXT        IDC_EDIT_Mag,87,129,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_ScnRotAngle,87,204,31,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Stig_X,87,220,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_Stig_Y,87,236,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Set",IDC_BUTTON_SetMag,154,128,23,15
+    PUSHBUTTON      "Set",IDC_BUTTON_SetScnRotAngle,154,202,23,15
+    PUSHBUTTON      "Set",IDC_BUTTON_SetStig,154,218,23,15
+    EDITTEXT        IDC_EDIT_HV,87,298,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_Fila,87,315,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Set",IDC_BUTTON_SetHV,154,297,23,15
+    PUSHBUTTON      "Set",IDC_BUTTON_SetFila,154,314,23,15
+    PUSHBUTTON      "Bias or Beam Current",IDC_RADIO_Query_BeamCurrent,7,333,
+                    76,14,BS_RIGHT | BS_MULTILINE
+    EDITTEXT        IDC_EDIT_BeamCurrent,87,334,31,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Set",IDC_BUTTON_SetBeamCurrent,154,333,23,15
+    PUSHBUTTON      "Rotate Angle Init",IDC_RADIO_Query_RotAngleInit,7,69,76,
+                    14,BS_RIGHT | BS_MULTILINE
+    EDITTEXT        IDC_EDIT_ScnRotAngleInit,87,70,31,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "[D]",IDC_STATIC,121,72,18,10
+    PUSHBUTTON      "Stop",IDC_BUTTON_Stage_Stop,357,51,23,15
+    PUSHBUTTON      "ABC",IDC_BUTTON_AutoBC,7,99,27,14
+    PUSHBUTTON      "Brightness",IDC_RADIO_Query_Brt,39,92,44,14,BS_RIGHT
+    PUSHBUTTON      "Contrast",IDC_RADIO_Query_Cst,39,109,44,14,BS_RIGHT
+    EDITTEXT        IDC_EDIT_Brightness,87,93,31,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Contrast,87,110,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Set",IDC_BUTTON_SetBrt,154,91,23,15
+    PUSHBUTTON      "Set",IDC_BUTTON_SetCst,154,108,23,15
+    PUSHBUTTON      "Gun Status",IDC_RADIO_Query_GunStatus,7,260,76,14
+    EDITTEXT        IDC_EDIT_GunStatus,87,260,31,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Vacuum Status",IDC_RADIO_Query_VacStatus,7,276,76,14
+    EDITTEXT        IDC_EDIT_VacStatus,87,276,31,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Speed 1",IDC_RADIO_ScanCtrl_Speed1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,7,431,53,9
+    CONTROL         "Speed 2",IDC_RADIO_ScanCtrl_Speed2,"Button",
+                    BS_AUTORADIOBUTTON,7,445,53,9
+    CONTROL         "Speed 3",IDC_RADIO_ScanCtrl_Speed3,"Button",
+                    BS_AUTORADIOBUTTON,7,460,53,9
+    CONTROL         "Speed 4",IDC_RADIO_ScanCtrl_Speed4,"Button",
+                    BS_AUTORADIOBUTTON,7,473,53,9
+    CONTROL         "Reso 1",IDC_RADIO_ScanCtrl_Reso1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,7,498,53,9
+    CONTROL         "Reso 2",IDC_RADIO_ScanCtrl_Reso2,"Button",
+                    BS_AUTORADIOBUTTON,7,511,53,9
+    CONTROL         "Freeze",IDC_RADIO_ScanCtrl_Type1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,65,431,70,9
+    CONTROL         "Normal",IDC_RADIO_ScanCtrl_Type2,"Button",
+                    BS_AUTORADIOBUTTON,65,445,70,9
+    CONTROL         "Active Area",IDC_RADIO_ScanCtrl_Type3,"Button",
+                    BS_AUTORADIOBUTTON,65,460,70,9
+    CONTROL         "Horizontal Line",IDC_RADIO_ScanCtrl_Type4,"Button",
+                    BS_AUTORADIOBUTTON,65,473,70,9
+    CONTROL         "Vertical Line",IDC_RADIO_ScanCtrl_Type5,"Button",
+                    BS_AUTORADIOBUTTON,65,487,70,9
+    CONTROL         "Spot",IDC_RADIO_ScanCtrl_Type6,"Button",
+                    BS_AUTORADIOBUTTON,65,501,32,9
+    CONTROL         "Synchronous Record",IDC_RADIO_ScanCtrl_Type7,"Button",
+                    BS_AUTORADIOBUTTON,65,516,94,9
+    PUSHBUTTON      "Shutdown Beam",IDC_BUTTON_ShutdownBeam,346,7,38,31,
+                    BS_MULTILINE
+    PUSHBUTTON      "HV Type",IDC_RADIO_Type_HV,7,51,76,14,BS_RIGHT
+    EDITTEXT        IDC_EDIT_HVType,87,52,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "SEM Type",IDC_RADIO_Type_SEM,7,33,76,14,BS_RIGHT
+    EDITTEXT        IDC_EDIT_SEMType,87,33,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Emi Monitor(uA)",IDC_RADIO_Query_EMI,7,351,76,14,
+                    BS_RIGHT | BS_MULTILINE
+    EDITTEXT        IDC_EDIT_EMI,87,351,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_Brightness2,120,93,31,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Contrast2,120,110,31,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Mag2,120,129,31,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ScnRotAngle2,120,204,31,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Stig_X2,120,220,31,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Stig_Y2,120,236,31,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HV2,121,298,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Fila2,121,315,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BeamCurrent2,121,334,31,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Mag Range",IDC_RADIO_Query_MagRange,7,146,76,14,
+                    BS_RIGHT
+    EDITTEXT        IDC_EDIT_MagRange,87,146,89,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Field of View",IDC_RADIO_Query_FOV,7,164,76,14,BS_RIGHT
+    EDITTEXT        IDC_EDIT_FOV,87,164,89,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WD2,120,186,31,14,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Set",IDC_BUTTON_SetWD,154,185,23,15
+    PUSHBUTTON      "Query All",IDC_RADIO_Query_All,287,7,46,14
+    CONTROL         "",IDC_CHECK_Polling,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,271,9,12,11
+    PUSHBUTTON      "Clear",IDC_BUTTON_Clear,233,7,30,14
+    EDITTEXT        IDC_EDIT_Stage_Position_Z,307,86,24,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Stage_Position_R,333,86,24,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Stage_Position_T,360,86,24,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Stage_Position_X2,255,103,24,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Stage_Position_Y2,281,103,24,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Stage_Position_Z2,307,103,24,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Stage_Position_R2,333,103,24,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Stage_Position_T2,360,103,24,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear",IDC_BUTTON_Log_Clear,354,123,30,14
+    PUSHBUTTON      "Home",IDC_BUTTON_Stage_GoHome,331,51,23,15
+    CONTROL         "Spots",IDC_CHECK_ScanSpots,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,105,500,36,12
+    CONTROL         "",IDC_STATIC_IMAGE,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,182,391,202,127
+    PUSHBUTTON      "Speed",IDC_RADIO_Query_Speed,7,395,76,14,BS_RIGHT
+    EDITTEXT        IDC_EDIT_Speed,87,396,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Resolution",IDC_RADIO_Query_Resolution,7,412,76,14,
+                    BS_RIGHT
+    EDITTEXT        IDC_EDIT_Resolution,87,412,39,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Clear",IDC_BUTTON_Image_Clear,147,420,30,14
+    PUSHBUTTON      "Frame Data",IDC_RADIO_Query_FrameData,147,442,30,19,
+                    BS_MULTILINE
+    CONTROL         "Get Image",IDC_RADIO_Query_Image,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_MULTILINE | NOT 
+                    WS_VISIBLE | WS_TABSTOP,147,394,30,19
+    PUSHBUTTON      "Save Params",IDC_BUTTON_Save_Params,187,123,62,14
+    PUSHBUTTON      "Load Params",IDC_BUTTON_Load_Params,255,123,62,14
+    LTEXT           "Static",IDC_STATIC_Rect,7,28,371,341,NOT WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CommTestSample Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CommTestSample\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2018\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CommTestSample.EXE\0"
+            VALUE "ProductName", "CommTestSample 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_COMMTESTSAMPLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 530
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CommTestSample(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CommTestSample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

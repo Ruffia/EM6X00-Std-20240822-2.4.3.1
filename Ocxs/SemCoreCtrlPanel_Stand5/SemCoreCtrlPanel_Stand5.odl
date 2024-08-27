@@ -1,0 +1,80 @@
+// SemCoreCtrlPanel_Stand5.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (SemCoreCtrlPanel_Stand5.tlb) that will become a resource in
+// SemCoreCtrlPanel_Stand5.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(BFFB2319-BCB4-4F5F-B8DF-5A775F74B1EF), version(1.0),
+  helpfile("SemCoreCtrlPanel_Stand5.hlp"),
+  helpstring("SemCoreCtrlPanel_Stand5 ActiveX Control module"),
+  control ]
+library SEMCORECTRLPANEL_STAND5Lib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CSemCoreCtrlPanel_Stand5Ctrl
+
+	[ uuid(23E28CB6-7AC0-4401-833D-3ADED9BFF799),
+	  helpstring("Dispatch interface for SemCoreCtrlPanel_Stand5 Control"), hidden ]
+	dispinterface _DSemCoreCtrlPanel_Stand5
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CSemCoreCtrlPanel_Stand5Ctrl)
+			[id(DISPID_CAPTION), bindable, requestedit] BSTR Caption;
+			[id(1)] short ControlStyle;
+			[id(2)] short ScaleDecimals;
+			[id(3)] short ValueDecimals;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CSemCoreCtrlPanel_Stand5Ctrl)
+			[id(4)] void Bind(VARIANT ClassID, VARIANT SerialNumber);
+			[id(5)] void Enable(VARIANT Enabled, VARIANT Flag);
+			[id(6)] void SetRange(VARIANT Xmin, VARIANT Xmax, VARIANT Ymin, VARIANT Ymax);
+			[id(7)] void SetPos(VARIANT Xpos, VARIANT Ypos, VARIANT Flag);
+			[id(8)] void SyncPos(VARIANT Xpos, VARIANT Ypos, VARIANT Flag);
+			[id(9)] void SyncText(BSTR strX, BSTR strY, VARIANT Flag);
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CSemCoreCtrlPanel_Stand5Ctrl
+
+	[ uuid(61B3BB3D-9913-4370-8697-704B1BF77B93),
+	  helpstring("Event interface for SemCoreCtrlPanel_Stand5 Control") ]
+	dispinterface _DSemCoreCtrlPanel_Stand5Events
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CSemCoreCtrlPanel_Stand5Ctrl)
+			[id(1)] void ReportPos(VARIANT ClassID, VARIANT SerialNumber, VARIANT Xpos, VARIANT Ypos, VARIANT Flag);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CSemCoreCtrlPanel_Stand5Ctrl
+
+	[ uuid(96E0ED82-F866-44F0-9BEB-E0701945FC1C),
+	  helpstring("SemCoreCtrlPanel_Stand5 Control"), control ]
+	coclass SemCoreCtrlPanel_Stand5
+	{
+		[default] dispinterface _DSemCoreCtrlPanel_Stand5;
+		[default, source] dispinterface _DSemCoreCtrlPanel_Stand5Events;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

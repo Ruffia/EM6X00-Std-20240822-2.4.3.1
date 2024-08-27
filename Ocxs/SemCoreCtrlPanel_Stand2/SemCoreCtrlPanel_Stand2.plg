@@ -1,0 +1,699 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "..\..\Bin\Ocx/SemCoreCtrlPanel_Stand1.tlb" /mktyplib203 /win32 "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand1\SemCoreCtrlPanel_Stand1.odl""
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\1/SemCoreCtrlPanel_Stand1.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand1\SemCoreCtrlPanel_Stand1.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPB7EE.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\COMMON\Template" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\1/SemCoreCtrlPanel_Stand1.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\1/" /Fd"..\..\Bin\SharedDebug\Ocx\1/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand1\MySpinButtonCtrl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand1\SemCoreCtrlPanel_Stand1.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand1\SemCoreCtrlPanel_Stand1Ctl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand1\SemCoreCtrlPanel_Stand1Ppg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPB7EE.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPB7EF.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\COMMON\Template" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\1/SemCoreCtrlPanel_Stand1.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\1/" /Fd"..\..\Bin\SharedDebug\Ocx\1/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand1\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPB7EF.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPB7F0.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand1.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand1.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand1.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand1.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\1\MySpinButtonCtrl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\1\SemCoreCtrlPanel_Stand1.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\1\SemCoreCtrlPanel_Stand1Ctl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\1\SemCoreCtrlPanel_Stand1Ppg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\1\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\1\SemCoreCtrlPanel_Stand1.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPB7F0.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPB7F1.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\Ocx\SemCoreCtrlPanel_Stand1.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSPB7F1.bat"
+Creating Type Library...
+Processing D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand1\SemCoreCtrlPanel_Stand1.odl
+SemCoreCtrlPanel_Stand1.odl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MySpinButtonCtrl.cpp
+SemCoreCtrlPanel_Stand1.cpp
+SemCoreCtrlPanel_Stand1Ctl.cpp
+SemCoreCtrlPanel_Stand1Ppg.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand1.lib and object ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand1.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand1.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "..\..\Bin\Ocx/SemCoreCtrlPanel_Stand2.tlb" /mktyplib203 /win32 "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand2\SemCoreCtrlPanel_Stand2.odl""
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\2/SemCoreCtrlPanel_Stand2.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand2\SemCoreCtrlPanel_Stand2.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPC818.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"..\..\Bin\SharedDebug\Ocx\2/" /Fp"..\..\Bin\SharedDebug\Ocx\2/SemCoreCtrlPanel_Stand2.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\2/" /Fd"..\..\Bin\SharedDebug\Ocx\2/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand2\MoveXYCtl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand2\SemCoreCtrlPanel_Stand2.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand2\SemCoreCtrlPanel_Stand2Ctl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand2\SemCoreCtrlPanel_Stand2Ppg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPC818.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPC819.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"..\..\Bin\SharedDebug\Ocx\2/" /Fp"..\..\Bin\SharedDebug\Ocx\2/SemCoreCtrlPanel_Stand2.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\2/" /Fd"..\..\Bin\SharedDebug\Ocx\2/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand2\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPC819.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPC81A.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand2.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand2.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand2.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand2.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\2\MoveXYCtl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\2\SemCoreCtrlPanel_Stand2.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\2\SemCoreCtrlPanel_Stand2Ctl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\2\SemCoreCtrlPanel_Stand2Ppg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\2\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\2\SemCoreCtrlPanel_Stand2.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPC81A.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPC81B.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\Ocx\SemCoreCtrlPanel_Stand2.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSPC81B.bat"
+Creating Type Library...
+Processing D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand2\SemCoreCtrlPanel_Stand2.odl
+SemCoreCtrlPanel_Stand2.odl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MoveXYCtl.cpp
+SemCoreCtrlPanel_Stand2.cpp
+SemCoreCtrlPanel_Stand2Ctl.cpp
+SemCoreCtrlPanel_Stand2Ppg.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand2.lib and object ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand2.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand2.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand3 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "..\..\Bin\Ocx/SemCoreCtrlPanel_Stand3.tlb" /mktyplib203 /win32 "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\SemCoreCtrlPanel_Stand3.odl""
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\3/SemCoreCtrlPanel_Stand3.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\SemCoreCtrlPanel_Stand3.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPD43C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\3/SemCoreCtrlPanel_Stand3.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\3/" /Fd"..\..\Bin\SharedDebug\Ocx\3/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\PublicFuction.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\RoundSliderCtrl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\RoundSliderCtrlEx.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\RoundSliderDlg.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\SemCoreCtrlPanel_Stand3.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\SemCoreCtrlPanel_Stand3Ctl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\SemCoreCtrlPanel_Stand3Ppg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPD43C.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPD43D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\3/SemCoreCtrlPanel_Stand3.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\3/" /Fd"..\..\Bin\SharedDebug\Ocx\3/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPD43D.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPD44E.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand3.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand3.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand3.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand3.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\3\PublicFuction.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\3\RoundSliderCtrl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\3\RoundSliderCtrlEx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\3\RoundSliderDlg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\3\SemCoreCtrlPanel_Stand3.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\3\SemCoreCtrlPanel_Stand3Ctl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\3\SemCoreCtrlPanel_Stand3Ppg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\3\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\3\SemCoreCtrlPanel_Stand3.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPD44E.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPD44F.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\Ocx\SemCoreCtrlPanel_Stand3.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSPD44F.bat"
+Creating Type Library...
+Processing D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\SemCoreCtrlPanel_Stand3.odl
+SemCoreCtrlPanel_Stand3.odl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+PublicFuction.cpp
+RoundSliderCtrl.cpp
+RoundSliderCtrlEx.cpp
+RoundSliderDlg.cpp
+D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\RoundSliderDlg.cpp(396) : warning C4800: 'long' : forcing value to bool 'true' or 'false' (performance warning)
+D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\RoundSliderDlg.cpp(397) : warning C4800: 'unsigned char' : forcing value to bool 'true' or 'false' (performance warning)
+D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand3\RoundSliderDlg.cpp(398) : warning C4800: 'unsigned char' : forcing value to bool 'true' or 'false' (performance warning)
+SemCoreCtrlPanel_Stand3.cpp
+SemCoreCtrlPanel_Stand3Ctl.cpp
+SemCoreCtrlPanel_Stand3Ppg.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand3.lib and object ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand3.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand3.ocx - 0 error(s), 3 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand4 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "..\..\Bin\Ocx/SemCoreCtrlPanel_Stand4.tlb" /mktyplib203 /win32 "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand4\SemCoreCtrlPanel_Stand4.odl""
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\4/SemCoreCtrlPanel_Stand4.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand4\SemCoreCtrlPanel_Stand4.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPE032.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\4/SemCoreCtrlPanel_Stand4.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\4/" /Fd"..\..\Bin\SharedDebug\Ocx\4/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand4\Curvefit.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand4\Digistring.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand4\SemCoreCtrlPanel_Stand4.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand4\SemCoreCtrlPanel_Stand4Ctl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand4\SemCoreCtrlPanel_Stand4Ppg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPE032.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPE033.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\4/SemCoreCtrlPanel_Stand4.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\4/" /Fd"..\..\Bin\SharedDebug\Ocx\4/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand4\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPE033.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPE034.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand4.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand4.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand4.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand4.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\4\Curvefit.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\4\Digistring.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\4\SemCoreCtrlPanel_Stand4.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\4\SemCoreCtrlPanel_Stand4Ctl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\4\SemCoreCtrlPanel_Stand4Ppg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\4\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\4\SemCoreCtrlPanel_Stand4.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPE034.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPE035.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\Ocx\SemCoreCtrlPanel_Stand4.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSPE035.bat"
+Creating Type Library...
+Processing D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand4\SemCoreCtrlPanel_Stand4.odl
+SemCoreCtrlPanel_Stand4.odl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Curvefit.cpp
+Digistring.cpp
+SemCoreCtrlPanel_Stand4.cpp
+SemCoreCtrlPanel_Stand4Ctl.cpp
+SemCoreCtrlPanel_Stand4Ppg.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand4.lib and object ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand4.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand4.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand5 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "..\..\Bin\Ocx/SemCoreCtrlPanel_Stand5.tlb" /mktyplib203 /win32 "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand5\SemCoreCtrlPanel_Stand5.odl""
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\5/SemCoreCtrlPanel_Stand5.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand5\SemCoreCtrlPanel_Stand5.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPED50.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\5/SemCoreCtrlPanel_Stand5.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\5/" /Fd"..\..\Bin\SharedDebug\Ocx\5/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand5\3DMeterCtrl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand5\SemCoreCtrlPanel_Stand5.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand5\SemCoreCtrlPanel_Stand5Ctl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand5\SemCoreCtrlPanel_Stand5Ppg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPED50.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPED51.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\5/SemCoreCtrlPanel_Stand5.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\5/" /Fd"..\..\Bin\SharedDebug\Ocx\5/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand5\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPED51.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPED52.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand5.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand5.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand5.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand5.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\5\3DMeterCtrl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\5\SemCoreCtrlPanel_Stand5.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\5\SemCoreCtrlPanel_Stand5Ctl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\5\SemCoreCtrlPanel_Stand5Ppg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\5\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\5\SemCoreCtrlPanel_Stand5.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPED52.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPED53.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\Ocx\SemCoreCtrlPanel_Stand5.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSPED53.bat"
+Creating Type Library...
+Processing D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand5\SemCoreCtrlPanel_Stand5.odl
+SemCoreCtrlPanel_Stand5.odl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+3DMeterCtrl.cpp
+SemCoreCtrlPanel_Stand5.cpp
+SemCoreCtrlPanel_Stand5Ctl.cpp
+SemCoreCtrlPanel_Stand5Ppg.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand5.lib and object ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand5.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand5.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand6 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "..\..\Bin\Ocx/SemCoreCtrlPanel_Stand6.tlb" /mktyplib203 /win32 "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand6\SemCoreCtrlPanel_Stand6.odl""
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\6/SemCoreCtrlPanel_Stand6.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand6\SemCoreCtrlPanel_Stand6.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPF955.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\6/SemCoreCtrlPanel_Stand6.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\6/" /Fd"..\..\Bin\SharedDebug\Ocx\6/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand6\GradeDlg.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand6\SemCoreCtrlPanel_Stand6.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand6\SemCoreCtrlPanel_Stand6Ctl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand6\SemCoreCtrlPanel_Stand6Ppg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPF955.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPF966.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\6/SemCoreCtrlPanel_Stand6.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\6/" /Fd"..\..\Bin\SharedDebug\Ocx\6/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand6\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPF966.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPF967.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand6.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand6.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand6.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand6.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\6\GradeDlg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\6\SemCoreCtrlPanel_Stand6.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\6\SemCoreCtrlPanel_Stand6Ctl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\6\SemCoreCtrlPanel_Stand6Ppg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\6\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\6\SemCoreCtrlPanel_Stand6.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPF967.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPF968.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\Ocx\SemCoreCtrlPanel_Stand6.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSPF968.bat"
+Creating Type Library...
+Processing D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand6\SemCoreCtrlPanel_Stand6.odl
+SemCoreCtrlPanel_Stand6.odl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GradeDlg.cpp
+SemCoreCtrlPanel_Stand6.cpp
+SemCoreCtrlPanel_Stand6Ctl.cpp
+SemCoreCtrlPanel_Stand6Ppg.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand6.lib and object ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand6.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand6.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand7 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "..\..\Bin\Ocx/SemCoreCtrlPanel_Stand7.tlb" /mktyplib203 /win32 "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand7\SemCoreCtrlPanel_Stand7.odl""
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\7/SemCoreCtrlPanel_Stand7.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand7\SemCoreCtrlPanel_Stand7.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP57A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\7/SemCoreCtrlPanel_Stand7.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\7/" /Fd"..\..\Bin\SharedDebug\Ocx\7/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand7\SemCoreCtrlPanel_Stand7.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand7\SemCoreCtrlPanel_Stand7Ctl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand7\SemCoreCtrlPanel_Stand7Ppg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP57A.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP57B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\7/SemCoreCtrlPanel_Stand7.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\7/" /Fd"..\..\Bin\SharedDebug\Ocx\7/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand7\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP57B.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP57C.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand7.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand7.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand7.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand7.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\7\SemCoreCtrlPanel_Stand7.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\7\SemCoreCtrlPanel_Stand7Ctl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\7\SemCoreCtrlPanel_Stand7Ppg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\7\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\7\SemCoreCtrlPanel_Stand7.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP57C.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP58C.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\Ocx\SemCoreCtrlPanel_Stand7.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSP58C.bat"
+Creating Type Library...
+Processing D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand7\SemCoreCtrlPanel_Stand7.odl
+SemCoreCtrlPanel_Stand7.odl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+SemCoreCtrlPanel_Stand7.cpp
+SemCoreCtrlPanel_Stand7Ctl.cpp
+SemCoreCtrlPanel_Stand7Ppg.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand7.lib and object ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand7.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand7.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand8 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "..\..\Bin\Ocx/SemCoreCtrlPanel_Stand8.tlb" /mktyplib203 /win32 "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand8\SemCoreCtrlPanel_Stand8.odl""
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\8/SemCoreCtrlPanel_Stand8.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand8\SemCoreCtrlPanel_Stand8.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP116F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Template" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\8/SemCoreCtrlPanel_Stand8.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\8/" /Fd"..\..\Bin\SharedDebug\Ocx\8/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand8\DlgProgress.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand8\DlgSetupTimer.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand8\SemCoreCtrlPanel_Stand8.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand8\SemCoreCtrlPanel_Stand8Ctl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand8\SemCoreCtrlPanel_Stand8Ppg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP116F.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP1170.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Template" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\8/SemCoreCtrlPanel_Stand8.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\8/" /Fd"..\..\Bin\SharedDebug\Ocx\8/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand8\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP1170.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP1181.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand8.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand8.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand8.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand8.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\8\DlgProgress.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\8\DlgSetupTimer.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\8\SemCoreCtrlPanel_Stand8.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\8\SemCoreCtrlPanel_Stand8Ctl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\8\SemCoreCtrlPanel_Stand8Ppg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\8\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\8\SemCoreCtrlPanel_Stand8.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP1181.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP1182.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\Ocx\SemCoreCtrlPanel_Stand8.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSP1182.bat"
+Creating Type Library...
+Processing D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand8\SemCoreCtrlPanel_Stand8.odl
+SemCoreCtrlPanel_Stand8.odl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgProgress.cpp
+DlgSetupTimer.cpp
+SemCoreCtrlPanel_Stand8.cpp
+SemCoreCtrlPanel_Stand8Ctl.cpp
+SemCoreCtrlPanel_Stand8Ppg.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand8.lib and object ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand8.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand8.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand9 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "..\..\Bin\Ocx/SemCoreCtrlPanel_Stand9.tlb" /mktyplib203 /win32 "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand9\SemCoreCtrlPanel_Stand9.odl""
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\9/SemCoreCtrlPanel_Stand9.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand9\SemCoreCtrlPanel_Stand9.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP1DD2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Template" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\9/SemCoreCtrlPanel_Stand9.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\9/" /Fd"..\..\Bin\SharedDebug\Ocx\9/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand9\MySpinButtonCtrl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand9\SemCoreCtrlPanel_Stand9.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand9\SemCoreCtrlPanel_Stand9Ctl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand9\SemCoreCtrlPanel_Stand9Ppg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP1DD2.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP1DD3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Template" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\9/SemCoreCtrlPanel_Stand9.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\9/" /Fd"..\..\Bin\SharedDebug\Ocx\9/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand9\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP1DD3.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP1DD4.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand9.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand9.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand9.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand9.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\9\MySpinButtonCtrl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\9\SemCoreCtrlPanel_Stand9.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\9\SemCoreCtrlPanel_Stand9Ctl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\9\SemCoreCtrlPanel_Stand9Ppg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\9\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\9\SemCoreCtrlPanel_Stand9.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP1DD4.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP1DD5.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\Ocx\SemCoreCtrlPanel_Stand9.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSP1DD5.bat"
+Creating Type Library...
+Processing D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_Stand9\SemCoreCtrlPanel_Stand9.odl
+SemCoreCtrlPanel_Stand9.odl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MySpinButtonCtrl.cpp
+SemCoreCtrlPanel_Stand9.cpp
+SemCoreCtrlPanel_Stand9Ctl.cpp
+SemCoreCtrlPanel_Stand9Ppg.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand9.lib and object ..\..\Bin\Ocx/SemCoreCtrlPanel_Stand9.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand9.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_StandA - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "..\..\Bin\Ocx/SemCoreCtrlPanel_StandA.tlb" /mktyplib203 /win32 "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_StandA\SemCoreCtrlPanel_StandA.odl""
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\A/SemCoreCtrlPanel_StandA.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_StandA\SemCoreCtrlPanel_StandA.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP29D7.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Template" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\A/SemCoreCtrlPanel_StandA.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\A/" /Fd"..\..\Bin\SharedDebug\Ocx\A/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_StandA\SemCoreCtrlPanel_StandA.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_StandA\SemCoreCtrlPanel_StandACtl.cpp"
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_StandA\SemCoreCtrlPanel_StandAPpg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP29D7.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP29D8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Template" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\Ocx\A/SemCoreCtrlPanel_StandA.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Ocx\A/" /Fd"..\..\Bin\SharedDebug\Ocx\A/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_StandA\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP29D8.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP29D9.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_StandA.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_StandA.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_StandA.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_StandA.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\A\SemCoreCtrlPanel_StandA.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\A\SemCoreCtrlPanel_StandACtl.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\A\SemCoreCtrlPanel_StandAPpg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\A\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Ocx\A\SemCoreCtrlPanel_StandA.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP29D9.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP29DA.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\Ocx\SemCoreCtrlPanel_StandA.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSP29DA.bat"
+Creating Type Library...
+Processing D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Ocxs\SemCoreCtrlPanel_StandA\SemCoreCtrlPanel_StandA.odl
+SemCoreCtrlPanel_StandA.odl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+SemCoreCtrlPanel_StandA.cpp
+SemCoreCtrlPanel_StandACtl.cpp
+SemCoreCtrlPanel_StandAPpg.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin\Ocx/SemCoreCtrlPanel_StandA.lib and object ..\..\Bin\Ocx/SemCoreCtrlPanel_StandA.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_StandA.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,435 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+const
+	WM_USER						              = $0400;
+	WM_USER_KYKYComm_Connect_Status	= WM_USER+512;
+
+type
+  TForm1 = class(TForm)
+    btnConnect: TButton;
+    btnDisconnect: TButton;
+    btnStig: TButton;
+    btnGetWD: TButton;
+    btnRotateInit: TButton;
+    btnStageGrating: TButton;
+    btnStageRange: TButton;
+    btnStageStatus: TButton;
+    edtWD: TEdit;
+    edtRotateInit: TEdit;
+    edtStageGrating: TEdit;
+    edtStageRange: TEdit;
+    edtStageStatus: TEdit;
+    btnBrt: TButton;
+    btnCst: TButton;
+    edtBrt: TEdit;
+    edtCst: TEdit;
+    btnSetBrt: TButton;
+    btnSetCst: TButton;
+    btnMag: TButton;
+    edtMag: TEdit;
+    btnSetMag: TButton;
+    btnRotate: TButton;
+    edtRotate: TEdit;
+    edtStigX: TEdit;
+    edtStigY: TEdit;
+    btnSetStig: TButton;
+    btnSetRotate: TButton;
+    btnStagePos: TButton;
+    edtStagePosX: TEdit;
+    edtStagePosY: TEdit;
+    btnStagePosSet: TButton;
+    btnStageStop: TButton;
+    btnStatusGun: TButton;
+    edtStatusGun: TEdit;
+    btnStatusVac: TButton;
+    edtStatusVac: TEdit;
+    btnHV: TButton;
+    edtHV: TEdit;
+    btnSetHV: TButton;
+    btnFilament: TButton;
+    edtFilament: TEdit;
+    btnSetFilament: TButton;
+    btnBeam: TButton;
+    edtBeam: TEdit;
+    btnSetBeam: TButton;
+    btnHVType: TButton;
+    edtHVType: TEdit;
+    procedure btnConnectClick(Sender: TObject);
+    procedure btnDisconnectClick(Sender: TObject);
+
+    procedure Disconnect;
+    procedure btnStigClick(Sender: TObject);
+    procedure btnMagClick(Sender: TObject);
+    procedure btnRotateClick(Sender: TObject);
+    procedure btnRotateInitClick(Sender: TObject);
+    procedure btnBrtClick(Sender: TObject);
+    procedure btnCstClick(Sender: TObject);
+    procedure btnGetWDClick(Sender: TObject);
+    procedure btnStageStatusClick(Sender: TObject);
+    procedure btnSetBrtClick(Sender: TObject);
+    procedure btnSetCstClick(Sender: TObject);
+    procedure btnSetMagClick(Sender: TObject);
+    procedure btnSetStigClick(Sender: TObject);
+    procedure btnStageGratingClick(Sender: TObject);
+    procedure btnStageRangeClick(Sender: TObject);
+    procedure btnStagePosClick(Sender: TObject);
+    procedure btnStagePosSetClick(Sender: TObject);
+    procedure btnStageStopClick(Sender: TObject);
+    procedure btnStatusGunClick(Sender: TObject);
+    procedure btnStatusVacClick(Sender: TObject);
+    procedure btnHVClick(Sender: TObject);
+    procedure btnFilamentClick(Sender: TObject);
+    procedure btnBeamClick(Sender: TObject);
+    procedure btnSetHVClick(Sender: TObject);
+    procedure btnSetFilamentClick(Sender: TObject);
+    procedure btnSetBeamClick(Sender: TObject);
+    procedure btnSetRotateClick(Sender: TObject);
+    procedure btnHVTypeClick(Sender: TObject);
+
+  private
+		procedure OnGetConnectStatus(var msg: TMessage); message WM_USER_KYKYComm_Connect_Status;
+  public
+  end;
+
+	procedure	KYKYCtrlInit(hWnd: THandle); stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlConnect(IP1: Integer; IP2:Integer; IP3:Integer; IP4:Integer): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	procedure	KYKYCtrlDisconnect(bActive: Boolean); stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetServerStatus(status:PInteger): Boolean; stdcall; external 'SEMClientWrapper.dll';
+
+	function	KYKYCtrlGetMagn(mgn:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlSetMagn(mgn:Single): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetWD(wd:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetBrightness(brt:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlSetBrightness(brt:Single): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetContrast(cst:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlSetContrast(cst:Single): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetStig(stx:PSingle; sty:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlSetStig(stx:Single; sty:Single): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetScnRotAngleInit(angle:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetScnRotAngle(angle:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlSetScnRotAngle(angle:Single): Boolean; stdcall; external 'SEMClientWrapper.dll';
+
+	function	KYKYCtrlGetVacuumStatus(status:PInteger): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetGunStatus(status:PInteger): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetHVPowerType(HVtype:PInteger): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetAccVoltage(volt:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlSetAccVoltage(volt:Single): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetFilament(fila:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlSetFilament(fila:Single): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetBeamCurrent(curr:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlSetBeamCurrent(curr:Single): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetStageGratings(xSt:PInteger; ySt:PInteger): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetStageRanges(xSt:PInteger; ySt:PInteger): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetStageStatus(status:PInteger): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlMoveStageXY(xSt:Single; ySt:Single): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlGetStageXY(xSt:PSingle; ySt:PSingle): Boolean; stdcall; external 'SEMClientWrapper.dll';
+	function	KYKYCtrlStopStage: Boolean; stdcall; external 'SEMClientWrapper.dll';
+var
+  Form1: TForm1;
+  m_bConnected: Boolean;
+  m_nStatusVac, m_nStatusGun, m_nStatusStage: Integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btnBeamClick(Sender: TObject);
+var
+  fC: Single;
+begin
+  KYKYCtrlGetBeamCurrent( @fC );
+  edtBeam.Text:=Format('%.1f', [fC]);
+end;
+
+procedure TForm1.btnBrtClick(Sender: TObject);
+var
+  fB: Single;
+begin
+  KYKYCtrlGetBrightness( @fB );
+  edtBrt.Text:=Format('%.2f', [fB]);
+end;
+
+procedure TForm1.btnConnectClick(Sender: TObject);
+begin
+    KYKYCtrlInit(Handle);
+    KYKYCtrlConnect(192,168,1,58);
+end;
+
+procedure TForm1.btnCstClick(Sender: TObject);
+var
+  fC: Single;
+begin
+  KYKYCtrlGetContrast( @fC );
+  edtCst.Text:=Format('%.2f', [fC]);
+end;
+
+procedure TForm1.btnDisconnectClick(Sender: TObject);
+begin
+    Disconnect;
+end;
+
+procedure TForm1.btnFilamentClick(Sender: TObject);
+var
+  fF: Single;
+begin
+  KYKYCtrlGetFilament( @fF );
+  edtFilament.Text:=Format('%.2f', [fF]);
+end;
+
+procedure TForm1.btnGetWDClick(Sender: TObject);
+var
+  fWD: Single;
+begin
+  KYKYCtrlGetWD( @fWD );
+  edtWD.Text:=Format('%.1f', [fWD]);
+end;
+
+
+procedure TForm1.btnHVClick(Sender: TObject);
+var
+  fHV: Single;
+begin
+  KYKYCtrlGetAccVoltage( @fHV );
+  edtHV.Text:=Format('%.1f', [fHV]);
+end;
+
+procedure TForm1.btnHVTypeClick(Sender: TObject);
+var
+  nT: Integer;
+begin
+  KYKYCtrlGetHVPowerType( @nT );
+  edtHVType.Text:=Format('%d', [nT]);
+  if( nT = 0 ) then
+    btnSetBeam.Enabled:=False
+  else
+    btnSetBeam.Enabled:=True;
+end;
+
+procedure TForm1.btnSetBeamClick(Sender: TObject);
+var
+  nCode: Integer;
+  fC: Single;
+begin
+  Val(edtBeam.Text, fC, nCode);
+  KYKYCtrlSetBeamCurrent( fC );
+end;
+
+procedure TForm1.btnSetBrtClick(Sender: TObject);
+var
+  nCode: Integer;
+  fB: Single;
+begin
+  Val(edtBrt.Text, fB, nCode);
+  KYKYCtrlSetBrightness( fB );
+end;
+
+procedure TForm1.btnSetCstClick(Sender: TObject);
+var
+  nCode: Integer;
+  fC: Single;
+begin
+  Val(edtCst.Text, fC, nCode);
+  KYKYCtrlSetContrast( fC );
+end;
+
+procedure TForm1.btnSetFilamentClick(Sender: TObject);
+var
+  nCode: Integer;
+  fF: Single;
+begin
+  Val(edtFilament.Text, fF, nCode);
+  KYKYCtrlSetFilament( fF );
+end;
+
+procedure TForm1.btnSetHVClick(Sender: TObject);
+var
+  nCode: Integer;
+  fHV: Single;
+begin
+  Val(edtHV.Text, fHV, nCode);
+  KYKYCtrlSetAccVoltage( fHV );
+end;
+
+procedure TForm1.btnSetMagClick(Sender: TObject);
+var
+  nCode: Integer;
+  fM: Single;
+begin
+  Val(edtMag.Text, fM, nCode);
+  KYKYCtrlSetMagn( fM );
+end;
+
+procedure TForm1.btnSetRotateClick(Sender: TObject);
+var
+  nCode: Integer;
+  fR: Single;
+begin
+  Val(edtRotate.Text, fR, nCode);
+  KYKYCtrlSetScnRotAngle( fR );
+end;
+
+procedure TForm1.btnSetStigClick(Sender: TObject);
+var
+  nCode: Integer;
+  fX, fY: Single;
+begin
+  Val(edtStigX.Text, fX, nCode);
+  Val(edtStigY.Text, fY, nCode);
+  KYKYCtrlSetStig( fX, fY );
+end;
+
+
+procedure TForm1.btnStageGratingClick(Sender: TObject);
+var
+  nX, nY: Integer;
+begin
+  KYKYCtrlGetStageGratings( @nX, @nY );
+  edtStageGrating.Text:=Format('%d,%d', [nX, nY]);
+end;
+
+procedure TForm1.btnStagePosClick(Sender: TObject);
+var
+  fX, fY: Single;
+begin
+  KYKYCtrlGetStageXY( @fX, @fY );
+  edtStagePosX.Text:=Format('%.2f', [fX]);
+  edtStagePosY.Text:=Format('%.2f', [fY]);
+end;
+
+procedure TForm1.btnStagePosSetClick(Sender: TObject);
+var
+  nCode: Integer;
+  fX, fY: Single;
+begin
+  Val(edtStagePosX.Text, fX, nCode);
+  Val(edtStagePosY.Text, fY, nCode);
+  KYKYCtrlMoveStageXY( fX, fY );
+end;
+
+procedure TForm1.btnStageRangeClick(Sender: TObject);
+var
+  nX, nY: Integer;
+begin
+  KYKYCtrlGetStageRanges( @nX, @nY );
+  edtStageRange.Text:=Format('%d,%d', [nX, nY]);
+end;
+
+procedure TForm1.btnStageStatusClick(Sender: TObject);
+var
+  nS: Integer;
+begin
+  KYKYCtrlGetStageStatus( @nS );
+  edtStageStatus.Text:=Format('0x%02X', [nS]);
+end;
+
+procedure TForm1.btnStageStopClick(Sender: TObject);
+begin
+  KYKYCtrlStopStage;
+end;
+
+procedure TForm1.btnStatusGunClick(Sender: TObject);
+var
+  nS: Integer;
+begin
+  KYKYCtrlGetGunStatus( @nS );
+  edtStatusGun.Text:=Format('%d', [nS]);
+end;
+
+procedure TForm1.btnStatusVacClick(Sender: TObject);
+var
+  nS: Integer;
+begin
+  KYKYCtrlGetVacuumStatus( @nS );
+  edtStatusVac.Text:=Format('%d', [nS]);
+end;
+
+procedure TForm1.btnStigClick(Sender: TObject);
+var
+  fX, fY: Single;
+begin
+  KYKYCtrlGetStig( @fX, @fY );
+  edtStigX.Text:=Format('%.0f', [fX]);
+  edtStigY.Text:=Format('%.0f', [fY]);
+end;
+
+procedure TForm1.btnMagClick(Sender: TObject);
+var
+  fM: Single;
+begin
+  KYKYCtrlGetMagn( @fM );
+  edtMag.Text:=Format('%.1f', [fM]);
+end;
+
+procedure TForm1.btnRotateClick(Sender: TObject);
+var
+  fR: Single;
+begin
+  KYKYCtrlGetScnRotAngle( @fR );
+  edtRotate.Text:=Format('%.0f', [fR]);
+end;
+
+procedure TForm1.btnRotateInitClick(Sender: TObject);
+var
+  fR: Single;
+begin
+  KYKYCtrlGetScnRotAngleInit( @fR );
+  edtRotateInit.Text:=Format('%.0f', [fR]);
+end;
+
+procedure TForm1.Disconnect;
+begin
+    if( m_bConnected ) then
+    begin
+      KYKYCtrlDisconnect(True);
+      m_bConnected := False;
+    end;
+end;
+
+procedure TForm1.OnGetConnectStatus(Var msg: TMessage);
+var
+	ParamW: NativeUINT;
+	ParamL: NativeINT;
+  nT: Integer;
+begin
+	ParamW:=msg.wParam;
+	ParamL:=msg.lParam;
+  if( ParamL > 0 ) then Exit;
+
+  begin
+    case ParamW of
+      2:  // Connect Success
+      begin
+        m_bConnected := True;
+        MessageBox(Handle, 'Connect Success!', 'CAUTION', $30);
+        KYKYCtrlGetHVPowerType( @nT );
+        edtHVType.Text:=Format('%d', [nT]);
+        if( nT = 0 ) then
+          btnSetBeam.Enabled:=False
+        else
+          btnSetBeam.Enabled:=True;
+      end;
+      3:  // Disconnect
+      begin
+        KYKYCtrlDisconnect(False);
+        m_bConnected := False;
+      end;
+    end;
+  end;
+
+  if( m_bConnected ) then
+  begin
+    btnConnect.Enabled := False;
+    btnDisconnect.Enabled := True;
+  end else
+  begin
+    btnConnect.Enabled := True;
+    btnDisconnect.Enabled := False;
+  end;
+end;
+
+end.

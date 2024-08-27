@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{fc994513-2ad9-4902-8d79-d61a6f47a604}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b10a66ae-dea3-4821-af04-d093709b3b6f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{f0bd560f-0bc2-4f8e-b039-70b46c28b91f}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MySpinButtonCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SemCoreCtrlPanel_Stand1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SemCoreCtrlPanel_Stand1Ctl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SemCoreCtrlPanel_Stand1Ppg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="SemCoreCtrlPanel_Stand1.odl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SemCoreCtrlPanel_Stand1.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MySpinButtonCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SemCoreCtrlPanel_Stand1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SemCoreCtrlPanel_Stand1Ctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SemCoreCtrlPanel_Stand1Ppg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="aboutdll.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon_addex2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon_addex2_en.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon_desex2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon_desex2_en.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="semcorec.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SemCoreCtrlPanel_Stand1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SemCoreCtrlPanel_Stand1Ctl.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="SemCoreCtrlPanel_Stand1.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

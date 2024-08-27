@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DllTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Main\DllTest/DllTest.res" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DllTest.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP8ADD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include" /I "..\..\Common\Include\USB" /I "..\..\Common\Template" /I "..\..\CtrlLayer\SemScan" /I "..\..\CtrlLayer\SemCore" /I "..\..\CtrlLayer\SemControl" /I "..\..\CtrlLayer\VirtualMCICard" /I "..\..\CtrlLayer\SemControlCardAdapter" /I "..\..\CtrlLayer\SemCoreMsgComm" /I "..\..\CtrlLayer\VACStateMachine" /I "..\..\CtrlLayer\VACObtain" /I "..\..\Common\Include\SemCoreCtrlPanelManager" /I "..\..\Language\LanguageManager" /I "..\..\AutoFunctions\AutoTest" /I "..\..\CtrlLayer\Options_Camera" /I "..\..\CtrlLayer\Options_XYStage" /I "..\..\Common\Include\Stage" /I "..\..\CtrlLayer\Options_StageMC6600Wnd" /I "..\..\CtrlLayer\Options_StagePod" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\..\Bin\SharedDebug\Main\DllTest/DllTest.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Main\DllTest/" /Fd"..\..\Bin\SharedDebug\Main\DllTest/" /FD /GZ /c 
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DlgAngleOptions.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DlgCCDtest.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DlgLanguage.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DlgMobileUScale.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DllTest.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DllTestDoc.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DllTestView.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\LineTracker.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\MainFrm.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\TransparentImage.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP8ADD.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP8ADE.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include" /I "..\..\Common\Include\USB" /I "..\..\Common\Template" /I "..\..\CtrlLayer\SemScan" /I "..\..\CtrlLayer\SemCore" /I "..\..\CtrlLayer\SemControl" /I "..\..\CtrlLayer\VirtualMCICard" /I "..\..\CtrlLayer\SemControlCardAdapter" /I "..\..\CtrlLayer\SemCoreMsgComm" /I "..\..\CtrlLayer\VACStateMachine" /I "..\..\CtrlLayer\VACObtain" /I "..\..\Common\Include\SemCoreCtrlPanelManager" /I "..\..\Language\LanguageManager" /I "..\..\AutoFunctions\AutoTest" /I "..\..\CtrlLayer\Options_Camera" /I "..\..\CtrlLayer\Options_XYStage" /I "..\..\Common\Include\Stage" /I "..\..\CtrlLayer\Options_StageMC6600Wnd" /I "..\..\CtrlLayer\Options_StagePod" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\..\Bin\SharedDebug\Main\DllTest/DllTest.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\Main\DllTest/" /Fd"..\..\Bin\SharedDebug\Main\DllTest/" /FD /GZ /c 
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP8ADE.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP8ADF.tmp" with contents
+[
+SemCoreCtrlPanelManager.lib VirtualMCICard.lib SemScan.lib SemControl.lib winmm.lib LanguageManager.lib AutoTest.lib Options_Camera.lib Options_XYStage.lib Options_StageMC6600Wnd.lib Options_StagePod.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\..\Bin/DllTest.pdb" /debug /machine:I386 /out:"..\..\Bin/DllTest.exe" /pdbtype:sept /libpath:"..\..\Bin" 
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\DlgAngleOptions.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\DlgCCDtest.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\DlgLanguage.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\DlgMobileUScale.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\DllTest.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\DllTestDoc.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\DllTestView.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\LineTracker.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\MainFrm.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\StdAfx.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\TransparentImage.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\DllTest\DllTest.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP8ADF.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgAngleOptions.cpp
+DlgCCDtest.cpp
+DlgLanguage.cpp
+DlgMobileUScale.cpp
+DllTest.cpp
+DllTestDoc.cpp
+DllTestView.cpp
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DllTestView.cpp(407) : warning C4101: 'db' : unreferenced local variable
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DllTestView.cpp(960) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\MainFace\DllTest\DllTestView.cpp(960) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+LineTracker.cpp
+MainFrm.cpp
+TransparentImage.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DllTest.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,42 @@
+// XXX2.odl : type library source for XXX2.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (XXX2.tlb).
+
+[ uuid(57500EEB-9C48-4B79-B930-7A5C57303FFB), version(1.0) ]
+library XXX2
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CXXX2Doc
+	
+	[ uuid(B8CDC981-F26C-4318-9E3F-257FAE938468) ]
+	dispinterface IXXX2
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CXXX2Doc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CXXX2Doc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CXXX2Doc
+	
+	[ uuid(66E4C113-AB95-4138-8BB6-1E890A36E54F) ]
+	coclass Document
+	{
+		[default] dispinterface IXXX2;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

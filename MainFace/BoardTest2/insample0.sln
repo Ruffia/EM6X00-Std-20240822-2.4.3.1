@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "insample0", "insample0.vcxproj", "{B29429FF-7FA9-4FCA-875F-9CB0ECDC8CE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ChartCtrlLibS|Win32 = ChartCtrlLibS|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B29429FF-7FA9-4FCA-875F-9CB0ECDC8CE5}.ChartCtrlLibS|Win32.ActiveCfg = Release|Win32
+		{B29429FF-7FA9-4FCA-875F-9CB0ECDC8CE5}.ChartCtrlLibS|Win32.Build.0 = Release|Win32
+		{B29429FF-7FA9-4FCA-875F-9CB0ECDC8CE5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B29429FF-7FA9-4FCA-875F-9CB0ECDC8CE5}.Debug|Win32.Build.0 = Debug|Win32
+		{B29429FF-7FA9-4FCA-875F-9CB0ECDC8CE5}.Release|Win32.ActiveCfg = Release|Win32
+		{B29429FF-7FA9-4FCA-875F-9CB0ECDC8CE5}.Release|Win32.Build.0 = Release|Win32
+		{B29429FF-7FA9-4FCA-875F-9CB0ECDC8CE5}.Template|Win32.ActiveCfg = Release|Win32
+		{B29429FF-7FA9-4FCA-875F-9CB0ECDC8CE5}.Template|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

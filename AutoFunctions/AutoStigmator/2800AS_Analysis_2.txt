@@ -1,0 +1,488 @@
+
+long aust(unsigned char far  bb[16])
+{
+	WORD      xx;
+	WORD      ucl[26], uch[26];
+	WORD      i, j, k, l, m;
+	WORD      curl[4], curh[4];
+	DWORD     most1[26], most2[20], most3[20], most4[20];
+	DWORD     curr[4], ave, first, current, center;
+	DWORD     total[4], vr[4], lar;
+	BYTE far  **ibfb;
+	BYTE      gr[4];
+	BYTE      cc[7];
+	MSG       msg;
+	
+	
+	bb[5] = 128;                        // ast0
+	bb[6] = 128;                        // ast1
+	
+	center = bb[2]*256 + bb[1];
+	if (center <= 0)
+		center = 65536L + center;
+	first = center - 40;
+	
+	
+	uch[0] = (WORD)((first & 0x0000ff00L) >>8);
+	ucl[0] = (WORD)(first & 0x000000ffL);
+	
+	send_lens(cc);
+	
+	for (m = 1; m < 21; m++)                // 21 
+	{
+		rload_data(192, 192, 128, 128, ibfb);
+		current = first + m*4;
+		uch[m] = (WORD)((current & 0x0000ff00L) >> 8);
+		ucl[m] = (WORD)(current & 0x000000ffL);
+
+		send_lens(cc);
+		
+		
+		total[0] = 0;
+		total[1] = 0;
+		total[2] = 0;
+		total[3] = 0;
+		for (i = 1; i < 128; i++)
+		{
+			for (j = 1; j < 128; j++)
+			{
+				gr[0] = abs(ibfb[i][j] &0xff - ibfb[i][j - 1] &0xff);
+				total[0] = total[0] + gr[0];
+				gr[1] = abs(ibfb[i][j] &0xff - ibfb[i - 1][j - 1] &0xff);
+				total[1] = total[1] + gr[1];
+				gr[2] = abs(ibfb[i][j] &0xff - ibfb[i - 1][j] &0xff);
+				total[2] = total[2] + gr[2];
+				gr[3] = abs(ibfb[i - 1][j] &0xff - ibfb[i][j - 1] &0xff);
+				total[3] = total[3] + gr[3];
+			}
+		}
+		
+		most1[m - 1] = total[0];
+		most2[m - 1] = total[1];
+		most3[m - 1] = total[2];
+		most4[m - 1] = total[3];
+	}
+	
+	lar = most1[0];
+	for (k = 0; k < 20; k++)
+	{
+		if (most1[k] >= lar)
+		{
+			xx = k;
+			lar = most1[k];
+		}
+	}
+	curl[0] = ucl[xx];
+	curh[0] = uch[xx];
+	
+	lar = most2[0];
+	for (k = 0; k < 20; k++)
+	{
+		if (most2[k] >= lar)
+		{
+			xx = k;
+			lar = most2[k];
+		}
+	}
+	curl[1] = ucl[xx];
+	curh[1] = uch[xx];
+	
+	lar = most3[0];
+	for (k = 0; k < 20; k++)
+	{
+		if (most3[k] >= lar)
+		{
+			xx = k;
+			lar = most3[k];
+		}
+	}
+	curl[2] = ucl[xx];
+	curh[2] = uch[xx];
+	lar = most4[0];
+	for (k = 0; k < 20; k++)
+	{
+		if (most4[k] >= lar)
+		{
+			xx = k;
+			lar = most4[k];
+		}
+	}
+	curl[3] = ucl[xx];
+	curh[3] = uch[xx];
+	
+	curr[0] = curh[0]*256 + curl[0];
+	if (curr[0] <= 0)
+		curr[0] = 65536L + curr[0];
+	curr[1] = curh[1]*256 + curl[1];
+	if (curr[1] <= 0)
+		curr[1] = 65536L + curr[1];
+	curr[2] = curh[2]*256 + curl[2];
+	if (curr[2] <= 0)
+		curr[2] = 65536L + curr[2];
+	curr[3] = curh[3]*256 + curl[3];
+	if (curr[3] <= 0)
+		curr[3] = 65536L + curr[3];
+	ave = (curr[0] + curr[1] + curr[2] + curr[3])/4;
+	
+	
+	bb[2] = (WORD)((ave & 0x0000ff00L) >> 8);     // ol1 
+	bb[1] = (WORD)(ave & 0x000000ffL);           // ol0 
+	
+	cc[0] = 0xb6;
+	cc[1] = bb[1];
+	// cc[1]=ol0;  
+	cc[2] = bb[2];
+	// cc[2]=ol1;  
+	cc[3] = bb[3];
+	// cc[3]=ma0;  
+	cc[4] = bb[4];
+	// cc[4]=ma1;  
+	cc[5] = bb[5];
+	// cc[5]=ast0; 
+	cc[6] = bb[6];
+	// cc[6]=ast1; 
+	send_lens(cc);
+
+	//   STIGMATOR  
+	bb[6] = 0;                          //  ast1=0  
+	for (l = 1; l < 8; l++)
+	{
+		vr[0] = 0;
+		vr[1] = 0;
+		vr[2] = 0;
+		vr[3] = 0;
+		bb[5] = 128;
+		// ast0=128; 
+		ucl[l] = bb[5];
+		// ucl[l]=ast0; 
+		bb[6] = bb[6] + 32;
+		// ast1=ast1+32; 
+		uch[l] = bb[6];
+		// uch[l]=ast1;  
+		
+		cc[0] = 0xb6;
+		cc[1] = bb[1];
+		// cc[1]=ol0;    
+		cc[2] = bb[2];
+		// cc[2]=ol1;    
+		cc[3] = bb[3];
+		// cc[3]=ma0;    
+		cc[4] = bb[4];
+		// cc[4]=ma1;    
+		cc[5] = bb[5];
+		// cc[5]=ast0;   
+		cc[6] = bb[6];
+		// cc[6]=ast1;   
+		send_lens(cc);
+		
+		for (i = 1; i < 7; i++)
+			haxx1();
+		rload_data(192, 192, 128, 128, ibfb);
+		calcu(vr, gr, ibfb);
+		most1[l] = vr[0] + vr[1] + vr[2] + vr[3];
+	}
+	
+	bb[5] = 0;
+	//  ast0=0;  
+	for (l = 8; l < 14; l++)
+	{
+		vr[0] = 0;
+		vr[1] = 0;
+		vr[2] = 0;
+		vr[3] = 0;
+		bb[5] = bb[5] + 32;
+		// ast0=ast0+32; 
+		ucl[l] = bb[5];
+		// ucl[l]=ast0;  
+		bb[6] = bb[6] + 0;
+		// ast1=ast1;    
+		uch[l] = bb[6];
+		// uch[l]=ast1;  
+		
+		cc[0] = 0xb6;
+		cc[1] = bb[1];
+		// cc[1]=ol0;    
+		cc[2] = bb[2];
+		// cc[2]=ol1;    
+		cc[3] = bb[3];
+		// cc[3]=ma0;    
+		cc[4] = bb[4];
+		// cc[4]=ma1;    
+		cc[5] = bb[5];
+		// cc[5]=ast0;   
+		cc[6] = bb[6];
+		// cc[6]=ast1;   
+		send_lens(cc);
+		
+		for (i = 1; i < 7; i++)
+			haxx1();
+		rload_data(192, 192, 128, 128, ibfb);
+		calcu(vr, gr, ibfb);
+		most1[l] = vr[0] + vr[1] + vr[2] + vr[3];
+	}
+	
+	for (l = 14; l < 16; l++)
+	{
+		vr[0] = 0;
+		vr[1] = 0;
+		vr[2] = 0;
+		vr[3] = 0;
+		bb[5] = 151;
+		// ast0=151; 
+		ucl[l] = bb[5];
+		// ucl[l]=ast0; 
+		bb[6] = 151 - 46*(l - 14);
+        // ast1=151-46*(l-14); 
+		uch[l] = bb[6];
+		// uch[l]=ast1;  
+		
+		cc[0] = 0xb6;
+		cc[1] = bb[1];
+		// cc[1]=ol0;    
+		cc[2] = bb[2];
+		// cc[2]=ol1;    
+		cc[3] = bb[3];
+		// cc[3]=ma0;    
+		cc[4] = bb[4];
+		// cc[4]=ma1;    
+		cc[5] = bb[5];
+		// cc[5]=ast0;   
+		cc[6] = bb[6];
+		// cc[6]=ast1;   
+		send_lens(cc);
+		
+		for (i = 1; i < 7; i++)
+			haxx1();
+		rload_data(192, 192, 128, 128, ibfb);
+		calcu(vr, gr, ibfb);
+		most1[l] = vr[0] + vr[1] + vr[2] + vr[3];
+	}
+	
+	for (l = 16; l < 18; l++)
+	{
+		vr[0] = 0;
+		vr[1] = 0;
+		vr[2] = 0;
+		vr[3] = 0;
+		bb[5] = 105;
+		// ast0=105; 
+		ucl[l] = bb[5];
+		// ucl[l]=ast0; 
+		bb[6] = 105 + 46*(l - 16);
+		// ast1=105+46*(l-16); 
+		uch[l] = bb[6];
+		// uch[l]=ast1;  
+		
+		cc[0] = 0xb6;
+		cc[1] = bb[1];
+		// cc[1]=ol0;    
+		cc[2] = bb[2];
+		// cc[2]=ol1;    
+		cc[3] = bb[3];
+		// cc[3]=ma0;    
+		cc[4] = bb[4];
+		// cc[4]=ma1;    
+		cc[5] = bb[5];
+		// cc[5]=ast0;   
+		cc[6] = bb[6];
+		// cc[6]=ast1;   
+		send_lens(cc);
+		for (i = 1; i < 7; i++)
+			haxx1();
+		rload_data(192, 192, 128, 128, ibfb);
+		calcu(vr, gr, ibfb);
+		most1[l] = vr[0] + vr[1] + vr[2] + vr[3];
+	}
+	
+	for (l = 18; l < 20; l++)
+	{
+		vr[0] = 0;
+		vr[1] = 0;
+		vr[2] = 0;
+		vr[3] = 0;
+		bb[5] = 173;
+		// ast0=173; 
+		ucl[l] = bb[5];
+		// ucl[l]=ast0; 
+		bb[6] = 173 - 90*(l - 18);
+		// ast1=173-90*(l-18); 
+		uch[l] = bb[6];
+		// uch[l]=ast1;   
+		
+		cc[0] = 0xb6;
+		cc[1] = bb[1];
+		// cc[1]=ol0;    
+		cc[2] = bb[2];
+		// cc[2]=ol1;    
+		cc[3] = bb[3];
+		// cc[3]=ma0;    
+		cc[4] = bb[4];
+		// cc[4]=ma1;    
+		cc[5] = bb[5];
+		// cc[5]=ast0;   
+		cc[6] = bb[6];
+		// cc[6]=ast1;   
+		send_lens(cc);
+		
+		for (i = 1; i < 7; i++)
+			haxx1();
+		rload_data(192, 192, 128, 128, ibfb);
+		calcu(vr, gr, ibfb);
+		most1[l] = vr[0] + vr[1] + vr[2] + vr[3];
+	}
+	
+	for (l = 20; l < 22; l++)
+	{
+		vr[0] = 0;
+		vr[1] = 0;
+		vr[2] = 0;
+		vr[3] = 0;
+		bb[5] = 83;
+		// ast0=83; 
+		ucl[l] = bb[5];
+		// ucl[l]=ast0; 
+		bb[6] = 83 + 90*(l - 20);
+		// ast1=83+90*(l-20); 
+		uch[l] = bb[6];
+		// uch[l]=ast1;  
+		
+		cc[0] = 0xb6;
+		cc[1] = bb[1];
+		// cc[1]=ol0;    
+		cc[2] = bb[2];
+		// cc[2]=ol1;    
+		cc[3] = bb[3];
+		// cc[3]=ma0;    
+		cc[4] = bb[4];
+		// cc[4]=ma1;    
+		cc[5] = bb[5];
+		// cc[5]=ast0;   
+		cc[6] = bb[6];
+		// cc[6]=ast1;   
+		send_lens(cc);
+		
+		for (i = 1; i < 7; i++)
+			haxx1();
+		rload_data(192, 192, 128, 128, ibfb);
+		calcu(vr, gr, ibfb);
+		most1[l] = vr[0] + vr[1] + vr[2] + vr[3];
+	}
+	
+	for (l = 22; l < 24; l++)
+	{
+		vr[0] = 0;
+		vr[1] = 0;
+		vr[2] = 0;
+		vr[3] = 0;
+		bb[5] = 196;
+		// ast0=196; 
+		ucl[l] = bb[5];
+		// ucl[l]=ast0; 
+		bb[6] = 196 - 136*(l - 22);
+		// ast1=196-136*(l-22); 
+		uch[l] = bb[6];
+		// uch[l]=ast1; 
+		
+		cc[0] = 0xb6;
+		cc[1] = bb[1];
+		// cc[1]=ol0;    
+		cc[2] = bb[2];
+		// cc[2]=ol1;    
+		cc[3] = bb[3];
+		// cc[3]=ma0;    
+		cc[4] = bb[4];
+		// cc[4]=ma1;    
+		cc[5] = bb[5];
+		// cc[5]=ast0;   
+		cc[6] = bb[6];
+		// cc[6]=ast1;   
+		send_lens(cc);
+		
+		for (i = 1; i < 7; i++)
+			haxx1();
+		rload_data(192, 192, 128, 128, ibfb);
+		calcu(vr, gr, ibfb);
+		most1[l] = vr[0] + vr[1] + vr[2] + vr[3];
+	}
+	for (l = 24; l < 26; l++)
+	{
+		vr[0] = 0;
+		vr[1] = 0;
+		vr[2] = 0;
+		vr[3] = 0;
+		bb[5] = 60;
+		// ast0=60; 
+		ucl[l] = bb[5];
+		// ucl[l]=ast0; 
+		bb[6] = 60 + 136*(l - 24);
+        // ast1=60+136*(l-24); 
+		uch[l] = bb[6];
+		// uch[l]=ast1; 
+		
+		cc[0] = 0xb6;
+		cc[1] = bb[1];
+		// cc[1]=ol0;    
+		cc[2] = bb[2];
+		// cc[2]=ol1;    
+		cc[3] = bb[3];
+		// cc[3]=ma0;    
+		cc[4] = bb[4];
+		// cc[4]=ma1;    
+		cc[5] = bb[5];
+		// cc[5]=ast0;   
+		cc[6] = bb[6];
+		// cc[6]=ast1;   
+		send_lens(cc);
+		
+		for (i = 1; i < 7; i++)
+			haxx1();
+		rload_data(192, 192, 128, 128, ibfb);
+		calcu(vr, gr, ibfb);
+		most1[l] = vr[0] + vr[1] + vr[2] + vr[3];
+	}
+	
+	lar = most1[0];
+	for (k = 0; k < 25; k++)
+	{
+		if (most1[k] >= lar)
+		{
+			xx = k;
+			lar = most1[k];
+		}
+	}
+	
+	
+	bb[5] = ucl[xx];
+	// ast0=ucl[xx];  
+	bb[6] = uch[xx];
+	// ast1=uch[xx];  
+	cc[0] = 0xb6;
+	cc[1] = bb[1];
+	// cc[1]=ol0;    
+	cc[2] = bb[2];
+	// cc[2]=ol1;    
+	cc[3] = bb[3];
+	// cc[3]=ma0;    
+	cc[4] = bb[4];
+	// cc[4]=ma1;    
+	cc[5] = bb[5];
+	// cc[5]=ast0;   
+	cc[6] = bb[6];
+	// cc[6]=ast1;   
+	send_lens(cc);
+	
+	_ffree(ibfb);
+	
+	for (i = 1; i < 11; i++)
+		haxx1();
+	
+	//   printf("automatic ^^^end^^^ \n");    
+	
+	cc[0] = 0xb8;
+	send_lens(cc);
+end:;
+	
+	return (0L);
+}
+
+

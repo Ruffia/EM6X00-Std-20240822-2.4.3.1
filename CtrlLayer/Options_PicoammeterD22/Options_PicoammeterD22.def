@@ -1,0 +1,7 @@
+; Options_PicoammeterD22.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Options_PicoammeterD22"
+DESCRIPTION  'Options_PicoammeterD22 Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

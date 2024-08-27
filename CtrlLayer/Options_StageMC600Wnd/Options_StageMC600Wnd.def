@@ -1,0 +1,26 @@
+; Options_StageMC600Wnd.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Options_StageMC600Wnd"
+DESCRIPTION  'Options_StageMC600Wnd Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	StageMC600_ShowWnd			@1
+	StageMC600_IsReady			@2
+	StageMC600_SetLanguageID	@3
+	StageMC600_SetPixelsPerMM	@4
+	StageMC600_SetResolution	@5
+	StageMC600_SetMag			@6
+	StageMC600_IsMoving			@7
+	StageMC600_StopMove			@8
+	StageMC600_MoveToCenter		@9
+	StageMC600_Move				@10
+	StageMC600_Move4Axis		@11
+	StageMC600_Move5Axis		@12
+	StageMC600_GoOrigin			@13
+	StageMC600_GoHome			@14
+	StageMC600_OnVentExit		@15
+	StageMC600_SetTrackParam	@16
+	StageMC600_StopTrack		@17
+	StageMC600_SetParam			@18
+	StageMC600_GetParam			@19

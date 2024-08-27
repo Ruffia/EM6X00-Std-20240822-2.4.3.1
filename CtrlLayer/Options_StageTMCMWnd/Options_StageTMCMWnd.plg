@@ -1,0 +1,252 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BoardVAC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+BoardVAC.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_BSD - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_BSD.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_Camera - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_Camera.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC600 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC600.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC600Wnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC600Wnd.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC6600 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC6600.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC6600Wnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC6600Wnd.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StagePod - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StagePod.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageTMCM - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageTMCM.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageTMCMWnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPA5C7.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include\Stage" /I "..\..\CtrlLayer\Options_StageTMCM" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\CtrlLayer\StageTMCMWnd/Options_StageTMCMWnd.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\StageTMCMWnd/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\StageTMCMWnd/" /FD /GZ /c 
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPA5C7.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPA5C8.tmp" with contents
+[
+Options_StageTMCM.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/Options_StageTMCMWnd.pdb" /debug /machine:I386 /def:".\Options_StageTMCMWnd.def" /out:"..\..\Bin/Options_StageTMCMWnd.dll" /implib:"..\..\Bin/Options_StageTMCMWnd.lib" /pdbtype:sept /libpath:"..\..\Bin" 
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCMWnd\DlgInput.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCMWnd\DlgSetup.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCMWnd\ExportStageTMCMFunc.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCMWnd\Options_StageTMCMWnd.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCMWnd\PanelStage.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCMWnd\PanelStagePos.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCMWnd\StdAfx.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCMWnd\Options_StageTMCMWnd.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPA5C8.tmp"
+<h3>Output Window</h3>
+Compiling...
+PanelStage.cpp
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1162) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1167) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1313) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1316) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1319) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1322) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1325) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1353) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1356) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1359) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1362) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1365) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1682) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1687) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1689) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1697) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1698) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1699) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1853) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(1853) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(2586) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(2587) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(2606) : warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(2694) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(2695) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(2893) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(2894) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(3035) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(3036) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(3198) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(3199) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(3204) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCMWnd\PanelStage.cpp(3205) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+Linking...
+
+
+
+<h3>Results</h3>
+Options_StageTMCMWnd.dll - 0 error(s), 33 warning(s)
+<h3>
+--------------------Configuration: Options_StageVince - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageVince.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SEMClient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SEMClient.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SEMServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SEMServer.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemControl - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemControl.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemControlCardAdapter - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemControlCardAdapter.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCore - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCore.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanelManager - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanelManager.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreMsgComm - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreMsgComm.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemScan - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemScan.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VACStateMachine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VACStateMachine.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VirtualMCICard - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VirtualMCICard.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

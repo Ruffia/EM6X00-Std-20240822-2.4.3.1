@@ -1,0 +1,85 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CSemCoreCtrlPanel_Stand5Ctrl
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "SemCoreCtrlPanel_Stand5.h"
+CDK=Y
+
+ClassCount=2
+Class1=CSemCoreCtrlPanel_Stand5Ctrl
+Class2=CSemCoreCtrlPanel_Stand5PropPage
+
+ResourceCount=4
+Resource1=IDD_PROPPAGE_SEMCORECTRLPANEL_STAND5 (English (U.S.))
+LastPage=0
+Resource2=IDD_ABOUTBOX_SEMCORECTRLPANEL_STAND5 (English (U.S.))
+Resource3=IDD_PROPPAGE_SEMCORECTRLPANEL_STAND5
+Resource4=IDD_ABOUTBOX_SEMCORECTRLPANEL_STAND5
+
+[CLS:CSemCoreCtrlPanel_Stand5Ctrl]
+Type=0
+HeaderFile=SemCoreCtrlPanel_Stand5Ctl.h
+ImplementationFile=SemCoreCtrlPanel_Stand5Ctl.cpp
+Filter=W
+LastObject=CSemCoreCtrlPanel_Stand5Ctrl
+BaseClass=COleControl
+VirtualFilter=wWC
+
+[CLS:CSemCoreCtrlPanel_Stand5PropPage]
+Type=0
+HeaderFile=SemCoreCtrlPanel_Stand5Ppg.h
+ImplementationFile=SemCoreCtrlPanel_Stand5Ppg.cpp
+Filter=D
+BaseClass=COlePropertyPage
+VirtualFilter=idWC
+LastObject=IDC_RADIO_FLOAT
+
+[DLG:IDD_ABOUTBOX_SEMCORECTRLPANEL_STAND5]
+Type=1
+Class=?
+ControlCount=4
+Control1=IDC_STATIC,static,1342177283
+Control2=IDC_ABOUTBOX_SEMCORECTRLPANEL_STAND5_STATIC_Version,static,1342308352
+Control3=IDC_ABOUTBOX_SEMCORECTRLPANEL_STAND5_STATIC_Copyright,static,1342308352
+Control4=IDOK,button,1342373889
+
+[DLG:IDD_PROPPAGE_SEMCORECTRLPANEL_STAND5]
+Type=1
+Class=CSemCoreCtrlPanel_Stand5PropPage
+ControlCount=9
+Control1=IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_STATIC_Label,static,1342308352
+Control2=IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_EDIT_Caption,edit,1350631552
+Control3=IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_STATIC_STYLE,button,1342177287
+Control4=IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_RADIO_INT,button,1342308361
+Control5=IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_RADIO_FLOAT,button,1342177289
+Control6=IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_STATIC_SCALE,static,1342308352
+Control7=IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_EDIT_SCALE,edit,1350639744
+Control8=IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_STATIC_VALUE,static,1342308352
+Control9=IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_EDIT_VALUE,edit,1350639744
+
+[DLG:IDD_ABOUTBOX_SEMCORECTRLPANEL_STAND5 (English (U.S.))]
+Type=1
+Class=?
+ControlCount=4
+Control1=IDC_STATIC,static,1342177283
+Control2=IDC_STATIC,static,1342308352
+Control3=IDC_STATIC,static,1342308352
+Control4=IDOK,button,1342373889
+
+[DLG:IDD_PROPPAGE_SEMCORECTRLPANEL_STAND5 (English (U.S.))]
+Type=1
+Class=?
+ControlCount=9
+Control1=IDC_EDIT_Caption,edit,1350631552
+Control2=IDC_STATIC,static,1342308352
+Control3=IDC_STATIC,button,1342177287
+Control4=IDC_RADIO_INT,button,1342308361
+Control5=IDC_RADIO_FLOAT,button,1342177289
+Control6=IDC_EDIT_ScaleDecimals,edit,1350639744
+Control7=IDC_STATIC,static,1342308352
+Control8=IDC_EDIT_ValueDecimals,edit,1350639744
+Control9=IDC_STATIC,static,1342308352
+

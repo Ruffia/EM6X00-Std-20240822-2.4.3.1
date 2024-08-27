@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Options_PicoammeterD22 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\CtrlLayer\PicoammeterD22/Options_PicoammeterD22.res" /d "_DEBUG" /d "_AFXDLL" "D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_PicoammeterD22\Options_PicoammeterD22.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPFDB2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Public Classes" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\PicoammeterD22/Options_PicoammeterD22.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\PicoammeterD22/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\PicoammeterD22/" /FD /GZ    /c 
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_PicoammeterD22\Options_PicoammeterD22.cpp"
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_PicoammeterD22\CommD22.cpp"
+"D:\Projects\202101-Localization\Src-BD\Common\Public Classes\Serial.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPFDB2.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPFDB3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Public Classes" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\PicoammeterD22/Options_PicoammeterD22.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\PicoammeterD22/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\PicoammeterD22/" /FD /GZ    /c 
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_PicoammeterD22\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPFDB3.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPFDB4.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/Options_PicoammeterD22.pdb" /debug /machine:I386 /def:".\Options_PicoammeterD22.def" /out:"..\..\Bin/Options_PicoammeterD22.dll" /implib:"..\..\Bin/Options_PicoammeterD22.lib" /pdbtype:sept 
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\PicoammeterD22\Options_PicoammeterD22.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\PicoammeterD22\Options_PicoammeterD22.res"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\PicoammeterD22\StdAfx.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\PicoammeterD22\CommD22.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\PicoammeterD22\Serial.obj"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPFDB4.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Options_PicoammeterD22.cpp
+CommD22.cpp
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_PicoammeterD22\CommD22.cpp(74) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_PicoammeterD22\CommD22.cpp(106) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_PicoammeterD22\CommD22.cpp(107) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+Serial.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin/Options_PicoammeterD22.lib and object ..\..\Bin/Options_PicoammeterD22.exp
+
+
+
+<h3>Results</h3>
+Options_PicoammeterD22.dll - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

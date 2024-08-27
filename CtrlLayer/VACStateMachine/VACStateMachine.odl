@@ -1,0 +1,16 @@
+// VACStateMachine.odl : type library source for VACStateMachine.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (VACStateMachine.tlb).
+
+[ uuid(F1D9786A-3250-497D-ADBB-DD584EF7D98B), version(1.0) ]
+library VACStateMachine
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

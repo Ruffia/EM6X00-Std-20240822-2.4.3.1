@@ -1,0 +1,178 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Options_BSD.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,3,0,1
+ PRODUCTVERSION 3,3,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "Options_BSD DLL"
+            VALUE "FileVersion", "3.3.0.1"
+            VALUE "InternalName", "Options_BSD"
+            VALUE "LegalCopyright", "版权所有 (C) 2020 - 2024"
+            VALUE "OriginalFilename", "Options_BSD.DLL"
+            VALUE "ProductName", "Options_BSD Dynamic Link Library"
+            VALUE "ProductVersion", "3.3.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PANEL_BSD DIALOGEX 0, 0, 163, 175
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "BSD"
+FONT 8, "Microsoft Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,119,7,18,7,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,138,7,18,7,NOT WS_VISIBLE
+    GROUPBOX        "Channels",IDC_STATIC_Group_Channels,7,36,149,33
+    CONTROL         "A",IDC_RADIO_Channels_A,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT | WS_GROUP,15,50,29,14
+    CONTROL         "B",IDC_RADIO_Channels_B,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,50,50,29,14
+    CONTROL         "A+B",IDC_RADIO_Channels_AB1,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,85,50,29,14
+    CONTROL         "A-B",IDC_RADIO_Channels_AB2,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,120,50,29,14
+    GROUPBOX        "Coarse",IDC_STATIC_Group_Coarse,7,74,110,33
+    CONTROL         "X10",IDC_RADIO_Coarse_X010,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT | WS_GROUP,15,88,29,14
+    CONTROL         "X50",IDC_RADIO_Coarse_X050,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,50,88,29,14
+    CONTROL         "X100",IDC_RADIO_Coarse_X100,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,84,88,29,14
+    LTEXT           "Fine",IDC_STATIC_Fine,15,117,60,11
+    RTEXT           "0.0",IDC_STATIC_Fine_Value,82,118,70,11
+    SCROLLBAR       IDC_SCROLLBAR_Fine,7,129,149,10
+    RTEXT           "Port:",IDC_STATIC_Port,7,9,46,11
+    COMBOBOX        IDC_COMBO_Port,56,7,52,118,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Brt",IDC_STATIC_Brt,15,145,60,11
+    RTEXT           "0.0",IDC_STATIC_Brt_Value,82,146,70,11
+    SCROLLBAR       IDC_SCROLLBAR_Brt,7,158,149,10
+    CONTROL         "Fine Rev",IDC_CHECK_Fine,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_MULTILINE | BS_FLAT | WS_TABSTOP,122,79,34,26
+    LTEXT           "",IDC_STATIC_Rect,7,36,138,132,NOT WS_VISIBLE
+    PUSHBUTTON      "Relink",IDC_BUTTON_ReLink,111,7,45,14
+    CONTROL         "In/Out",IDC_CHECK_InOut,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,111,23,45,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PANEL_BSD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Options_BSD.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

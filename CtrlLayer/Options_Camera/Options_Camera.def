@@ -1,0 +1,10 @@
+; Options_Camera.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Options_Camera"
+DESCRIPTION  'Options_Camera Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	ShowCameraDlg	@1
+	ShowCameraWnd	@2
+	CCD_SetLanguageID	@3

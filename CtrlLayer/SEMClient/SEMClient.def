@@ -1,0 +1,11 @@
+; SEMClient.def : Declares the module parameters for the DLL.
+
+LIBRARY      "SEMClient"
+DESCRIPTION  'SEMClient Windows Dynamic Link Library'
+;DATA READ 
+;SECTIONS
+;.SHAREDDATA READ SHARED
+
+
+EXPORTS
+    ; Explicit exports can go here

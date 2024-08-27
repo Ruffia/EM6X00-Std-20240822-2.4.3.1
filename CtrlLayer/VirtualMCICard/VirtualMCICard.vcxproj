@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{922A7CBF-2382-40BA-B2EC-151689C511E0}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\Bin\SharedRelease\</OutDir>
+    <IntDir>.\..\..\Bin\SharedRelease\CtrlLayer\VirtualMCICard\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\Bin\</OutDir>
+    <IntDir>.\..\..\Bin\SharedDebug\CtrlLayer\VirtualMCICard\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\SemCoreMsgComm;..\..\Common\Include;..\..\Common\Include\USB;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\..\Bin\SharedRelease\CtrlLayer\VirtualMCICard\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\..\Bin\SharedRelease\CtrlLayer\VirtualMCICard\VirtualMCICard.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\..\Bin\SharedRelease\CtrlLayer\VirtualMCICard\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\Bin\SharedRelease\CtrlLayer\VirtualMCICard\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\Bin\SharedRelease\VirtualMCICard.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\Bin\SharedRelease\VirtualMCICard.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\..\..\Bin\SharedRelease\VirtualMCICard.dll</OutputFile>
+      <ImportLibrary>.\..\..\Bin\SharedRelease\VirtualMCICard.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\Bin\SharedRelease;..\..\..\Common\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ddraw.lib;dxguid.lib;winmm.lib;vfw32.lib;SemCoreMsgComm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\VirtualMCICard.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\SemCoreMsgComm;..\..\Common\Include;..\..\Common\Include\Comm;..\..\Common\Include\FEG;..\..\Common\Include\USB;..\..\CtrlLayer\GlobalComponent;..\..\Common\Include\Stage;..\..\CtrlLayer\Options_StageMC600Wnd;..\..\CtrlLayer\Options_StageMC6600Wnd;..\..\CtrlLayer\Options_StageTMCMWnd;..\..\Common\Include\NAV\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\..\Bin\SharedDebug\CtrlLayer\VirtualMCICard\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\..\Bin\SharedDebug\CtrlLayer\VirtualMCICard\VirtualMCICard.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\..\Bin\SharedDebug\CtrlLayer\VirtualMCICard\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\Bin\SharedDebug\CtrlLayer\VirtualMCICard\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\Bin\VirtualMCICard.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\Bin\VirtualMCICard.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\..\..\Bin\VirtualMCICard.dll</OutputFile>
+      <ImportLibrary>.\..\..\Bin\VirtualMCICard.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\Bin;..\..\Common\Lib;..\..\opencv\build\x86\vc11\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ddraw.lib;dxguid.lib;winmm.lib;vfw32.lib;SemCoreMsgComm.lib;GlobalComponent.lib;Options_StageMC600Wnd.lib;Options_StageMC6600Wnd.lib;Options_StageTMCMWnd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\VirtualMCICard.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AnalyseDispXYZ.cpp" />
+    <ClCompile Include="AnalyseDispXYZ2.cpp" />
+    <ClCompile Include="AnalyseDispXYZ2nd.cpp" />
+    <ClCompile Include="AnalyseDispXYZ2ndMix.cpp" />
+    <ClCompile Include="AngleControler.cpp" />
+    <ClCompile Include="Ddutil.cpp" />
+    <ClCompile Include="DIBAPI.CPP" />
+    <ClCompile Include="FrameRateControler.cpp" />
+    <ClCompile Include="HeaderControler.cpp" />
+    <ClCompile Include="ImageDataManager.cpp" />
+    <ClCompile Include="LabelControler.cpp" />
+    <ClCompile Include="LabelInitializer.cpp" />
+    <ClCompile Include="MCICard.cpp" />
+    <ClCompile Include="MCICardGetDataDet2ndLogicExecutor.cpp" />
+    <ClCompile Include="MCICardGetDataLogicExecutor.cpp" />
+    <ClCompile Include="MCICardGraphLay.cpp" />
+    <ClCompile Include="MCICardImageProcess.cpp" />
+    <ClCompile Include="MCICardInfo.cpp" />
+    <ClCompile Include="MCICardLabelLay.cpp" />
+    <ClCompile Include="MCICardOption.cpp" />
+    <ClCompile Include="MCICardOscillograph.cpp" />
+    <ClCompile Include="MCICardUScale.cpp" />
+    <ClCompile Include="MobileUScaleControler.cpp" />
+    <ClCompile Include="MYFILE.CPP" />
+    <ClCompile Include="OscillographControler.cpp" />
+    <ClCompile Include="RectConvertor.cpp" />
+    <ClCompile Include="SemVirtualMCICard.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="VirtualMCICard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="VirtualMCICard.def" />
+    <CustomBuild Include="res\VirtualMCICard.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VirtualMCICard.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AngleControler.h" />
+    <ClInclude Include="FrameRateControler.h" />
+    <ClInclude Include="HeaderControler.h" />
+    <ClInclude Include="ImageDataManager.h" />
+    <ClInclude Include="LabelControler.h" />
+    <ClInclude Include="LabelInitializer.h" />
+    <ClInclude Include="MCICard.h" />
+    <ClInclude Include="MCICardGetDataDet2ndLogicExecutor.h" />
+    <ClInclude Include="MCICardGetDataLogicExecutor.h" />
+    <ClInclude Include="MCICardOption.h" />
+    <ClInclude Include="MCICardParam.h" />
+    <ClInclude Include="MobileUScaleControler.h" />
+    <ClInclude Include="OscillographControler.h" />
+    <ClInclude Include="RectConvertor.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SemVirtualMCICard.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="XYZTuple.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

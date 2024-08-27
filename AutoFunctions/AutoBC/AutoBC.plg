@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AutoBC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+AutoBC.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: AutoFilament - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+AutoFilament.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: AutoFocus - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+AutoFocus.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: AutoStigmator - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+AutoStigmator.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: OrthogonalTransform - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+OrthogonalTransform.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

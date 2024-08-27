@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{BCFADEDB-BD1D-4CAF-931A-CFD59B3EF2FE}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\Bin\SharedRelease\</OutDir>
+    <IntDir>.\..\..\Bin\SharedRelease\CtrlLayer\SemCore\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\Bin\</OutDir>
+    <IntDir>.\..\..\Bin\SharedDebug\CtrlLayer\SemCore\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\SemControlCardAdapter;..\SemCoreMsgComm;..\..\Common\Include;..\..\Common\Include\CPS;Coadjustment;..\..\Language\LanguageManager;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\..\Bin\SharedRelease\CtrlLayer\SemCore\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\..\Bin\SharedRelease\CtrlLayer\SemCore\SemCore.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\..\Bin\SharedRelease\CtrlLayer\SemCore\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\Bin\SharedRelease\CtrlLayer\SemCore\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\Bin\SharedRelease\SemCore.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\Bin\SharedRelease\SemCore.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\..\..\Bin\SharedRelease\SemCore.dll</OutputFile>
+      <ImportLibrary>.\..\..\Bin\SharedRelease\SemCore.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\Bin\SharedRelease;..\..\..\Common\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SemCoreMsgComm.lib;LanguageManager.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\SemCore.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\SemControlCardAdapter;..\SemCoreMsgComm;..\..\Common\Include;..\..\Common\Include\CPS;Coadjustment;..\..\Language\LanguageManager;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\..\Bin\SharedDebug\CtrlLayer\SemCore\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\..\Bin\SharedDebug\CtrlLayer\SemCore\SemCore.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\..\Bin\SharedDebug\CtrlLayer\SemCore\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\Bin\SharedDebug\CtrlLayer\SemCore\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\Bin\SemCore.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\Bin\SemCore.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\..\..\Bin\SemCore.dll</OutputFile>
+      <ImportLibrary>.\..\..\Bin\SemCore.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\Bin;..\..\Common\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SemCoreMsgComm.lib;LanguageManager.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\SemCore.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Coadjustment\CoadjustParam.cpp" />
+    <ClCompile Include="MyProfileFunc.cpp" />
+    <ClCompile Include="SemBasisCtrl.cpp" />
+    <ClCompile Include="SemCore.cpp" />
+    <ClCompile Include="SemCoreAssemble.cpp" />
+    <ClCompile Include="SemCtrl_AdjustParameter.cpp" />
+    <ClCompile Include="SemCtrl_AutoFocus.cpp" />
+    <ClCompile Include="SemCtrl_AutoStigmator.cpp" />
+    <ClCompile Include="SemCtrl_AuxiliaryStigmation.cpp" />
+    <ClCompile Include="SemCtrl_BeemAlignmentX.cpp" />
+    <ClCompile Include="SemCtrl_BeemAlignmentY.cpp" />
+    <ClCompile Include="SemCtrl_Brightness.cpp" />
+    <ClCompile Include="SemCtrl_BseBySeDetectorSwitch.cpp" />
+    <ClCompile Include="SemCtrl_Channel2AB.cpp" />
+    <ClCompile Include="SemCtrl_Channel2C.cpp" />
+    <ClCompile Include="SemCtrl_Channel2D.cpp" />
+    <ClCompile Include="SemCtrl_Channel2E.cpp" />
+    <ClCompile Include="SemCtrl_CondenserLens.cpp" />
+    <ClCompile Include="SemCtrl_CondenserLensReverse.cpp" />
+    <ClCompile Include="SemCtrl_Contrast.cpp" />
+    <ClCompile Include="SemCtrl_CPS_Bias.cpp" />
+    <ClCompile Include="SemCtrl_CPS_FilamentCurrent.cpp" />
+    <ClCompile Include="SemCtrl_CPS_HV.cpp" />
+    <ClCompile Include="SemCtrl_DCondenserLens.cpp" />
+    <ClCompile Include="SemCtrl_DFocus.cpp" />
+    <ClCompile Include="SemCtrl_DObjectiveLens.cpp" />
+    <ClCompile Include="SemCtrl_FilamentCurrent.cpp" />
+    <ClCompile Include="SemCtrl_GunCurrent.cpp" />
+    <ClCompile Include="SemCtrl_GunCurrentAccelerate.cpp" />
+    <ClCompile Include="SemCtrl_HV.cpp" />
+    <ClCompile Include="SemCtrl_HVAccelerate.cpp" />
+    <ClCompile Include="SemCtrl_ImageInvert.cpp" />
+    <ClCompile Include="SemCtrl_InquirerZ80A.cpp" />
+    <ClCompile Include="SemCtrl_InquirerZ80B.cpp" />
+    <ClCompile Include="SemCtrl_Magnifier.cpp" />
+    <ClCompile Include="SemCtrl_MCB.cpp" />
+    <ClCompile Include="SemCtrl_ObjectiveLens.cpp" />
+    <ClCompile Include="SemCtrl_ObjectiveLensReverse.cpp" />
+    <ClCompile Include="SemCtrl_OSE.cpp" />
+    <ClCompile Include="SemCtrl_PC10SE1.cpp" />
+    <ClCompile Include="SemCtrl_PC10SE6.cpp" />
+    <ClCompile Include="SemCtrl_RobinsonDetectorSwitch.cpp" />
+    <ClCompile Include="SemCtrl_RotationScan.cpp" />
+    <ClCompile Include="SemCtrl_SACP.cpp" />
+    <ClCompile Include="SemCtrl_ScanRotate.cpp" />
+    <ClCompile Include="SemCtrl_ScanShiftX.cpp" />
+    <ClCompile Include="SemCtrl_ScanShiftY.cpp" />
+    <ClCompile Include="SemCtrl_Signal2Brightness.cpp" />
+    <ClCompile Include="SemCtrl_Signal2Contrast.cpp" />
+    <ClCompile Include="SemCtrl_SignalProcesser.cpp" />
+    <ClCompile Include="SemCtrl_SP_Bias.cpp" />
+    <ClCompile Include="SemCtrl_SP_Heater.cpp" />
+    <ClCompile Include="SemCtrl_SP_HV.cpp" />
+    <ClCompile Include="SemCtrl_SP_PMT.cpp" />
+    <ClCompile Include="SemCtrl_StigmatorX.cpp" />
+    <ClCompile Include="SemCtrl_StigmatorY.cpp" />
+    <ClCompile Include="SemCtrl_WD.cpp" />
+    <ClCompile Include="SemCtrl_YAdjust.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="SemCore.def" />
+    <CustomBuild Include="res\SemCore.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SemCore.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Coadjustment\CoadjustParam.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SemBasisCtrl.h" />
+    <ClInclude Include="SemCoreAssemble.h" />
+    <ClInclude Include="SemCtrl_AdjustParameter.h" />
+    <ClInclude Include="SemCtrl_AutoFocus.h" />
+    <ClInclude Include="SemCtrl_AutoStigmator.h" />
+    <ClInclude Include="SemCtrl_AuxiliaryStigmation.h" />
+    <ClInclude Include="SemCtrl_BeemAlignmentX.h" />
+    <ClInclude Include="SemCtrl_BeemAlignmentY.h" />
+    <ClInclude Include="SemCtrl_Brightness.h" />
+    <ClInclude Include="SemCtrl_BseBySeDetectorSwitch.h" />
+    <ClInclude Include="SemCtrl_Channel2AB.h" />
+    <ClInclude Include="SemCtrl_Channel2C.h" />
+    <ClInclude Include="SemCtrl_Channel2D.h" />
+    <ClInclude Include="SemCtrl_Channel2E.h" />
+    <ClInclude Include="SemCtrl_CondenserLens.h" />
+    <ClInclude Include="SemCtrl_CondenserLensReverse.h" />
+    <ClInclude Include="SemCtrl_Contrast.h" />
+    <ClInclude Include="SemCtrl_CPS_Bias.h" />
+    <ClInclude Include="SemCtrl_CPS_FilamentCurrent.h" />
+    <ClInclude Include="SemCtrl_CPS_HV.h" />
+    <ClInclude Include="SemCtrl_DCondenserLens.h" />
+    <ClInclude Include="SemCtrl_DFocus.h" />
+    <ClInclude Include="SemCtrl_DObjectiveLens.h" />
+    <ClInclude Include="SemCtrl_FilamentCurrent.h" />
+    <ClInclude Include="SemCtrl_GunCurrent.h" />
+    <ClInclude Include="SemCtrl_GunCurrentAccelerate.h" />
+    <ClInclude Include="SemCtrl_HV.h" />
+    <ClInclude Include="SemCtrl_HVAccelerate.h" />
+    <ClInclude Include="SemCtrl_ImageInvert.h" />
+    <ClInclude Include="SemCtrl_InquirerZ80A.h" />
+    <ClInclude Include="SemCtrl_InquirerZ80B.h" />
+    <ClInclude Include="SemCtrl_Magnifier.h" />
+    <ClInclude Include="SemCtrl_MCB.h" />
+    <ClInclude Include="SemCtrl_ObjectiveLens.h" />
+    <ClInclude Include="SemCtrl_ObjectiveLensReverse.h" />
+    <ClInclude Include="SemCtrl_OSE.h" />
+    <ClInclude Include="SemCtrl_PC10SE1.h" />
+    <ClInclude Include="SemCtrl_PC10SE6.h" />
+    <ClInclude Include="SemCtrl_RobinsonDetectorSwitch.h" />
+    <ClInclude Include="SemCtrl_RotationScan.h" />
+    <ClInclude Include="SemCtrl_SACP.h" />
+    <ClInclude Include="SemCtrl_ScanRotate.h" />
+    <ClInclude Include="SemCtrl_ScanShiftX.h" />
+    <ClInclude Include="SemCtrl_ScanShiftY.h" />
+    <ClInclude Include="SemCtrl_Signal2Brightness.h" />
+    <ClInclude Include="SemCtrl_Signal2Contrast.h" />
+    <ClInclude Include="SemCtrl_SignalProcesser.h" />
+    <ClInclude Include="SemCtrl_SP_Bias.h" />
+    <ClInclude Include="SemCtrl_SP_Heater.h" />
+    <ClInclude Include="SemCtrl_SP_HV.h" />
+    <ClInclude Include="SemCtrl_SP_PMT.h" />
+    <ClInclude Include="SemCtrl_StigmatorX.h" />
+    <ClInclude Include="SemCtrl_StigmatorY.h" />
+    <ClInclude Include="SemCtrl_WD.h" />
+    <ClInclude Include="SemCtrl_YAdjust.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SemCoreMsgComm\SemCoreMsgComm.vcxproj">
+      <Project>{8dc7ea98-e1fe-4cb0-af8f-f3347cf3754a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

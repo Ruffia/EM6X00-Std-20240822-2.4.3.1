@@ -1,0 +1,94 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Options_StageTMCM - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\CtrlLayer\StageTMCM/Options_StageTMCM.res" /d "_DEBUG" /d "_AFXDLL" "D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\Options_StageTMCM.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP30C3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include\Stage" /I "..\..\Common\Public Classes" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\StageTMCM/Options_StageTMCM.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\StageTMCM/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\StageTMCM/" /FD /GZ /c 
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp"
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\Options_StageTMCM.cpp"
+"D:\Projects\202101-Localization\Src-BD\Common\Public Classes\Serial.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP30C3.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP30C4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include\Stage" /I "..\..\Common\Public Classes" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\StageTMCM/Options_StageTMCM.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\StageTMCM/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\StageTMCM/" /FD /GZ /c 
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP30C4.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP30C5.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/Options_StageTMCM.pdb" /debug /machine:I386 /def:".\Options_StageTMCM.def" /out:"..\..\Bin/Options_StageTMCM.dll" /implib:"..\..\Bin/Options_StageTMCM.lib" /pdbtype:sept 
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCM\CommTMCM.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCM\Options_StageTMCM.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCM\Serial.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCM\StdAfx.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageTMCM\Options_StageTMCM.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP30C5.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CommTMCM.cpp
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(284) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(315) : warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(323) : warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(330) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(340) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(340) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(342) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(342) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(349) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(357) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(357) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(359) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(359) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(367) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(383) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(389) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(395) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(461) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(472) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(472) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(474) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(474) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(476) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(476) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(478) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(478) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(480) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(480) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(482) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(487) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(488) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(490) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(495) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(496) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(500) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(501) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(513) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(514) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(521) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(522) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(529) : warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageTMCM\CommTMCM.cpp(530) : warning C4244: 'argument' : conversion from 'short' to 'unsigned char', possible loss of data
+Options_StageTMCM.cpp
+Serial.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin/Options_StageTMCM.lib and object ..\..\Bin/Options_StageTMCM.exp
+
+
+
+<h3>Results</h3>
+Options_StageTMCM.dll - 0 error(s), 42 warning(s)
+</pre>
+</body>
+</html>

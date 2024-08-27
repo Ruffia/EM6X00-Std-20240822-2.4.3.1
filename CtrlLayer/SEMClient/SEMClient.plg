@@ -1,0 +1,223 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BoardVAC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+BoardVAC.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HVPower_CPS3603 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+HVPower_CPS3603.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HVPower_Spellman2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+HVPower_Spellman2.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_BSD - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_BSD.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_Camera - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_Camera.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC600 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC600.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC600Wnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC600Wnd.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageVince - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageVince.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_XYStage - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_XYStage.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SEMClient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\CtrlLayer\SEMClient/SEMClient.res" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\CtrlLayer\SEMClient\SEMClient.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP6B12.tmp" with contents
+[
+winmm.lib jsonlib.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/SEMClient.pdb" /debug /machine:I386 /def:".\SEMClient.def" /out:"..\..\Bin/SEMClient.dll" /implib:"..\..\Bin/SEMClient.lib" /pdbtype:sept /libpath:"..\..\Bin" 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMClient\CSCmd.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMClient\CSCmdThread.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMClient\CSImg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMClient\CSImgThread.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMClient\KYKYSEMComm.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMClient\SEMClient.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMClient\SEMCommClient.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMClient\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMClient\SEMClient.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP6B12.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+SEMClient.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SEMServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\CtrlLayer\SEMServer/SEMServer.res" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\CtrlLayer\SEMServer\SEMServer.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP6D54.tmp" with contents
+[
+jsonlib.lib /nologo /subsystem:windows /dll /profile /debug /machine:I386 /def:".\SEMServer.def" /out:"..\..\Bin/SEMServer.dll" /implib:"..\..\Bin/SEMServer.lib" /libpath:"..\..\Bin" 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMServer\SEMServer.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMServer\SSCmd.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMServer\SSCmdThread.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMServer\SSImg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMServer\SSImgThread.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMServer\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMServer\TCPServer.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\SEMServer\SEMServer.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP6D54.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+   Creating library ..\..\Bin/SEMServer.lib and object ..\..\Bin/SEMServer.exp
+
+
+
+<h3>Results</h3>
+SEMServer.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemControl - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemControl.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemControlCardAdapter - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemControlCardAdapter.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCore - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCore.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanelManager - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanelManager.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreMsgComm - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreMsgComm.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemScan - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemScan.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VACObtain - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VACObtain.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VACStateMachine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VACStateMachine.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VirtualMCICard - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VirtualMCICard.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

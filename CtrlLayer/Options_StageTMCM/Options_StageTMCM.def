@@ -1,0 +1,7 @@
+; Options_StageTMCM.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Options_StageTMCM"
+DESCRIPTION  'Options_StageTMCM Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{B29429FF-7FA9-4FCA-875F-9CB0ECDC8CE5}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\Bin\</OutDir>
+    <IntDir>.\..\..\Bin\SharedDebug\main\BrdTest2\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>BrdTest2</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\insample0.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\insample0.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\insample0.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\insample0.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>Include;MsOffice;CxImage2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\..\Bin\SharedDebug\main\BrdTest2\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\..\Bin\SharedDebug\main\BrdTest2\BrdTest2.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\..\Bin\SharedDebug\main\BrdTest2\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\Bin\SharedDebug\main\BrdTest2\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\Bin\insample0.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\Bin\insample0.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\..\Bin/BrdTest2.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Bin;CxImage2\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Winmm.lib;winusb.lib;ftd2xx.lib;png.lib;mng.lib;jasper.lib;jpeg.lib;zlib.lib;tiff.lib;libdcr.lib;cximage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Calc.cpp" />
+    <ClCompile Include="DetectDialog.cpp" />
+    <ClCompile Include="DlgAutoTestLNS.cpp" />
+    <ClCompile Include="DlgAutoTestMain.cpp" />
+    <ClCompile Include="DlgAutoTestMCI.cpp" />
+    <ClCompile Include="DlgAutoTestPower.cpp" />
+    <ClCompile Include="DlgAutoTestSCN.cpp" />
+    <ClCompile Include="DlgAutoTestSPR.cpp" />
+    <ClCompile Include="DlgAutoTestTab.cpp" />
+    <ClCompile Include="DlgAutoTestVAC.cpp" />
+    <ClCompile Include="DlgDiagLog.cpp" />
+    <ClCompile Include="DlgDiagLogGraph.cpp" />
+    <ClCompile Include="DlgDisplay.cpp" />
+    <ClCompile Include="FT232HDevice.cpp" />
+    <ClCompile Include="insample0.cpp" />
+    <ClCompile Include="insample0Dlg.cpp" />
+    <ClCompile Include="MacButtons.cpp" />
+    <ClCompile Include="MCIBasicFunctionsDlg.cpp" />
+    <ClCompile Include="MsOffice\MsWord9.cpp" />
+    <ClCompile Include="PageMCI.cpp" />
+    <ClCompile Include="PageSL.cpp" />
+    <ClCompile Include="PageVS.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TabDialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="insample0.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Calc.h" />
+    <ClInclude Include="DetectDialog.h" />
+    <ClInclude Include="DlgAutoTestLNS.h" />
+    <ClInclude Include="DlgAutoTestMain.h" />
+    <ClInclude Include="DlgAutoTestMCI.h" />
+    <ClInclude Include="DlgAutoTestPower.h" />
+    <ClInclude Include="DlgAutoTestSCN.h" />
+    <ClInclude Include="DlgAutoTestSPR.h" />
+    <ClInclude Include="DlgAutoTestTab.h" />
+    <ClInclude Include="DlgAutoTestVAC.h" />
+    <ClInclude Include="DlgDiagLog.h" />
+    <ClInclude Include="DlgDiagLogGraph.h" />
+    <ClInclude Include="DlgDisplay.h" />
+    <ClInclude Include="FT232HDevice.h" />
+    <ClInclude Include="FTD2XX.H" />
+    <ClInclude Include="insample0.h" />
+    <ClInclude Include="insample0Dlg.h" />
+    <ClInclude Include="MacButtons.h" />
+    <ClInclude Include="MCIBasicFunctionsDlg.h" />
+    <ClInclude Include="PageMCI.h" />
+    <ClInclude Include="PageSL.h" />
+    <ClInclude Include="PageVS.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TabDialog.h" />
+    <ClInclude Include="USB_Functions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bmp_led_blue_d.bmp" />
+    <Image Include="res\bmp_led_blue_h.bmp" />
+    <Image Include="res\insample0.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\insample0.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="VCAIOUSB.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="BrdTest2.exe.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="insample0.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

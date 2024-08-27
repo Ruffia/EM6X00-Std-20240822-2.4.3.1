@@ -1,0 +1,363 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\..\Language\LanguagePackage\resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "..\\..\\Language\\LanguagePackage\\resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""SemCoreCtrlPanel_Stand5.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,1
+ PRODUCTVERSION 1,0,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "KYKY\0"
+            VALUE "FileDescription", "SemCoreCtrlPanel_Stand5 ActiveX Control Module\0"
+            VALUE "FileVersion", "2, 0, 0, 1\0"
+            VALUE "InternalName", "SemCoreCtrlPanel_Stand5\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002 - 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "OriginalFilename", "SemCoreCtrlPanel_Stand5.OCX\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SemCoreCtrlPanel_Stand5 ActiveX Control Module\0"
+            VALUE "ProductVersion", "2, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SEMCORECTRLPANEL_STAND5_ABOUTDLL            ICON    DISCARDABLE     "SemCoreCtrlPanel_Stand5.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SEMCORECTRLPANEL_STAND5 BITMAP  DISCARDABLE     "SemCoreCtrlPanel_Stand5Ctl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_SEMCORECTRLPANEL_STAND5 DIALOG DISCARDABLE  34, 22, 260, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SemCoreCtrlPanel_Stand5 控件"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_SEMCORECTRLPANEL_STAND5_ABOUTDLL,IDC_STATIC,10,10,20,20
+    LTEXT           "SemCoreCtrlPanel_Stand5 控件, 版本 1.0",IDC_ABOUTBOX_SEMCORECTRLPANEL_STAND5_STATIC_Version,40,
+                    10,170,8
+    LTEXT           "版权所有 (C) 2002 - 2007, KYKY",IDC_ABOUTBOX_SEMCORECTRLPANEL_STAND5_STATIC_Copyright,40,25,170,8
+    DEFPUSHBUTTON   "确定",IDOK,221,7,32,14,WS_GROUP
+END
+
+IDD_PROPPAGE_SEMCORECTRLPANEL_STAND5 DIALOG DISCARDABLE  0, 0, 250, 60
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "标签",IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_STATIC_Label,7,9,16,8
+    EDITTEXT        IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_EDIT_Caption,37,7,77,14,ES_AUTOHSCROLL
+    GROUPBOX        "方式",IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_STATIC_STYLE,181,7,62,47
+    CONTROL         "整数型",IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_RADIO_INT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,189,23,38,10
+    CONTROL         "浮点型",IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_RADIO_FLOAT,"Button",BS_AUTORADIOBUTTON,189,
+                    38,38,10
+    LTEXT           "ScaleDecimals",IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_STATIC_SCALE,7,30,53,8
+    EDITTEXT        IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_EDIT_SCALE,7,40,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "ValueDecimals",IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_STATIC_VALUE,87,30,53,8
+    EDITTEXT        IDC_PROPPAGE_SEMCORECTRLPANEL_STAND5_EDIT_VALUE,87,40,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_SEMCORECTRLPANEL_STAND5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPPAGE_SEMCORECTRLPANEL_STAND5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SEMCORECTRLPANEL_STAND5 "SemCoreCtrlPanel_Stand5 控件"
+    IDS_SEMCORECTRLPANEL_STAND5_PPG "SemCoreCtrlPanel_Stand5 属性页"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SEMCORECTRLPANEL_STAND5_PPG_CAPTION "常规"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+/*
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,1
+ PRODUCTVERSION 1,0,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "KYKY\0"
+            VALUE "FileDescription", "SemCoreCtrlPanel_Stand5 ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 1, 1\0"
+            VALUE "InternalName", "SemCoreCtrlPanel_Stand5\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002 - 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "OriginalFilename", "SemCoreCtrlPanel_Stand5.OCX\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SemCoreCtrlPanel_Stand5 ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 1, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ABOUTDLL            ICON    DISCARDABLE     "aboutdll.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SEMCORECTRLPANEL_STAND5 BITMAP  DISCARDABLE     "semcorec.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_SEMCORECTRLPANEL_STAND5 DIALOG DISCARDABLE  34, 22, 260, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SemCoreCtrlPanel_Stand5 Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+    LTEXT           "SemCoreCtrlPanel_Stand5 Control, Version 1.0",
+                    IDC_STATIC,40,10,177,8
+    LTEXT           "Copyright (C) 2002 - 2007, KYKY",IDC_STATIC,40,25,170,8
+    DEFPUSHBUTTON   "OK",IDOK,221,7,32,14,WS_GROUP
+END
+
+IDD_PROPPAGE_SEMCORECTRLPANEL_STAND5 DIALOG DISCARDABLE  0, 0, 250, 60
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_Caption,37,7,77,14,ES_AUTOHSCROLL
+    LTEXT           "Caption",IDC_STATIC,7,9,29,8
+    GROUPBOX        "Styles",IDC_STATIC,181,7,62,47
+    CONTROL         "Interger",IDC_RADIO_INT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,189,23,48,10
+    CONTROL         "Float",IDC_RADIO_FLOAT,"Button",BS_AUTORADIOBUTTON,189,
+                    38,36,10
+    EDITTEXT        IDC_EDIT_ScaleDecimals,7,40,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "ScaleDecimals",IDC_STATIC,7,30,53,8
+    EDITTEXT        IDC_EDIT_ValueDecimals,87,40,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "ValueDecimals",IDC_STATIC,87,30,53,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_SEMCORECTRLPANEL_STAND5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPPAGE_SEMCORECTRLPANEL_STAND5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SEMCORECTRLPANEL_STAND5 "SemCoreCtrlPanel_Stand5 Control"
+    IDS_SEMCORECTRLPANEL_STAND5_PPG "SemCoreCtrlPanel_Stand5 Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SEMCORECTRLPANEL_STAND5_PPG_CAPTION "General"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+*/
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "SemCoreCtrlPanel_Stand5.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,9 @@
+; Options_XYStage.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Options_XYStage"
+DESCRIPTION  'Options_XYStage Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	ShowXYStageDlg	@1
+	Options_XYStage_FindIndex	@2

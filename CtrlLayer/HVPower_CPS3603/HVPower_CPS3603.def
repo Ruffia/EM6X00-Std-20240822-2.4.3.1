@@ -1,0 +1,7 @@
+; HVPower_CPS3603.def : Declares the module parameters for the DLL.
+
+LIBRARY      "HVPower_CPS3603"
+DESCRIPTION  'HVPower_CPS3603 Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

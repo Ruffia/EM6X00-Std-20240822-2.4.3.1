@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Options_StageMC6600Wnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd/Options_StageMC6600Wnd.res" /d "_DEBUG" /d "_AFXDLL" "D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\Options_StageMC6600Wnd.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP5255.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include\Stage" /I "..\..\CtrlLayer\Options_StageMC6600" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd/Options_StageMC6600Wnd.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd/" /FD /GZ /c 
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\DlgDriverInit.cpp"
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\DlgInput.cpp"
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\DlgSetup.cpp"
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\ExportStageMC6600Func.cpp"
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\Options_StageMC6600Wnd.cpp"
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp"
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStagePos.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP5255.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP5256.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include\Stage" /I "..\..\CtrlLayer\Options_StageMC6600" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd/Options_StageMC6600Wnd.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd/" /FD /GZ /c 
+"D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP5256.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP5257.tmp" with contents
+[
+Options_StageMC6600.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/Options_StageMC6600Wnd.pdb" /debug /machine:I386 /def:".\Options_StageMC6600Wnd.def" /out:"..\..\Bin/Options_StageMC6600Wnd.dll" /implib:"..\..\Bin/Options_StageMC6600Wnd.lib" /pdbtype:sept /libpath:"..\..\Bin" 
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\DlgDriverInit.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\DlgInput.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\DlgSetup.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\ExportStageMC6600Func.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\Options_StageMC6600Wnd.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\PanelStage.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\PanelStagePos.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\StdAfx.obj"
+"\Projects\202101-Localization\Src-BD\Bin\SharedDebug\CtrlLayer\StageMC6600Wnd\Options_StageMC6600Wnd.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP5257.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgDriverInit.cpp
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\DlgDriverInit.cpp(264) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\DlgDriverInit.cpp(265) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+DlgInput.cpp
+DlgSetup.cpp
+ExportStageMC6600Func.cpp
+Options_StageMC6600Wnd.cpp
+PanelStage.cpp
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1157) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1162) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1164) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1206) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1207) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1208) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1339) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1344) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1491) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1494) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1497) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1500) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1503) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1531) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1534) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1537) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1540) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(1543) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(2040) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(2040) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(2928) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(2929) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(2933) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(2934) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(2950) : warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(3058) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(3059) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(3063) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+D:\Projects\202101-Localization\Src-BD\CtrlLayer\Options_StageMC6600Wnd\PanelStage.cpp(3064) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+PanelStagePos.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin/Options_StageMC6600Wnd.lib and object ..\..\Bin/Options_StageMC6600Wnd.exp
+
+
+
+<h3>Results</h3>
+Options_StageMC6600Wnd.dll - 0 error(s), 31 warning(s)
+</pre>
+</body>
+</html>

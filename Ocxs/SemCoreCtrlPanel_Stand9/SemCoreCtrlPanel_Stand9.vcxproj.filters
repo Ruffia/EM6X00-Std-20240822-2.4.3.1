@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c8b7944f-8efb-4423-851e-416674dc9b9f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3a22cdd0-3af1-4f5f-8f40-018cd810604f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1f64dae1-8551-4eb7-b593-c48a1494a349}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MySpinButtonCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SemCoreCtrlPanel_Stand9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SemCoreCtrlPanel_Stand9Ctl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SemCoreCtrlPanel_Stand9Ppg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="SemCoreCtrlPanel_Stand9.odl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SemCoreCtrlPanel_Stand9.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MySpinButtonCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SemCoreCtrlPanel_Stand9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SemCoreCtrlPanel_Stand9Ctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SemCoreCtrlPanel_Stand9Ppg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="aboutdll.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_add.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_add_en.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_addex.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_addex2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_addex2_en.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_addex_en.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_des.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_des_en.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_desex.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_desex2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_desex2_en.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_desex_en.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_dis_add.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_dis_add_en.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_dis_addex.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_dis_addex_en.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_dis_des.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_dis_des_en.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_dis_desex.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp_dis_desex_en.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon_addex2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon_addex2_en.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon_desex2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon_desex2_en.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon_mul.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="semcorec.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SemCoreCtrlPanel_Stand9.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SemCoreCtrlPanel_Stand9Ctl.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="SemCoreCtrlPanel_Stand9.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

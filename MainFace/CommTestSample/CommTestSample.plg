@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CommTestSample - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP7663.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include" /I "..\..\CtrlLayer\SemCoreMsgComm" /I "..\..\CtrlLayer\ImageDisplay" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\..\Bin\SharedDebug\Main\CommTestSample/CommTestSample.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\Main\CommTestSample/" /Fd"..\..\Bin\SharedDebug\Main\CommTestSample/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\MainFace\CommTestSample\CommTestSampleDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP7663.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP7664.tmp" with contents
+[
+Winmm.lib SEMClient.lib ImageDisplay.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\..\Bin/CommTestSample.pdb" /debug /machine:I386 /out:"..\..\Bin/CommTestSample.exe" /pdbtype:sept /libpath:"..\..\Bin" 
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\CommTestSample\CommTestSample.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\CommTestSample\CommTestSampleDlg.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\CommTestSample\StdAfx.obj"
+"\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\Main\CommTestSample\CommTestSample.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP7664.tmp"
+<h3>Output Window</h3>
+Compiling...
+CommTestSampleDlg.cpp
+D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\MainFace\CommTestSample\CommTestSampleDlg.cpp(1823) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\MainFace\CommTestSample\CommTestSampleDlg.cpp(1823) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\MainFace\CommTestSample\CommTestSampleDlg.cpp(1823) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\MainFace\CommTestSample\CommTestSampleDlg.cpp(1823) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+D:\ASrcNow\SEM\6X00New\Src-VC6.0\202104-6000VAC\MainFace\CommTestSample\CommTestSampleDlg.cpp(1823) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+Linking...
+
+
+
+<h3>Results</h3>
+CommTestSample.exe - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

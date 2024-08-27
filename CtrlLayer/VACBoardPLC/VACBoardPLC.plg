@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VACBoardPLC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\CtrlLayer\VACBrdPLC/VACBoardPLC.res" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\CtrlLayer\VACBoardPLC\VACBoardPLC.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP3EB2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include\FEG" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\VACBrdPLC/VACBoardPLC.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\VACBrdPLC/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\VACBrdPLC/" /FD /GZ /c 
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\CtrlLayer\VACBoardPLC\PLCvacBoard.cpp"
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\CtrlLayer\VACBoardPLC\VACBoardPLC.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP3EB2.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP3EB3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include\FEG" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\VACBrdPLC/VACBoardPLC.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\VACBrdPLC/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\VACBrdPLC/" /FD /GZ /c 
+"D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\CtrlLayer\VACBoardPLC\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP3EB3.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP3EB4.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/VACBoardPLC.pdb" /debug /machine:I386 /def:".\VACBoardPLC.def" /out:"..\..\Bin/VACBoardPLC.dll" /implib:"..\..\Bin/VACBoardPLC.lib" /pdbtype:sept 
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\VACBrdPLC\PLCvacBoard.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\VACBrdPLC\StdAfx.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\VACBrdPLC\VACBoardPLC.obj"
+"\ASrcNow\New\Src-VC6.0\202104-6000VAC\Bin\SharedDebug\CtrlLayer\VACBrdPLC\VACBoardPLC.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP3EB4.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+PLCvacBoard.cpp
+D:\ASrcNow\New\Src-VC6.0\202104-6000VAC\CtrlLayer\VACBoardPLC\PLCvacBoard.cpp(516) : warning C4101: 'szPortPC' : unreferenced local variable
+VACBoardPLC.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\Bin/VACBoardPLC.lib and object ..\..\Bin/VACBoardPLC.exp
+
+
+
+<h3>Results</h3>
+VACBoardPLC.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

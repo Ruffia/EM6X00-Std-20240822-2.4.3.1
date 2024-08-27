@@ -1,0 +1,10 @@
+; Options_BSD.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Options_BSD"
+DESCRIPTION  'Options_BSD Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	BSD_ShowWnd			@1
+	BSD_IsReady			@2
+	BSD_SetLanguageID	@3

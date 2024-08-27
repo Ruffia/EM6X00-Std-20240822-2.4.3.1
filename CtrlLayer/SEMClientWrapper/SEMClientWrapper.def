@@ -1,0 +1,41 @@
+; SEMClientWrapper.def : Declares the module parameters for the DLL.
+
+LIBRARY      "SEMClientWrapper"
+DESCRIPTION  'SEMClientWrapper Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	KYKYCtrlInit				@1
+	KYKYCtrlConnect				@2
+	KYKYCtrlDisconnect			@3
+	KYKYCtrlGetServerStatus		@4
+
+	KYKYCtrlGetMagn				@5
+	KYKYCtrlSetMagn				@6
+	KYKYCtrlGetWD				@7
+	KYKYCtrlGetBrightness		@8
+	KYKYCtrlSetBrightness		@9
+	KYKYCtrlGetContrast			@10
+	KYKYCtrlSetContrast			@11
+	KYKYCtrlGetStig				@12
+	KYKYCtrlSetStig				@13
+	KYKYCtrlGetScnRotAngleInit	@14
+	KYKYCtrlGetScnRotAngle		@15
+	KYKYCtrlSetScnRotAngle		@16
+
+	KYKYCtrlGetVacuumStatus		@17
+	KYKYCtrlGetGunStatus		@18
+	KYKYCtrlGetHVPowerType		@19
+	KYKYCtrlGetAccVoltage		@20
+	KYKYCtrlSetAccVoltage		@21
+	KYKYCtrlGetFilament			@22
+	KYKYCtrlSetFilament			@23
+	KYKYCtrlGetBeamCurrent		@24
+	KYKYCtrlSetBeamCurrent		@25
+
+	KYKYCtrlGetStageGratings	@26
+	KYKYCtrlGetStageRanges		@27
+	KYKYCtrlGetStageStatus		@28
+	KYKYCtrlMoveStageXY			@29
+	KYKYCtrlGetStageXY			@30
+	KYKYCtrlStopStage			@31

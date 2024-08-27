@@ -1,0 +1,104 @@
+////////////////////////////////////////////////////////////////////////////
+// FinalLens_LED <==> Ctrl
+////////////////////////////////////////////////////////////////////////////
+2800   FinalLens_LED_display = ObjectLensCtrl / 64
+		(e.g.   F = 0, OL = 0; F = 511, OL = 65536/2 )
+
+Generally, F [300-700]	=>  AF Scanning from F=250 to F=750
+
+Means	AF Scanning from OL=250*64 to OL=750*64
+
+And		We have tested OL_Step = 2048 is OK
+
+Then	AF Scanning from OL=250*64 to OL=750*64, OL_Step = 64 * 25 < 2048 ( All Steps = 20 )
+															2000                        16
+		Fine_AF Scanning from OL= - 64 * 16 to OL= 64 * 16	OL_Step = 64 * 4 ( All Steps = 8 )
+
+////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////
+// AutoStigmator_LED <==> Ctrl
+////////////////////////////////////////////////////////////////////////////
+	LED_X	LED_Y
+	-128	-128	bData[5] = 0x00 bData[6] = 0x00
+	-64		-64		bData[5] = 0x40 bData[6] = 0x40
+	0		0		bData[5] = 0x80 bData[6] = 0x80
+	63		63		bData[5] = 0xBF bData[6] = 0xBF
+	127		127		bData[5] = 0xFF bData[6] = 0xFF
+	-128	127		bData[5] = 0x00 bData[6] = 0xFF 
+
+AutoStigmator PC <==MP : 
+	bData[1] = 0x00 bData[2] = 0x80
+	bData[3] = 0xE8 bData[4] = 0x0B
+	bData[5] = 0x00 bData[6] = 0xFF 
+
+AutoStigmator_LED <==> Ctrl - 128
+[-128, 127]				[0, 255]
+////////////////////////////////////////////////////////////////////////////
+
+
+long aust(unsigned char far  bb[16])
+{
+	/////////////////////////////////////////////////////
+	// Autofocusing		Sharpness = 梯度积分
+	// Scanning area [center - 40 , center + 40]
+	/////////////////////////////////////////////////////
+	... ...
+	first = center - 40;
+	... ...
+	send_lens(cc);
+	... ...
+	
+	for (m = 1; m < 21; m++)                // 21 
+	{
+		current = first + m*4;
+		... ...
+		send_lens(cc);
+		
+		... ...
+		计算梯度积分
+		... ...
+		
+	}
+	
+	... ...
+	current = New current;
+	... ...
+	send_lens(cc);
+	/////////////////////////////////////////////////////
+
+	/////////////////////////////////////////////////////
+	// Auto-astigmating		Sharpness = 梯度积分
+	// Scanning area "米" track	( 25 steps )
+	/////////////////////////////////////////////////////
+	
+	for (i = 0; i < 25; i++)
+	{
+		... ...
+		send_lens(cc);
+		... ...	
+
+		... ...	
+		if ( ... )
+		{
+			... ...	
+			cc[0] = 0xC8;		// Stop
+			send_lens(cc);
+			... ...	
+		}
+		... ...	
+		
+		... ...	
+		rload_data(192, 192, 128, 128, ibfb);
+		calcu(vr, gr, ibfb);
+		... ...
+	}
+	
+	... ...	
+	cc[0] = 0xB8;		// automatic ^^^end^^^
+	send_lens(cc);
+	... ...	
+	
+	return (0L);
+}
+

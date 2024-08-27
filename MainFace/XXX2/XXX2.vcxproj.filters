@@ -1,0 +1,1365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1464f189-c143-41b1-9af3-1a9f03be07d0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{a64da905-010d-4a94-be88-510eb1bfeaa4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{ef8d6ae9-901e-429d-8730-4be7d90e1ef3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="SEMPanel">
+      <UniqueIdentifier>{7e69678e-63a3-449e-9422-8bdcb67bcb33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SEMLog">
+      <UniqueIdentifier>{3b471cd7-3fb4-4f40-ba95-5b5b929ec63a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{3c75bbf3-f949-4af6-bbfd-476da72fba60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Calc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CntrItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Public Classes\Curvefit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiagLogging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Public Classes\Digistring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Public Classes\DigiUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoTestLNS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoTestMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoTestMCI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoTestPower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoTestSCN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoTestSPR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoTestTab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoTestVAC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCaliCoadjust.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCaliLNS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCaliMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCaliMCI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCaliSCN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCaliSPR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgColorize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgCustomFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDebugAdvance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDebugMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDebugMon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDebugMon2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDebugTab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgDecBpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDiagLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDiagLogDiffGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDiagLogGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgDither.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgExpand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgFFT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgFloodFill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgGamma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgHisto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgImpPanelAccessory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgImpPanelAll2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgImpPanelDebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgImpPanelDebug2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgImpPanelDebugA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgImpPanelDebugR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgImpPanelLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgImpPanelThumb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgIncBpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\DlgInputAcq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgJpeg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgOpacity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgPalette.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\DlgProgress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\DlgPrompt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\dlgremark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgRepair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgResample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgRotate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgShadow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\DlgThreshold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\FilmPhotoData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FontCombo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HID_USB\HIDInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\ImageDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\ImageStandStyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\ImageView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kykyimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Public Classes\Led.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LineTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MacButtons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCBCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Include\MsOffice\MsWord9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGroupBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageLangOther.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageScanPhoto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSys.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelMainDebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelMCI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelSL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelStage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelVS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\Quantize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semcorectrlpanel_standa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\SEMCTRL_Label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\SemCtrl_Mouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\SemCtrlDlgDebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\SemCtrlDlgEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEM Control\semctrldlgrenewselect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMDocument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMFileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SheetSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Splash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SrvrItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThumbnailListCtrlEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TipWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransparentImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image classes\xTargetButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XXX2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XXX2Doc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XXX2View.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductVersionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Preparation4Scan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkListManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MCBControler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SemCtrlInitializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewMCBControler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestParameterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenarioManageDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pugixml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Communicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanParameterSaver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoFocusThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCellBehaviour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCellAttributeBehaviour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMPanel\ControlPanel2Dlg.cpp">
+      <Filter>SEMPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMPanel\LibUSBCommandButton.cpp">
+      <Filter>SEMPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMPanel\SEMPanelStatusDetector.cpp">
+      <Filter>SEMPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMPanel\PanelDataProcessor.cpp">
+      <Filter>SEMPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMPanel\PanelDataProcessorBase.cpp">
+      <Filter>SEMPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMPanel\PanelDataProcessorMgr.cpp">
+      <Filter>SEMPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMPanel\PanelModeMgr.cpp">
+      <Filter>SEMPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\Chart4NegativeExponent.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\ChartContainer4NegativeExponent.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_ShowALLData.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_ShowOperation.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\AlarmManager.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_ShowAlarm.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMPanel\PanelDataProcessorSwitchCode.cpp">
+      <Filter>SEMPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMPanel\PanelCoefficientMgr.cpp">
+      <Filter>SEMPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_DataCurve.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_Data.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\DlgTab.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\DlgGridPage.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_DeleteData.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_Settings.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\CustomButton.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\InputEdit.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\AsynProcessorWithProgress.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\Dlg4ProgressThread.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_GridHeaderSettings.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\CheckComboBox.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_OperationQueryKeyWordSettings.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\AxisCCG.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\AxisFila.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\Chart4Fila.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\AxisEMI.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\Chart4EMI.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\AxisHV.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\Chart4HV.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_ShowHistoryTrend.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\DlgSEMLog_ShowRealTimeTrend.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="SEMLog\RealTimeDataManager.cpp">
+      <Filter>SEMLog</Filter>
+    </ClCompile>
+    <ClCompile Include="LibUSB_Function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDebugMon3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoContrastDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CvvImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Curves.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackStatusDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAngleOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BeamButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiagPicoammeterD22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgBeamAperture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSetImageData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="XXX2.odl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XXX2.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Calc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CntrItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoTestLNS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoTestMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoTestMCI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoTestPower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoTestSCN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoTestSPR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoTestTab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoTestVAC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCaliCoadjust.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCaliLNS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCaliMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCaliMCI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCaliSCN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCaliSPR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgColorize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgCustomFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDebugAdvance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDebugMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDebugMon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDebugMon2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDebugTab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgDecBpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDiagLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDiagLogDiffGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDiagLogGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgDither.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgExpand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgFFT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgFloodFill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgGamma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgHisto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgImpPanelAccessory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgImpPanelAll2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgImpPanelDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgImpPanelDebug2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgImpPanelDebugA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgImpPanelDebugR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgImpPanelLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgImpPanelThumb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgIncBpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\DlgInputAcq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgJpeg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgOpacity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgPalette.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\DlgProgress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\DlgPrompt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\dlgremark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgRepair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgResample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgRotate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgShadow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\DlgThreshold.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\FilmPhotoData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FontCombo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\ImageDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\ImageStandStyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\ImageView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kykyimage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LineTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MacButtons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCBCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGroupBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageLangOther.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageScanPhoto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelMainDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelMCI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelSL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelStage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelVS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semcorectrlpanel_standa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\SEMCTRL_Label.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\SemCtrl_Mouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\SemCtrlDlgDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\SemCtrlDlgEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\semctrldlgrenewselect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMDocument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMFileDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SheetSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Splash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SrvrItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThumbnailListCtrlEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TipWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransparentImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image classes\xTargetButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XXX2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XXX2Doc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XXX2View.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductVersionManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Preparation4Scan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkListManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCBControler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SemCtrlInitializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewMCBControler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestParameterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenarioManageDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pugiconfig.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pugixml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Communicator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanParameterSaver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoFocusThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCellBehaviour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCellAttributeBehaviour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMPanel\ControlPanel2Dlg.h">
+      <Filter>SEMPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMPanel\LibUSBCommandButton.h">
+      <Filter>SEMPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMPanel\SEMPanelStatusDetector.h">
+      <Filter>SEMPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMPanel\PanelDataProcessor.h">
+      <Filter>SEMPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMPanel\PanelDataProcessorBase.h">
+      <Filter>SEMPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMPanel\PanelDataProcessorMgr.h">
+      <Filter>SEMPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMPanel\PanelModeMgr.h">
+      <Filter>SEMPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\Chart4NegativeExponent.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\ChartContainer4NegativeExponent.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_ShowALLData.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_ShowOperation.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\AlarmManager.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_ShowAlarm.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMPanel\PanelDataProcessorSwitchCode.h">
+      <Filter>SEMPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMPanel\PanelCoefficientMgr.h">
+      <Filter>SEMPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_DataCurve.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_Data.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\DlgTab.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\DlgGridPage.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_DeleteData.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_Settings.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\CustomButton.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\InputEdit.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\AsynProcessorWithProgress.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\Dlg4ProgressThread.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_GridHeaderSettings.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools\CheckComboBox.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_OperationQueryKeyWordSettings.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\AxisCCG.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\AxisFila.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\Chart4Fila.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\AxisEMI.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\Chart4EMI.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\AxisHV.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\Chart4HV.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_ShowHistoryTrend.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\DlgSEMLog_ShowRealTimeTrend.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="SEMLog\RealTimeDataManager.h">
+      <Filter>SEMLog</Filter>
+    </ClInclude>
+    <ClInclude Include="LibUSB_Function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libusb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDebugMon3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoContrastDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvvImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Curves.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackStatusDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAngleOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BeamButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgBeamAperture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEM Control\SemCtrl_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSetImageData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\b1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bar_full.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bar_img.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bar_return.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bar_scan.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bar_scan_big.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bar_scan_debug.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-abc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-af.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-clrev.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-date.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-fila.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-fit.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-frame.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-label.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-live.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-note.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-olrev.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-opt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-osc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-ruler-m.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-ruler.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-snap.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-sp1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-sp2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-sp3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-sp4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-split.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-sr1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-sr2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-sr3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-sr4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-st1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-st2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-st3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-st4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-st5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-st6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-stig.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-sync.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-text.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-zoomin.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp-zoomout.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_led_blue_d.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_led_blue_h.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_led_red_d.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_led_red_h.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_leds.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_PneumaticDiagram.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_wait.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\g1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\gray.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_ba.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_bm.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_br.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_stage_d.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_stage_l.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_stage_r.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_stage_u.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_stig.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_stig_auto.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_warning.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\IToolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\no1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\scantype.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\XXX2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\XXX2Doc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\bmp-2nd.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_PneumaticDiagramOld.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_PneumaticDiagramNew.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_PneumaticDiagramNew2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PlayPrevious.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PlayNext.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\bmp-angle.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp_led_err.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar_beam.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="KYKY-SEM.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cur_objective.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cur_stig.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\XXX2.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="XXX2.reg" />
+  </ItemGroup>
+</Project>

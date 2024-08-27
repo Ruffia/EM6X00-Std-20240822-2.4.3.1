@@ -1,0 +1,453 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Comm Test Sample'
+  ClientHeight = 715
+  ClientWidth = 225
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btnConnect: TButton
+    Left = 8
+    Top = 8
+    Width = 89
+    Height = 33
+    Caption = 'Connect'
+    TabOrder = 0
+    OnClick = btnConnectClick
+  end
+  object btnDisconnect: TButton
+    Left = 128
+    Top = 9
+    Width = 89
+    Height = 33
+    Caption = 'Disconnect'
+    TabOrder = 1
+    OnClick = btnDisconnectClick
+  end
+  object btnStig: TButton
+    Left = 8
+    Top = 367
+    Width = 114
+    Height = 25
+    Caption = 'Stigmator'
+    TabOrder = 8
+    OnClick = btnStigClick
+  end
+  object btnGetWD: TButton
+    Left = 8
+    Top = 56
+    Width = 114
+    Height = 25
+    Caption = 'WD [mm]'
+    TabOrder = 2
+    OnClick = btnGetWDClick
+  end
+  object btnRotateInit: TButton
+    Left = 8
+    Top = 455
+    Width = 114
+    Height = 25
+    Caption = 'Rotate Angle Init [D]'
+    TabOrder = 3
+    OnClick = btnRotateInitClick
+  end
+  object btnStageGrating: TButton
+    Left = 8
+    Top = 137
+    Width = 114
+    Height = 25
+    Caption = 'Stage Grating [mm]'
+    TabOrder = 4
+    OnClick = btnStageGratingClick
+  end
+  object btnStageRange: TButton
+    Left = 8
+    Top = 169
+    Width = 114
+    Height = 25
+    Caption = 'Stage Range [mm]'
+    TabOrder = 5
+    OnClick = btnStageRangeClick
+  end
+  object btnStageStatus: TButton
+    Left = 8
+    Top = 106
+    Width = 114
+    Height = 25
+    Caption = 'Stage Status'
+    TabOrder = 6
+    OnClick = btnStageStatusClick
+  end
+  object edtWD: TEdit
+    Left = 128
+    Top = 57
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    ReadOnly = True
+    TabOrder = 7
+  end
+  object edtRotateInit: TEdit
+    Left = 128
+    Top = 456
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    ReadOnly = True
+    TabOrder = 9
+  end
+  object edtStageGrating: TEdit
+    Left = 128
+    Top = 138
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    ReadOnly = True
+    TabOrder = 10
+  end
+  object edtStageRange: TEdit
+    Left = 128
+    Top = 170
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    ReadOnly = True
+    TabOrder = 11
+  end
+  object edtStageStatus: TEdit
+    Left = 128
+    Top = 107
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    ReadOnly = True
+    TabOrder = 12
+  end
+  object btnBrt: TButton
+    Left = 8
+    Top = 272
+    Width = 114
+    Height = 25
+    Caption = 'Brightness'
+    TabOrder = 13
+    OnClick = btnBrtClick
+  end
+  object btnCst: TButton
+    Left = 8
+    Top = 304
+    Width = 114
+    Height = 25
+    Caption = 'Contrast'
+    TabOrder = 14
+    OnClick = btnCstClick
+  end
+  object edtBrt: TEdit
+    Left = 128
+    Top = 273
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 15
+  end
+  object edtCst: TEdit
+    Left = 128
+    Top = 305
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 16
+  end
+  object btnSetBrt: TButton
+    Left = 183
+    Top = 272
+    Width = 33
+    Height = 25
+    Caption = 'Set'
+    TabOrder = 17
+    OnClick = btnSetBrtClick
+  end
+  object btnSetCst: TButton
+    Left = 183
+    Top = 303
+    Width = 33
+    Height = 25
+    Caption = 'Set'
+    TabOrder = 18
+    OnClick = btnSetCstClick
+  end
+  object btnMag: TButton
+    Left = 8
+    Top = 336
+    Width = 114
+    Height = 25
+    Caption = 'Magnification'
+    TabOrder = 19
+    OnClick = btnMagClick
+  end
+  object edtMag: TEdit
+    Left = 128
+    Top = 337
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 20
+  end
+  object btnSetMag: TButton
+    Left = 183
+    Top = 334
+    Width = 33
+    Height = 25
+    Caption = 'Set'
+    TabOrder = 21
+    OnClick = btnSetMagClick
+  end
+  object btnRotate: TButton
+    Left = 8
+    Top = 424
+    Width = 114
+    Height = 25
+    Caption = 'Scan Rotate Angle [D]'
+    TabOrder = 22
+    OnClick = btnRotateClick
+  end
+  object edtRotate: TEdit
+    Left = 128
+    Top = 425
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 23
+  end
+  object edtStigX: TEdit
+    Left = 128
+    Top = 369
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 24
+  end
+  object edtStigY: TEdit
+    Left = 128
+    Top = 396
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 25
+  end
+  object btnSetStig: TButton
+    Left = 183
+    Top = 367
+    Width = 33
+    Height = 25
+    Caption = 'Set'
+    TabOrder = 26
+    OnClick = btnSetStigClick
+  end
+  object btnSetRotate: TButton
+    Left = 183
+    Top = 423
+    Width = 33
+    Height = 25
+    Caption = 'Set'
+    TabOrder = 27
+    OnClick = btnSetRotateClick
+  end
+  object btnStagePos: TButton
+    Left = 8
+    Top = 200
+    Width = 114
+    Height = 25
+    Caption = 'Stage Position [mm]'
+    TabOrder = 28
+    OnClick = btnStagePosClick
+  end
+  object edtStagePosX: TEdit
+    Left = 128
+    Top = 201
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 29
+  end
+  object edtStagePosY: TEdit
+    Left = 128
+    Top = 228
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 30
+  end
+  object btnStagePosSet: TButton
+    Left = 183
+    Top = 199
+    Width = 33
+    Height = 25
+    Caption = 'Set'
+    TabOrder = 31
+    OnClick = btnStagePosSetClick
+  end
+  object btnStageStop: TButton
+    Left = 183
+    Top = 230
+    Width = 33
+    Height = 25
+    Caption = 'Stop'
+    TabOrder = 32
+    OnClick = btnStageStopClick
+  end
+  object btnStatusGun: TButton
+    Left = 8
+    Top = 504
+    Width = 114
+    Height = 25
+    Caption = 'Gun Status'
+    TabOrder = 33
+    OnClick = btnStatusGunClick
+  end
+  object edtStatusGun: TEdit
+    Left = 128
+    Top = 505
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 34
+  end
+  object btnStatusVac: TButton
+    Left = 8
+    Top = 536
+    Width = 114
+    Height = 25
+    Caption = 'Vacuum Status'
+    TabOrder = 35
+    OnClick = btnStatusVacClick
+  end
+  object edtStatusVac: TEdit
+    Left = 128
+    Top = 537
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 36
+  end
+  object btnHV: TButton
+    Left = 8
+    Top = 618
+    Width = 113
+    Height = 25
+    Caption = 'High Voltage [KV]'
+    TabOrder = 37
+    OnClick = btnHVClick
+  end
+  object edtHV: TEdit
+    Left = 128
+    Top = 620
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 38
+  end
+  object btnSetHV: TButton
+    Left = 184
+    Top = 618
+    Width = 33
+    Height = 25
+    Caption = 'Set'
+    TabOrder = 39
+    OnClick = btnSetHVClick
+  end
+  object btnFilament: TButton
+    Left = 8
+    Top = 650
+    Width = 113
+    Height = 25
+    Caption = 'Filament [A]'
+    TabOrder = 40
+    OnClick = btnFilamentClick
+  end
+  object edtFilament: TEdit
+    Left = 128
+    Top = 650
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 41
+  end
+  object btnSetFilament: TButton
+    Left = 184
+    Top = 650
+    Width = 33
+    Height = 25
+    Caption = 'Set'
+    TabOrder = 42
+    OnClick = btnSetFilamentClick
+  end
+  object btnBeam: TButton
+    Left = 8
+    Top = 682
+    Width = 113
+    Height = 25
+    Caption = 'Beam Current'
+    TabOrder = 43
+    OnClick = btnBeamClick
+  end
+  object edtBeam: TEdit
+    Left = 128
+    Top = 682
+    Width = 49
+    Height = 21
+    Alignment = taRightJustify
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    TabOrder = 44
+  end
+  object btnSetBeam: TButton
+    Left = 184
+    Top = 682
+    Width = 33
+    Height = 25
+    Caption = 'Set'
+    TabOrder = 45
+    OnClick = btnSetBeamClick
+  end
+  object btnHVType: TButton
+    Left = 8
+    Top = 584
+    Width = 113
+    Height = 25
+    Caption = 'Get HV Type'
+    TabOrder = 46
+    OnClick = btnHVTypeClick
+  end
+  object edtHVType: TEdit
+    Left = 128
+    Top = 584
+    Width = 49
+    Height = 21
+    ImeName = #20013#25991'('#31616#20307') - '#25628#29399#25340#38899#36755#20837#27861
+    ReadOnly = True
+    TabOrder = 47
+  end
+end

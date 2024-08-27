@@ -1,0 +1,7 @@
+; HVPower_WSM30KV.def : Declares the module parameters for the DLL.
+
+LIBRARY      "HVPower_WSM30KV"
+DESCRIPTION  'HVPower_WSM30KV Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

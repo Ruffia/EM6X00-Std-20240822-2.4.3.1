@@ -1,0 +1,467 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WSM30KVTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WSM30KVTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 WSM30KVTest"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "WSM30KVTest 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2021",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_WSM30KVTEST_DIALOG DIALOGEX 0, 0, 346, 436
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WSM30KVTest"
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,316,7,12,14,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,327,7,12,14,NOT WS_VISIBLE
+    LTEXT           "Port:",IDC_STATIC_WSM30KV_Port,7,7,36,12
+    COMBOBOX        IDC_COMBO_WSM30KV_Port,46,7,56,16,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "V1",IDC_CHECK_WSM30KV_V1Test,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,175,7,62,16
+    CONTROL         "En Acc V",IDC_CHECK_WSM30KV_ACL,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,176,27,46,15
+    CONTROL         "En EMS",IDC_CHECK_WSM30KV_EMS,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,230,27,46,15
+    CONTROL         "En Fil",IDC_CHECK_WSM30KV_FIL,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,284,27,46,15
+    SCROLLBAR       IDC_SCROLLBAR_WSM30KV_ACL_V,53,55,226,10
+    SCROLLBAR       IDC_SCROLLBAR_WSM30KV_ACL_I,53,73,226,10
+    SCROLLBAR       IDC_SCROLLBAR_WSM30KV_FIL_I,53,91,226,10
+    SCROLLBAR       IDC_SCROLLBAR_WSM30KV_PMT_V,53,109,226,10
+    EDITTEXT        IDC_EDIT_WSM30KV_Set_ACL_V,285,53,33,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WSM30KV_Set_ACL_I,285,71,33,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WSM30KV_Set_FIL_I,285,89,33,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WSM30KV_Set_PMT_V,285,107,33,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "V",IDC_STATIC,321,55,13,11
+    LTEXT           "uA",IDC_STATIC,321,73,13,11
+    LTEXT           "mA",IDC_STATIC,321,91,13,11
+    LTEXT           "V",IDC_STATIC,321,109,13,11
+    LTEXT           "Send to DAC:",IDC_STATIC,46,135,49,10
+    RTEXT           "SCI V:",IDC_STATIC,15,153,28,10,SS_CENTERIMAGE
+    RTEXT           "COL V:",IDC_STATIC,15,168,28,10,SS_CENTERIMAGE
+    RTEXT           "ACL V:",IDC_STATIC,15,183,28,10,SS_CENTERIMAGE
+    RTEXT           "ACL I:",IDC_STATIC,15,198,28,10,SS_CENTERIMAGE
+    RTEXT           "FIL I:",IDC_STATIC,15,212,28,10,SS_CENTERIMAGE
+    RTEXT           "PMT V:",IDC_STATIC,15,227,28,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_WSM30KV_MonOP_SCI_V,47,150,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonOP_COL_V,47,165,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonOP_ACL_V,47,180,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonOP_ACL_I,47,195,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonOP_FIL_I,47,210,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonOP_PMT_V,47,225,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonFB_SCI_V,100,150,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonFB_SCI_I,152,150,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonFB_COL_V,100,165,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonFB_COL_I,152,165,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonFB_ACL_V,100,187,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonFB_ACL_I,152,187,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonFB_FIL_V,100,210,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonFB_FIL_I,152,210,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonFB_PMT_V,100,225,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonFB_PMT_I,152,225,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "输出状态:",IDC_STATIC,13,288,51,11
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Output_01,69,286,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Output_25,108,286,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Output_Bit0,258,286,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Output_Bit1,238,286,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Output_Bit2,218,286,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Output_Bit3,198,286,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Output_Bit4,178,286,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Output_Bit5,158,286,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "SCI",IDC_STATIC,258,258,16,10
+    CTEXT           "ACL",IDC_STATIC,236,258,16,10
+    CTEXT           "EMS",IDC_STATIC,214,258,16,10
+    CTEXT           "FIL",IDC_STATIC,196,258,16,10
+    CTEXT           "COL",IDC_STATIC,177,258,16,10
+    CTEXT           "PMT",IDC_STATIC,156,258,16,10
+    LTEXT           "#01",IDC_STATIC,71,258,27,10
+    LTEXT           "#25",IDC_STATIC,111,258,27,10
+    LTEXT           "Feedback V",IDC_STATIC,101,136,49,9
+    LTEXT           "Feedback I",IDC_STATIC,153,136,49,9
+    RTEXT           "基本保护状态:",IDC_STATIC,13,306,51,11
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB_01,69,304,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB_25,108,304,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB01_Bit0,216,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB01_Bit1,204,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB01_Bit2,192,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB01_Bit3,180,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB01_Bit4,169,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB01_Bit5,158,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB25_Bit0,303,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB25_Bit1,291,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB25_Bit2,279,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB25_Bit3,267,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB25_Bit4,255,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PB25_Bit5,243,304,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "电压保护状态:",IDC_STATIC,13,325,51,11
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PV_01,69,324,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PV_25,108,324,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PV_Bit0,258,324,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PV_Bit1,238,324,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PV_Bit2,218,324,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PV_Bit3,198,324,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PV_Bit4,178,324,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PV_Bit5,158,324,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "电流保护状态:",IDC_STATIC,13,342,51,11
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PI_01,69,341,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PI_25,108,341,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PI_Bit0,258,341,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PI_Bit1,238,341,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PI_Bit2,218,341,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PI_Bit3,198,341,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PI_Bit4,178,341,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PI_Bit5,158,341,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "ARC保护状态:",IDC_STATIC,13,358,51,11
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PA_25,108,358,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_PA_Bit1,238,358,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "请求状态1:",IDC_STATIC,14,376,51,11
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire1_01,70,376,35,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire1_25,108,376,35,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire1_Bit0,258,376,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire1_Bit1,238,376,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire1_Bit2,218,376,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire1_Bit3,198,376,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire1_Bit4,178,376,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire1_Bit5,158,376,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "请求状态2:",IDC_STATIC,14,392,51,11
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire2_01,70,392,35,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire2_25,108,392,35,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire2_Bit0,258,392,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire2_Bit1,238,392,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire2_Bit2,218,392,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire2_Bit3,198,392,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire2_Bit4,178,392,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire2_Bit5,158,392,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "请求状态3:",IDC_STATIC,14,408,51,11
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire3_01,70,408,35,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire3_25,108,408,35,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire3_Bit0,258,408,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_Inquire3_Bit1,238,408,10,14,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "+3V3:",IDC_STATIC,213,153,28,10
+    RTEXT           "+5V:",IDC_STATIC,213,168,28,10
+    RTEXT           "+15V:",IDC_STATIC,213,183,28,10
+    RTEXT           "-15V:",IDC_STATIC,213,198,28,10
+    RTEXT           "+24V:",IDC_STATIC,213,212,28,10
+    RTEXT           "温度:",IDC_STATIC,213,227,28,10
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT01_P3V3,251,150,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT01_P5V,251,165,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT01_P15V,251,180,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT01_N15V,251,195,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT01_P24V,251,210,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT01_Temp,251,225,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT25_P3V3,296,150,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT25_P5V,296,165,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT25_P15V,296,180,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT25_N15V,296,195,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT25_P24V,296,210,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_MonVT25_Temp,296,225,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "#01",IDC_STATIC,257,139,27,10
+    LTEXT           "#25",IDC_STATIC,302,139,27,10
+    PUSHBUTTON      "连通",IDC_BUTTON_WSM30KV_Link,106,7,62,16
+    PUSHBUTTON      "Test",IDC_BUTTON_Test,282,7,41,14
+    RTEXT           "Interlock:",IDC_STATIC,14,270,51,11
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_INT_01,70,269,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_INT_25,108,269,35,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_INT_Bit0,258,269,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_INT_Bit1,238,269,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_INT_Bit2,178,269,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_WSM30KV_Status_INT_Bit3,158,269,10,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Acc V:",IDC_STATIC,7,55,31,10
+    RTEXT           "Acc I:",IDC_STATIC,7,73,31,10
+    RTEXT           "Filament:",IDC_STATIC,7,91,31,10
+    RTEXT           "PMT:",IDC_STATIC,7,110,31,10
+    CONTROL         "En SCI",IDC_CHECK_WSM30KV_SCI,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,14,27,46,15
+    CONTROL         "En COL",IDC_CHECK_WSM30KV_COL,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,68,27,46,15
+    CONTROL         "En PMT",IDC_CHECK_WSM30KV_PMT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,122,27,46,15
+    PUSHBUTTON      "Clear Fault",IDC_BUTTON_WSM30KV_ClearFault,282,327,57,
+                    26
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "WSM30KVTest Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "WSM30KVTest\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2021\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WSM30KVTest.EXE\0"
+            VALUE "ProductName", "WSM30KVTest 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_WSM30KVTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 429
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 WSM30KVTest(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\WSM30KVTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

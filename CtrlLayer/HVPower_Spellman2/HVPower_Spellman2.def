@@ -1,0 +1,7 @@
+; HVPower_Spellman2.def : Declares the module parameters for the DLL.
+
+LIBRARY      "HVPower_Spellman2"
+DESCRIPTION  'HVPower_Spellman2 Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

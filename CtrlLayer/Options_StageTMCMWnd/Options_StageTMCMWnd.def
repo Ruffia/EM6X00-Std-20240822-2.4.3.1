@@ -1,0 +1,28 @@
+; Options_StageTMCMWnd.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Options_StageTMCMWnd"
+DESCRIPTION  'Options_StageTMCMWnd Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	StageTMCM_ShowWnd			@1
+	StageTMCM_IsReady			@2
+	StageTMCM_SetLanguageID		@3
+	StageTMCM_SetPixelsPerMM	@4
+	StageTMCM_SetResolution		@5
+	StageTMCM_SetMag			@6
+	StageTMCM_IsMoving			@7
+	StageTMCM_StopMove			@8
+	StageTMCM_MoveToCenter		@9
+	StageTMCM_Move				@10
+	StageTMCM_Move5Axis			@11
+	StageTMCM_GoOrigin			@12
+	StageTMCM_GoHome		    @13
+	StageTMCM_OnVentExit		@14
+	StageTMCM_SetTrackParam		@15
+	StageTMCM_StopTrack			@16
+	StageTMCM_GetParam			@17
+	StageTMCM_SetTracklocus1	@18
+	StageTMCM_SetTracklocus2	@19
+	StageTMCM_StopTracklocus	@20
+	StageTMCM_Move2Axis			@21

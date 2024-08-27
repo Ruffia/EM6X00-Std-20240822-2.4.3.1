@@ -1,0 +1,10 @@
+; AutoFocus.def : Declares the module parameters for the DLL.
+
+LIBRARY      "AutoFocus"
+DESCRIPTION  'AutoFocus Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+;	?AutoFocus_Initialize@@YGXAAJAAG@Z
+;	?AutoFocus_Analyze_Image@@YGIPAXVCSize@@AAJAAGAAN@Z
+;	?Analyze_Image@@YGHPAXVCSize@@AAN222@Z

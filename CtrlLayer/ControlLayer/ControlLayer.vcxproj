@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0798BBF-0797-4CE1-9F02-34E47939773E}</ProjectGuid>
+    <RootNamespace>ControlLayer</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>.\..\..\Bin\</OutDir>
+    <IntDir>.\..\..\Bin\SharedDebug\CtrlLayer\ControlLayer\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile>.\..\..\Bin\SharedDebug\CtrlLayer\ControlLayer\ControlLayer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\..\Bin\SharedDebug\CtrlLayer\ControlLayer\</AssemblerListingLocation>
+      <ObjectFileName>.\..\..\Bin\SharedDebug\CtrlLayer\ControlLayer\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\Bin\SharedDebug\CtrlLayer\ControlLayer\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\Common\Include;..\..\Common\Include\USB;..\..\Common\Include\CPS;..\..\Common\Include\MCB;..\..\Common\Include\Stage;..\..\CtrlLayer\SemScan;..\..\CtrlLayer\SemCore;..\..\CtrlLayer\SemControl;..\..\CtrlLayer\VirtualMCICard;..\..\CtrlLayer\SemControlCardAdapter;..\..\CtrlLayer\SemCoreMsgComm;..\..\CtrlLayer\VACStateMachine;..\..\CtrlLayer\VACObtain;..\..\CtrlLayer\HVPower_CPS3603;..\..\CtrlLayer\HVPower_Spellman2;..\..\CtrlLayer\SEMServer;..\..\Common\Include\Auto;..\..\Common\Include\FEG;..\..\Common\Include\Comm;..\..\Common\Include\Board;..\..\Language\LanguageManager;..\..\CtrlLayer\Options_Camera;..\..\CtrlLayer\Options_BSD;..\..\CtrlLayer\GlobalComponent;..\..\CtrlLayer\LogManager;..\..\CtrlLayer\SemCoreCtrlPanelManager;..\..\CtrlLayer\BoardVAC;..\..\CtrlLayer\Database</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <OutputFile>.\..\..\Bin\ControlLayer.dll</OutputFile>
+      <ImportLibrary>.\..\..\Bin\ControlLayer.lib</ImportLibrary>
+      <AdditionalDependencies>LanguageManager.lib;SemCore.lib;SemControl.lib;SemCoreCtrlPanelManager.lib;SemScan.lib;SemControlCardAdapter.lib;SemCoreMsgComm.lib;VACObtain.lib;HVPower_CPS3603.lib;Options_StageMC600Wnd.lib;BoardVAC.lib;VACStateMachine.lib;HVPower_Spellman2.lib;VirtualMCICard.lib;GlobalComponent.lib;Database.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\Bin;..\..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\ControlLayer.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppLogManager.cpp" />
+    <ClCompile Include="BoardComm.cpp" />
+    <ClCompile Include="Calc.cpp" />
+    <ClCompile Include="CFGFileManager.cpp" />
+    <ClCompile Include="Delayer.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ControlLayer.cpp" />
+    <ClCompile Include="HVPowerDataManager.cpp" />
+    <ClCompile Include="Scenario.cpp" />
+    <ClCompile Include="SemCoreCtrlPanelMessageProc.cpp" />
+    <ClCompile Include="SemCoreCtrlPanelMessageTransmiter.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VACDataManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ControlLayer.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppLogManager.h" />
+    <ClInclude Include="BoardComm.h" />
+    <ClInclude Include="Calc.h" />
+    <ClInclude Include="CFGFileManager.h" />
+    <ClInclude Include="ControlLayer.h" />
+    <ClInclude Include="Delayer.h" />
+    <ClInclude Include="HVPowerDataManager.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Scenario.h" />
+    <ClInclude Include="SemCoreCtrlPanelMessageProc.h" />
+    <ClInclude Include="SemCoreCtrlPanelMessageTransmiter.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VACDataManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ControlLayer.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

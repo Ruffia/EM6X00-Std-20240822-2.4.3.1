@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{BB038E46-8C70-41A9-9BE8-C585A49C245A}</ProjectGuid>
+    <ProjectName>KYKY-SEM</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\Bin\</OutDir>
+    <IntDir>.\..\..\Bin\SharedDebug\XXX2\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\Bin\SharedRelease\</OutDir>
+    <IntDir>.\..\..\Bin\SharedRelease\XXX2\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\XXX2;..\XXX2\Image Classes;..\..\Common\CxImage2\include;..\..\Common\Public classes;..\XXX2\SEM Control;..\..\Common\Include;..\..\Common\Include\USB;..\..\Common\Include\CPS;..\..\Common\Include\MCB;..\..\Common\Include\Board;..\..\Common\Include\Stage;..\..\Common\Template;..\..\Common\Include\MsOffice;..\..\Common\Include\Beam;..\..\CtrlLayer\SemScan;..\..\CtrlLayer\SemCore;..\..\CtrlLayer\SemControl;..\..\CtrlLayer\VirtualMCICard;..\..\CtrlLayer\SemControlCardAdapter;..\..\CtrlLayer\SemCoreMsgComm;..\..\CtrlLayer\VACStateMachine;..\..\CtrlLayer\VACObtain;..\..\CtrlLayer\VACBoardPLC;..\..\CtrlLayer\HVPower_CPS3603;..\..\CtrlLayer\HVPower_Spellman2;..\..\CtrlLayer\HVPower_WSM30KV;..\..\CtrlLayer\HVPower_WSM30KV2;..\..\CtrlLayer\SEMServer;..\..\CtrlLayer\Options_BSD;..\..\Common\Include\Auto;..\..\Common\Include\FEG;..\..\Common\Include\Comm;..\..\Language\LanguageManager;..\..\CtrlLayer\Options_Camera;..\..\CtrlLayer\Options_StageMC600Wnd;..\..\CtrlLayer\Options_StageMC6600Wnd;..\..\CtrlLayer\Options_StageTMCMWnd;..\..\CtrlLayer\Grid;..\..\CtrlLayer\GlobalComponent;..\..\CtrlLayer\LogManager;..\..\CtrlLayer\ControlLayer;..\..\CtrlLayer\SemCoreCtrlPanelManager;..\..\CtrlLayer\BoardVAC;..\..\CtrlLayer\Database;..\..\CtrlLayer\ChartCtrlLib;..\..\Common\Include\NAV;..\..\Common\Include\NAV\opencv;..\..\Common\Include\NAV\MVS;..\..\CtrlLayer\Options_NAV;..\..\CtrlLayer\Options_PicoammeterD22;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_VARIADIC_MAX=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\..\Bin\SharedDebug\XXX2\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\..\Bin\SharedDebug\XXX2\XXX2.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\..\Bin\SharedDebug\XXX2\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\Bin\SharedDebug\XXX2\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\Bin\XXX2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\Bin\XXX2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\..\Bin/KYKY-SEM.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\Common\CxImage2\lib;..\..\Lib;..\..\Bin;..\..\Lib\NAV\opencv;..\..\Lib\NAV\MVS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wininet.lib;Gdiplus.lib;Ws2_32.lib;Version.lib;png.lib;mng.lib;jasper.lib;jpeg.lib;zlib.lib;tiff.lib;libdcr.lib;cximage.lib;SemCoreCtrlPanelManager.lib;VirtualMCICard.lib;SemScan.lib;SemControl.lib;SemCore.lib;VACStateMachine.lib;VACObtain.lib;VACBoardPLC.lib;HVPower_CPS3603.lib;HVPower_Spellman2.lib;HVPower_WSM30KV.lib;HVPower_WSM30KV2.lib;winmm.lib;AutoBC.lib;AutoFocus.lib;AutoStigmator.lib;AutoFilament.lib;LanguageManager.lib;htmlhelp.lib;hid.lib;setupapi.lib;SEMServer.lib;dmc32.lib;Options_Camera.lib;Options_StageMC600Wnd.lib;Options_StageMC6600Wnd.lib;Options_StageTMCMWnd.lib;Grid.lib;sqlite3.lib;Database.lib;GlobalComponent.lib;LogManager.lib;ControlLayer.lib;BoardVAC.lib;Options_BSD.lib;libusb-1.0.lib;ChartCtrlLib.lib;MvCameraControl.lib;opencv_calib3d249d.lib;opencv_contrib249d.lib;opencv_core249d.lib;opencv_features2d249d.lib;opencv_flann249d.lib;opencv_highgui249d.lib;opencv_imgproc249d.lib;opencv_ml249d.lib;opencv_objdetect249d.lib;opencv_photo249d.lib;opencv_video249d.lib;opencv_videostab249d.lib;Options_NAV.lib;Options_PicoammeterD22.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\XXX2;..\XXX2\Image Classes;..\..\Common\CxImage2\include;..\..\Common\Public classes;..\XXX2\SEM Control;..\..\Common\Include;..\..\Common\Include\USB;..\..\Common\Include\CPS;..\..\Common\Include\MCB;..\..\Common\Template;..\..\CtrlLayer\SemScan;..\..\CtrlLayer\SemCore;..\..\CtrlLayer\SemControl;..\..\CtrlLayer\VirtualMCICard;..\..\CtrlLayer\SemControlCardAdapter;..\..\CtrlLayer\SemCoreMsgComm;..\..\Common\Include\SemCoreCtrlPanelManager;..\..\Common\Include\AutoBC;..\..\Common\Include\AutoFocus;..\..\Common\Include\AutoStigmator;..\..\Language\LanguageManager;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\..\Bin\SharedRelease\XXX2\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\..\Bin\SharedRelease\XXX2\XXX2.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\..\Bin\SharedRelease\XXX2\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\Bin\SharedRelease\XXX2\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\Bin\SharedRelease\XXX2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\Bin\SharedRelease\XXX2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\..\..\Bin\SharedRelease\XXX2.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\Common\CxImage2\lib;..\..\Bin\SharedRelease;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wininet.lib;png.lib;mng.lib;jasper.lib;jpeg.lib;zlib.lib;tiff.lib;libdcr.lib;cximage.lib;SemCoreCtrlPanelManager.lib;VirtualMCICard.lib;SemScan.lib;SemControl.lib;winmm.lib;AutoBC.lib;AutoFocus.lib;AutoStigmator.lib;LanguageManager.lib;htmlhelp.lib;hid.lib;setupapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoContrastDlg.cpp" />
+    <ClCompile Include="AutoFocusThread.cpp" />
+    <ClCompile Include="BeamButton.cpp" />
+    <ClCompile Include="Calc.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="CntrItem.cpp" />
+    <ClCompile Include="..\..\Common\Public Classes\Curvefit.cpp" />
+    <ClCompile Include="Communicator.cpp" />
+    <ClCompile Include="Curves.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CvvImage.cpp" />
+    <ClCompile Include="DiagLogging.cpp" />
+    <ClCompile Include="..\..\Common\Public Classes\Digistring.cpp" />
+    <ClCompile Include="..\..\Common\Public Classes\DigiUtil.cpp" />
+    <ClCompile Include="DiagPicoammeterD22.cpp" />
+    <ClCompile Include="DlgAngleOptions.cpp" />
+    <ClCompile Include="DlgAutoTestLNS.cpp" />
+    <ClCompile Include="DlgAutoTestMain.cpp" />
+    <ClCompile Include="DlgAutoTestMCI.cpp" />
+    <ClCompile Include="DlgAutoTestPower.cpp" />
+    <ClCompile Include="DlgAutoTestSCN.cpp" />
+    <ClCompile Include="DlgAutoTestSPR.cpp" />
+    <ClCompile Include="DlgAutoTestTab.cpp" />
+    <ClCompile Include="DlgAutoTestVAC.cpp" />
+    <ClCompile Include="DlgBeamAperture.cpp" />
+    <ClCompile Include="DlgCaliCoadjust.cpp" />
+    <ClCompile Include="DlgCaliLNS.cpp" />
+    <ClCompile Include="DlgCaliMain.cpp" />
+    <ClCompile Include="DlgCaliMCI.cpp" />
+    <ClCompile Include="DlgCaliSCN.cpp" />
+    <ClCompile Include="DlgCaliSPR.cpp" />
+    <ClCompile Include="DlgDebugMon3.cpp" />
+    <ClCompile Include="DlgSetImageData.cpp" />
+    <ClCompile Include="GridCellAttributeBehaviour.cpp" />
+    <ClCompile Include="GridCellBehaviour.cpp" />
+    <ClCompile Include="Image classes\DlgColorize.cpp" />
+    <ClCompile Include="Image classes\DlgCustomFilter.cpp" />
+    <ClCompile Include="DlgDebugAdvance.cpp" />
+    <ClCompile Include="DlgDebugMain.cpp" />
+    <ClCompile Include="DlgDebugMon.cpp" />
+    <ClCompile Include="DlgDebugMon2.cpp" />
+    <ClCompile Include="DlgDebugTab.cpp" />
+    <ClCompile Include="Image classes\DlgDecBpp.cpp" />
+    <ClCompile Include="DlgDiagLog.cpp" />
+    <ClCompile Include="DlgDiagLogDiffGraph.cpp" />
+    <ClCompile Include="DlgDiagLogGraph.cpp" />
+    <ClCompile Include="Image classes\DlgDither.cpp" />
+    <ClCompile Include="Image classes\DlgExpand.cpp" />
+    <ClCompile Include="Image classes\DlgFFT.cpp" />
+    <ClCompile Include="Image classes\DlgFloodFill.cpp" />
+    <ClCompile Include="Image classes\DlgGamma.cpp" />
+    <ClCompile Include="Image classes\DlgHisto.cpp" />
+    <ClCompile Include="DlgImpPanelAccessory.cpp" />
+    <ClCompile Include="DlgImpPanelAll2.cpp" />
+    <ClCompile Include="DlgImpPanelDebug.cpp" />
+    <ClCompile Include="DlgImpPanelDebug2.cpp" />
+    <ClCompile Include="DlgImpPanelDebugA.cpp" />
+    <ClCompile Include="DlgImpPanelDebugR.cpp" />
+    <ClCompile Include="DlgImpPanelLog.cpp" />
+    <ClCompile Include="DlgImpPanelThumb.cpp" />
+    <ClCompile Include="Image classes\DlgIncBpp.cpp" />
+    <ClCompile Include="DlgInput.cpp" />
+    <ClCompile Include="LibUSB_Function.cpp" />
+    <ClCompile Include="LinkListManager.cpp" />
+    <ClCompile Include="MCBControler.cpp" />
+    <ClCompile Include="Preparation4Scan.cpp" />
+    <ClCompile Include="ProductVersionManager.cpp" />
+    <ClCompile Include="pugixml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ScanParameterSaver.cpp" />
+    <ClCompile Include="ScenarioManageDlg.cpp" />
+    <ClCompile Include="SEM Control\DlgInputAcq.cpp" />
+    <ClCompile Include="Image classes\DlgJpeg.cpp" />
+    <ClCompile Include="Image classes\DlgOpacity.cpp" />
+    <ClCompile Include="Image classes\DlgOptions.cpp" />
+    <ClCompile Include="Image classes\DlgPalette.cpp" />
+    <ClCompile Include="SEM Control\DlgProgress.cpp" />
+    <ClCompile Include="SEM Control\DlgPrompt.cpp" />
+    <ClCompile Include="SEM Control\dlgremark.cpp" />
+    <ClCompile Include="Image classes\DlgRepair.cpp" />
+    <ClCompile Include="Image classes\DlgResample.cpp" />
+    <ClCompile Include="Image classes\DlgRotate.cpp" />
+    <ClCompile Include="Image classes\DlgShadow.cpp" />
+    <ClCompile Include="Image classes\DlgThreshold.cpp" />
+    <ClCompile Include="SEM Control\FilmPhotoData.cpp" />
+    <ClCompile Include="SEM Control\font.cpp" />
+    <ClCompile Include="FontCombo.cpp" />
+    <ClCompile Include="HID_USB\HIDInterface.cpp" />
+    <ClCompile Include="Image classes\ImageDoc.cpp" />
+    <ClCompile Include="ImageItem.cpp" />
+    <ClCompile Include="SEM Control\ImageStandStyle.cpp" />
+    <ClCompile Include="Image classes\ImageView.cpp" />
+    <ClCompile Include="IpFrame.cpp" />
+    <ClCompile Include="kykyimage.cpp" />
+    <ClCompile Include="..\..\Common\Public Classes\Led.cpp" />
+    <ClCompile Include="LineTracker.cpp" />
+    <ClCompile Include="MacButtons.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MCBCtrl.cpp" />
+    <ClCompile Include="..\..\Common\Include\MsOffice\MsWord9.cpp" />
+    <ClCompile Include="MyGroupBox.cpp" />
+    <ClCompile Include="PageLangOther.cpp" />
+    <ClCompile Include="PageScanPhoto.cpp" />
+    <ClCompile Include="PageSys.cpp" />
+    <ClCompile Include="PanelMainDebug.cpp" />
+    <ClCompile Include="PanelMCI.cpp" />
+    <ClCompile Include="PanelSL.cpp" />
+    <ClCompile Include="PanelStage.cpp" />
+    <ClCompile Include="PanelVS.cpp" />
+    <ClCompile Include="Image classes\Quantize.cpp" />
+    <ClCompile Include="ScanChildFrm.cpp" />
+    <ClCompile Include="ScanDoc.cpp" />
+    <ClCompile Include="ScanView.cpp" />
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand1.cpp" />
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand2.cpp" />
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand3.cpp" />
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand4.cpp" />
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand5.cpp" />
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand6.cpp" />
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand7.cpp" />
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand8.cpp" />
+    <ClCompile Include="SEM Control\semcorectrlpanel_stand9.cpp" />
+    <ClCompile Include="SEM Control\semcorectrlpanel_standa.cpp" />
+    <ClCompile Include="SEM Control\SEMCTRL_Label.cpp" />
+    <ClCompile Include="SEM Control\SemCtrl_Mouse.cpp" />
+    <ClCompile Include="SEM Control\SemCtrlDlgDebug.cpp" />
+    <ClCompile Include="SEM Control\SemCtrlDlgEdit.cpp" />
+    <ClCompile Include="SEM Control\semctrldlgrenewselect.cpp" />
+    <ClCompile Include="SemCtrlInitializer.cpp" />
+    <ClCompile Include="SEMDocument.cpp" />
+    <ClCompile Include="SEMFileDialog.cpp" />
+    <ClCompile Include="SEMLog\AlarmManager.cpp" />
+    <ClCompile Include="SEMLog\AxisCCG.cpp" />
+    <ClCompile Include="SEMLog\AxisEMI.cpp" />
+    <ClCompile Include="SEMLog\AxisFila.cpp" />
+    <ClCompile Include="SEMLog\AxisHV.cpp" />
+    <ClCompile Include="SEMLog\Chart4EMI.cpp" />
+    <ClCompile Include="SEMLog\Chart4Fila.cpp" />
+    <ClCompile Include="SEMLog\Chart4HV.cpp" />
+    <ClCompile Include="SEMLog\Chart4NegativeExponent.cpp" />
+    <ClCompile Include="SEMLog\ChartContainer4NegativeExponent.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_Data.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_DataCurve.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_DeleteData.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_GridHeaderSettings.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_OperationQueryKeyWordSettings.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_Settings.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_ShowAlarm.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_ShowALLData.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_ShowHistoryTrend.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_ShowOperation.cpp" />
+    <ClCompile Include="SEMLog\DlgSEMLog_ShowRealTimeTrend.cpp" />
+    <ClCompile Include="SEMLog\RealTimeDataManager.cpp" />
+    <ClCompile Include="SEMPanel\ControlPanel2Dlg.cpp" />
+    <ClCompile Include="SEMPanel\LibUSBCommandButton.cpp" />
+    <ClCompile Include="SEMPanel\PanelCoefficientMgr.cpp" />
+    <ClCompile Include="SEMPanel\PanelDataProcessor.cpp" />
+    <ClCompile Include="SEMPanel\PanelDataProcessorBase.cpp" />
+    <ClCompile Include="SEMPanel\PanelDataProcessorMgr.cpp" />
+    <ClCompile Include="SEMPanel\PanelDataProcessorSwitchCode.cpp" />
+    <ClCompile Include="SEMPanel\PanelModeMgr.cpp" />
+    <ClCompile Include="SEMPanel\SEMPanelStatusDetector.cpp" />
+    <ClCompile Include="SheetSetup.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="SrvrItem.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TestParameterDlg.cpp" />
+    <ClCompile Include="ThumbnailListCtrlEx.cpp" />
+    <ClCompile Include="TipWnd.cpp" />
+    <ClCompile Include="Tools\AsynProcessorWithProgress.cpp" />
+    <ClCompile Include="Tools\CheckComboBox.cpp" />
+    <ClCompile Include="Tools\CustomButton.cpp" />
+    <ClCompile Include="Tools\Dlg4ProgressThread.cpp" />
+    <ClCompile Include="Tools\DlgGridPage.cpp" />
+    <ClCompile Include="Tools\DlgTab.cpp" />
+    <ClCompile Include="Tools\InputEdit.cpp" />
+    <ClCompile Include="TrackStatusDetector.cpp" />
+    <ClCompile Include="TransparentImage.cpp" />
+    <ClCompile Include="Image classes\xTargetButton.cpp" />
+    <ClCompile Include="ViewMCBControler.cpp" />
+    <ClCompile Include="XXX2.cpp" />
+    <ClCompile Include="XXX2Doc.cpp" />
+    <ClCompile Include="XXX2View.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="XXX2.odl">
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Win32</TargetEnvironment>
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Win32</TargetEnvironment>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XXX2.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoContrastDlg.h" />
+    <ClInclude Include="AutoFocusThread.h" />
+    <ClInclude Include="BeamButton.h" />
+    <ClInclude Include="Calc.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="CntrItem.h" />
+    <ClInclude Include="Communicator.h" />
+    <ClInclude Include="Curves.h" />
+    <ClInclude Include="CvvImage.h" />
+    <ClInclude Include="DlgAngleOptions.h" />
+    <ClInclude Include="DlgAutoTestLNS.h" />
+    <ClInclude Include="DlgAutoTestMain.h" />
+    <ClInclude Include="DlgAutoTestMCI.h" />
+    <ClInclude Include="DlgAutoTestPower.h" />
+    <ClInclude Include="DlgAutoTestSCN.h" />
+    <ClInclude Include="DlgAutoTestSPR.h" />
+    <ClInclude Include="DlgAutoTestTab.h" />
+    <ClInclude Include="DlgAutoTestVAC.h" />
+    <ClInclude Include="DlgBeamAperture.h" />
+    <ClInclude Include="DlgCaliCoadjust.h" />
+    <ClInclude Include="DlgCaliLNS.h" />
+    <ClInclude Include="DlgCaliMain.h" />
+    <ClInclude Include="DlgCaliMCI.h" />
+    <ClInclude Include="DlgCaliSCN.h" />
+    <ClInclude Include="DlgCaliSPR.h" />
+    <ClInclude Include="DlgDebugMon3.h" />
+    <ClInclude Include="DlgSetImageData.h" />
+    <ClInclude Include="Dump.h" />
+    <ClInclude Include="GridCellAttributeBehaviour.h" />
+    <ClInclude Include="GridCellBehaviour.h" />
+    <ClInclude Include="Image classes\DlgColorize.h" />
+    <ClInclude Include="Image classes\DlgCustomFilter.h" />
+    <ClInclude Include="DlgDebugAdvance.h" />
+    <ClInclude Include="DlgDebugMain.h" />
+    <ClInclude Include="DlgDebugMon.h" />
+    <ClInclude Include="DlgDebugMon2.h" />
+    <ClInclude Include="DlgDebugTab.h" />
+    <ClInclude Include="Image classes\DlgDecBpp.h" />
+    <ClInclude Include="DlgDiagLog.h" />
+    <ClInclude Include="DlgDiagLogDiffGraph.h" />
+    <ClInclude Include="DlgDiagLogGraph.h" />
+    <ClInclude Include="Image classes\DlgDither.h" />
+    <ClInclude Include="Image classes\DlgExpand.h" />
+    <ClInclude Include="Image classes\DlgFFT.h" />
+    <ClInclude Include="Image classes\DlgFloodFill.h" />
+    <ClInclude Include="Image classes\DlgGamma.h" />
+    <ClInclude Include="Image classes\DlgHisto.h" />
+    <ClInclude Include="DlgImpPanelAccessory.h" />
+    <ClInclude Include="DlgImpPanelAll2.h" />
+    <ClInclude Include="DlgImpPanelDebug.h" />
+    <ClInclude Include="DlgImpPanelDebug2.h" />
+    <ClInclude Include="DlgImpPanelDebugA.h" />
+    <ClInclude Include="DlgImpPanelDebugR.h" />
+    <ClInclude Include="DlgImpPanelLog.h" />
+    <ClInclude Include="DlgImpPanelThumb.h" />
+    <ClInclude Include="Image classes\DlgIncBpp.h" />
+    <ClInclude Include="DlgInput.h" />
+    <ClInclude Include="libusb.h" />
+    <ClInclude Include="LibUSB_Function.h" />
+    <ClInclude Include="LinkListManager.h" />
+    <ClInclude Include="MCBControler.h" />
+    <ClInclude Include="Preparation4Scan.h" />
+    <ClInclude Include="ProductVersionManager.h" />
+    <ClInclude Include="pugiconfig.hpp" />
+    <ClInclude Include="pugixml.hpp" />
+    <ClInclude Include="ScanParameterSaver.h" />
+    <ClInclude Include="ScenarioManageDlg.h" />
+    <ClInclude Include="SEM Control\DlgInputAcq.h" />
+    <ClInclude Include="Image classes\DlgJpeg.h" />
+    <ClInclude Include="Image classes\DlgOpacity.h" />
+    <ClInclude Include="Image classes\DlgOptions.h" />
+    <ClInclude Include="Image classes\DlgPalette.h" />
+    <ClInclude Include="SEM Control\DlgProgress.h" />
+    <ClInclude Include="SEM Control\DlgPrompt.h" />
+    <ClInclude Include="SEM Control\dlgremark.h" />
+    <ClInclude Include="Image classes\DlgRepair.h" />
+    <ClInclude Include="Image classes\DlgResample.h" />
+    <ClInclude Include="Image classes\DlgRotate.h" />
+    <ClInclude Include="Image classes\DlgShadow.h" />
+    <ClInclude Include="Image classes\DlgThreshold.h" />
+    <ClInclude Include="SEM Control\FilmPhotoData.h" />
+    <ClInclude Include="SEM Control\font.h" />
+    <ClInclude Include="FontCombo.h" />
+    <ClInclude Include="Image classes\ImageDoc.h" />
+    <ClInclude Include="ImageItem.h" />
+    <ClInclude Include="SEM Control\ImageStandStyle.h" />
+    <ClInclude Include="Image classes\ImageView.h" />
+    <ClInclude Include="IpFrame.h" />
+    <ClInclude Include="kykyimage.h" />
+    <ClInclude Include="LineTracker.h" />
+    <ClInclude Include="MacButtons.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MCBCtrl.h" />
+    <ClInclude Include="MyGroupBox.h" />
+    <ClInclude Include="PageLangOther.h" />
+    <ClInclude Include="PageScanPhoto.h" />
+    <ClInclude Include="PageSys.h" />
+    <ClInclude Include="PanelMainDebug.h" />
+    <ClInclude Include="PanelMCI.h" />
+    <ClInclude Include="PanelSL.h" />
+    <ClInclude Include="PanelStage.h" />
+    <ClInclude Include="PanelVS.h" />
+    <CustomBuild Include="Resource.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo. &gt;"hlp\$(TargetName).hm" 
+echo // Commands (ID_* and IDM_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Prompts (IDP_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Resources (IDR_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Dialogs (IDD_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Frame Controls (IDW_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;"hlp\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hlp\$(TargetName).hm;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo. &gt;"hlp\$(TargetName).hm" 
+echo // Commands (ID_* and IDM_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Prompts (IDP_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Resources (IDR_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Dialogs (IDD_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;"hlp\$(TargetName).hm" 
+echo. &gt;&gt;"hlp\$(TargetName).hm" 
+echo // Frame Controls (IDW_*) &gt;&gt;"hlp\$(TargetName).hm" 
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;"hlp\$(TargetName).hm" </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making help include file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hlp\$(TargetName).hm;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="ScanChildFrm.h" />
+    <ClInclude Include="ScanDoc.h" />
+    <ClInclude Include="ScanView.h" />
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand1.h" />
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand2.h" />
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand3.h" />
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand4.h" />
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand5.h" />
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand6.h" />
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand7.h" />
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand8.h" />
+    <ClInclude Include="SEM Control\semcorectrlpanel_stand9.h" />
+    <ClInclude Include="SEM Control\semcorectrlpanel_standa.h" />
+    <ClInclude Include="SEM Control\SemCtrl_global.h" />
+    <ClInclude Include="SEM Control\SEMCTRL_Label.h" />
+    <ClInclude Include="SEM Control\SemCtrl_Mouse.h" />
+    <ClInclude Include="SEM Control\SemCtrlDlgDebug.h" />
+    <ClInclude Include="SEM Control\SemCtrlDlgEdit.h" />
+    <ClInclude Include="SEM Control\semctrldlgrenewselect.h" />
+    <ClInclude Include="SemCtrlInitializer.h" />
+    <ClInclude Include="SEMDocument.h" />
+    <ClInclude Include="SEMFileDialog.h" />
+    <ClInclude Include="SEMLog\AlarmManager.h" />
+    <ClInclude Include="SEMLog\AxisCCG.h" />
+    <ClInclude Include="SEMLog\AxisEMI.h" />
+    <ClInclude Include="SEMLog\AxisFila.h" />
+    <ClInclude Include="SEMLog\AxisHV.h" />
+    <ClInclude Include="SEMLog\Chart4EMI.h" />
+    <ClInclude Include="SEMLog\Chart4Fila.h" />
+    <ClInclude Include="SEMLog\Chart4HV.h" />
+    <ClInclude Include="SEMLog\Chart4NegativeExponent.h" />
+    <ClInclude Include="SEMLog\ChartContainer4NegativeExponent.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_Data.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_DataCurve.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_DeleteData.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_GridHeaderSettings.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_OperationQueryKeyWordSettings.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_Settings.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_ShowAlarm.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_ShowALLData.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_ShowHistoryTrend.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_ShowOperation.h" />
+    <ClInclude Include="SEMLog\DlgSEMLog_ShowRealTimeTrend.h" />
+    <ClInclude Include="SEMLog\RealTimeDataManager.h" />
+    <ClInclude Include="SEMPanel\ControlPanel2Dlg.h" />
+    <ClInclude Include="SEMPanel\LibUSBCommandButton.h" />
+    <ClInclude Include="SEMPanel\PanelCoefficientMgr.h" />
+    <ClInclude Include="SEMPanel\PanelDataProcessor.h" />
+    <ClInclude Include="SEMPanel\PanelDataProcessorBase.h" />
+    <ClInclude Include="SEMPanel\PanelDataProcessorMgr.h" />
+    <ClInclude Include="SEMPanel\PanelDataProcessorSwitchCode.h" />
+    <ClInclude Include="SEMPanel\PanelModeMgr.h" />
+    <ClInclude Include="SEMPanel\SEMPanelStatusDetector.h" />
+    <ClInclude Include="SheetSetup.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="SrvrItem.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TestParameterDlg.h" />
+    <ClInclude Include="ThumbnailListCtrlEx.h" />
+    <ClInclude Include="TipWnd.h" />
+    <ClInclude Include="Tools\AsynProcessorWithProgress.h" />
+    <ClInclude Include="Tools\CheckComboBox.h" />
+    <ClInclude Include="Tools\CustomButton.h" />
+    <ClInclude Include="Tools\Dlg4ProgressThread.h" />
+    <ClInclude Include="Tools\DlgGridPage.h" />
+    <ClInclude Include="Tools\DlgTab.h" />
+    <ClInclude Include="Tools\InputEdit.h" />
+    <ClInclude Include="TrackStatusDetector.h" />
+    <ClInclude Include="TransparentImage.h" />
+    <ClInclude Include="Image classes\xTargetButton.h" />
+    <ClInclude Include="ViewMCBControler.h" />
+    <ClInclude Include="XXX2.h" />
+    <ClInclude Include="XXX2Doc.h" />
+    <ClInclude Include="XXX2View.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\b1.ico" />
+    <Image Include="res\bar_full.bmp" />
+    <Image Include="res\bar_img.bmp" />
+    <Image Include="res\bar_return.bmp" />
+    <Image Include="res\bar_scan.bmp" />
+    <Image Include="res\bar_scan_big.bmp" />
+    <Image Include="res\bar_scan_debug.bmp" />
+    <Image Include="RES\bmp-2nd.bmp" />
+    <Image Include="res\bmp-abc.bmp" />
+    <Image Include="res\bmp-af.bmp" />
+    <Image Include="RES\bmp-angle.bmp" />
+    <Image Include="res\bmp-clrev.bmp" />
+    <Image Include="res\bmp-date.bmp" />
+    <Image Include="res\bmp-fila.bmp" />
+    <Image Include="res\bmp-fit.bmp" />
+    <Image Include="res\bmp-frame.bmp" />
+    <Image Include="res\bmp-label.bmp" />
+    <Image Include="res\bmp-live.bmp" />
+    <Image Include="res\bmp-note.bmp" />
+    <Image Include="res\bmp-olrev.bmp" />
+    <Image Include="res\bmp-opt.bmp" />
+    <Image Include="res\bmp-osc.bmp" />
+    <Image Include="res\bmp-ruler-m.bmp" />
+    <Image Include="res\bmp-ruler.bmp" />
+    <Image Include="res\bmp-snap.bmp" />
+    <Image Include="res\bmp-sp1.bmp" />
+    <Image Include="res\bmp-sp2.bmp" />
+    <Image Include="res\bmp-sp3.bmp" />
+    <Image Include="res\bmp-sp4.bmp" />
+    <Image Include="res\bmp-split.bmp" />
+    <Image Include="res\bmp-sr1.bmp" />
+    <Image Include="res\bmp-sr2.bmp" />
+    <Image Include="res\bmp-sr3.bmp" />
+    <Image Include="res\bmp-sr4.bmp" />
+    <Image Include="res\bmp-st1.bmp" />
+    <Image Include="res\bmp-st2.bmp" />
+    <Image Include="res\bmp-st3.bmp" />
+    <Image Include="res\bmp-st4.bmp" />
+    <Image Include="res\bmp-st5.bmp" />
+    <Image Include="res\bmp-st6.bmp" />
+    <Image Include="res\bmp-stig.bmp" />
+    <Image Include="res\bmp-sync.bmp" />
+    <Image Include="res\bmp-text.bmp" />
+    <Image Include="res\bmp-zoomin.bmp" />
+    <Image Include="res\bmp-zoomout.bmp" />
+    <Image Include="res\bmp_led_blue_d.bmp" />
+    <Image Include="res\bmp_led_blue_h.bmp" />
+    <Image Include="res\bmp_led_err.bmp" />
+    <Image Include="res\bmp_led_red_d.bmp" />
+    <Image Include="res\bmp_led_red_h.bmp" />
+    <Image Include="res\bmp_leds.bmp" />
+    <Image Include="res\bmp_PneumaticDiagram.bmp" />
+    <Image Include="res\bmp_PneumaticDiagramNew.bmp" />
+    <Image Include="res\bmp_PneumaticDiagramNew2.bmp" />
+    <Image Include="res\bmp_PneumaticDiagramOld.bmp" />
+    <Image Include="res\bmp_wait.bmp" />
+    <Image Include="res\g1.ico" />
+    <Image Include="res\gray.ico" />
+    <Image Include="res\icon_ba.ico" />
+    <Image Include="res\icon_bm.ico" />
+    <Image Include="res\icon_br.ico" />
+    <Image Include="res\icon_stage_d.ico" />
+    <Image Include="res\icon_stage_l.ico" />
+    <Image Include="res\icon_stage_r.ico" />
+    <Image Include="res\icon_stage_u.ico" />
+    <Image Include="res\icon_stig.ico" />
+    <Image Include="res\icon_stig_auto.ico" />
+    <Image Include="res\icon_warning.ico" />
+    <Image Include="res\IToolbar.bmp" />
+    <Image Include="res\no1.ico" />
+    <Image Include="res\PlayNext.bmp" />
+    <Image Include="res\PlayPrevious.bmp" />
+    <Image Include="res\scantype.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar_beam.bmp" />
+    <Image Include="res\XXX2.ico" />
+    <Image Include="res\XXX2Doc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\cur_objective.cur" />
+    <CustomBuild Include="res\cur_stig.cur" />
+    <CustomBuild Include="res\XXX2.rc2" />
+    <CustomBuild Include="XXX2.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="KYKY-SEM.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="XXX2.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

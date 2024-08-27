@@ -1,0 +1,85 @@
+// SemCoreCtrlPanel_Stand3.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (SemCoreCtrlPanel_Stand3.tlb) that will become a resource in
+// SemCoreCtrlPanel_Stand3.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(03AAF95F-F2FE-41C9-9DDB-4F63F17F55E3), version(1.0),
+  helpfile("SemCoreCtrlPanel_Stand3.hlp"),
+  helpstring("SemCoreCtrlPanel_Stand3 ActiveX Control module"),
+  control ]
+library SEMCORECTRLPANEL_STAND3Lib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CSemCoreCtrlPanel_Stand3Ctrl
+
+	[ uuid(94F7D89B-2BC5-4F43-A7EE-7D7AA6A98C55),
+	  helpstring("Dispatch interface for SemCoreCtrlPanel_Stand3 Control"), hidden ]
+	dispinterface _DSemCoreCtrlPanel_Stand3
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CSemCoreCtrlPanel_Stand3Ctrl)
+			[id(1)] boolean CaptionVisible;
+			[id(DISPID_BACKCOLOR), bindable, requestedit] OLE_COLOR BackColor;
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(DISPID_FONT), bindable] IFontDisp* Font;
+			[id(DISPID_CAPTION), bindable, requestedit] BSTR Caption;
+			[id(2)] boolean DebugInfoVisible;
+			[id(3)] boolean GradeVisible;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CSemCoreCtrlPanel_Stand3Ctrl)
+			[id(4)] void Bind(VARIANT ClassID, VARIANT SerialNumber);
+			[id(5)] void Enable(VARIANT Enabled, VARIANT Flag);
+			[id(6)] void SetRange(VARIANT Xmin, VARIANT Xmax, VARIANT Ymin, VARIANT Ymax);
+			[id(7)] void SetPos(VARIANT Xpos, VARIANT Ypos, VARIANT Flag);
+			[id(8)] void SyncPos(VARIANT Xpos, VARIANT Ypos, VARIANT Flag);
+			[id(9)] void SyncText(BSTR strX, BSTR strY, VARIANT Flag);
+			[id(10)] void SyncResString(VARIANT ResourceID, BSTR strRes);
+			[id(11)] void SyncString(VARIANT ResourceID, VARIANT ResourceString);
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CSemCoreCtrlPanel_Stand3Ctrl
+
+	[ uuid(7CE808FA-2C8C-4C35-B6E2-A6E7313CDDE7),
+	  helpstring("Event interface for SemCoreCtrlPanel_Stand3 Control") ]
+	dispinterface _DSemCoreCtrlPanel_Stand3Events
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CSemCoreCtrlPanel_Stand3Ctrl)
+			[id(1)] void ReportPos(VARIANT ClassID, VARIANT SerialNumber, VARIANT Xpos, VARIANT Ypos, VARIANT Flag);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CSemCoreCtrlPanel_Stand3Ctrl
+
+	[ uuid(A7FDF08D-50E0-4E4E-B1C5-21C923B98504),
+	  helpstring("SemCoreCtrlPanel_Stand3 Control"), control ]
+	coclass SemCoreCtrlPanel_Stand3
+	{
+		[default] dispinterface _DSemCoreCtrlPanel_Stand3;
+		[default, source] dispinterface _DSemCoreCtrlPanel_Stand3Events;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,214 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BoardVAC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+BoardVAC.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HVPower_CPS3603 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+HVPower_CPS3603.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HVPower_Spellman2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+HVPower_Spellman2.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HVPower_WSM30KV - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+HVPower_WSM30KV.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HVPower_WSM30KV2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+HVPower_WSM30KV2.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: KYKYClientWrapper - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+KYKYClientWrapper.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_BSD - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_BSD.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_Camera - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_Camera.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC600 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC600.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC600Wnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC600Wnd.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageVince - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageVince.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_XYStage - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_XYStage.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SEMClient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SEMClient.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SEMServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SEMServer.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemControl - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemControl.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemControlCardAdapter - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemControlCardAdapter.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCore - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCore.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanelManager - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanelManager.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreMsgComm - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreMsgComm.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemScan - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemScan.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VACObtain - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VACObtain.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VACStateMachine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VACStateMachine.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VirtualMCICard - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VirtualMCICard.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

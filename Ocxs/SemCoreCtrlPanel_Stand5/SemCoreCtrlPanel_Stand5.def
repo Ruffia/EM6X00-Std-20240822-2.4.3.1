@@ -1,0 +1,9 @@
+; SemCoreCtrlPanel_Stand5.def : Declares the module parameters.
+
+LIBRARY      "SEMCORECTRLPANEL_STAND5.OCX"
+
+EXPORTS
+	DllCanUnloadNow     @1 PRIVATE
+	DllGetClassObject   @2 PRIVATE
+	DllRegisterServer   @3 PRIVATE
+	DllUnregisterServer @4 PRIVATE

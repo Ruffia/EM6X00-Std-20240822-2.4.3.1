@@ -1,0 +1,7 @@
+; Options_StageMC6600.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Options_StageMC6600"
+DESCRIPTION  'Options_StageMC6600 Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

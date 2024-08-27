@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LanguageManager", "LanguageManager\LanguageManager.vcxproj", "{DA402EE6-F8B6-48FA-9D02-EDE59666EDFD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "en_US", "LanguagePackage\en_US\en_US.vcxproj", "{3252F7A5-2703-48B6-90EF-8FEE7ACD09D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA402EE6-F8B6-48FA-9D02-EDE59666EDFD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DA402EE6-F8B6-48FA-9D02-EDE59666EDFD}.Debug|Win32.Build.0 = Debug|Win32
+		{DA402EE6-F8B6-48FA-9D02-EDE59666EDFD}.Release|Win32.ActiveCfg = Release|Win32
+		{DA402EE6-F8B6-48FA-9D02-EDE59666EDFD}.Release|Win32.Build.0 = Release|Win32
+		{DA402EE6-F8B6-48FA-9D02-EDE59666EDFD}.Template|Win32.ActiveCfg = Release|Win32
+		{DA402EE6-F8B6-48FA-9D02-EDE59666EDFD}.Template|Win32.Build.0 = Release|Win32
+		{3252F7A5-2703-48B6-90EF-8FEE7ACD09D1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3252F7A5-2703-48B6-90EF-8FEE7ACD09D1}.Debug|Win32.Build.0 = Debug|Win32
+		{3252F7A5-2703-48B6-90EF-8FEE7ACD09D1}.Release|Win32.ActiveCfg = Release|Win32
+		{3252F7A5-2703-48B6-90EF-8FEE7ACD09D1}.Release|Win32.Build.0 = Release|Win32
+		{3252F7A5-2703-48B6-90EF-8FEE7ACD09D1}.Template|Win32.ActiveCfg = Template|Win32
+		{3252F7A5-2703-48B6-90EF-8FEE7ACD09D1}.Template|Win32.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

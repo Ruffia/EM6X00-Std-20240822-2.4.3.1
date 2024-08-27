@@ -1,0 +1,345 @@
+# Microsoft Developer Studio Project File - Name="SemCoreCtrlPanel_Stand1" - Package Owner=<4>
+# Microsoft Developer Studio Generated Build File, Format Version 6.00
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (x86) Dynamic-Link Library" 0x0102
+
+CFG=SemCoreCtrlPanel_Stand1 - Win32 Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "SemCoreCtrlPanel_Stand1.mak".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "SemCoreCtrlPanel_Stand1.mak" CFG="SemCoreCtrlPanel_Stand1 - Win32 Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "SemCoreCtrlPanel_Stand1 - Win32 Release" (based on "Win32 (x86) Dynamic-Link Library")
+!MESSAGE "SemCoreCtrlPanel_Stand1 - Win32 Debug" (based on "Win32 (x86) Dynamic-Link Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+CPP=cl.exe
+MTL=midl.exe
+RSC=rc.exe
+
+!IF  "$(CFG)" == "SemCoreCtrlPanel_Stand1 - Win32 Release"
+
+# PROP BASE Use_MFC 2
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "Release"
+# PROP BASE Intermediate_Dir "Release"
+# PROP BASE Target_Ext "ocx"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 2
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "..\..\..\Bin\SharedRelease\Ocx"
+# PROP Intermediate_Dir "..\..\..\Bin\SharedRelease\Ocx\1"
+# PROP Target_Ext "ocx"
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /Yu"stdafx.h" /FD /c
+# ADD CPP /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Yu"stdafx.h" /FD /c
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /win32
+# ADD BASE RSC /l 0x804 /d "NDEBUG" /d "_AFXDLL"
+# ADD RSC /l 0x804 /d "NDEBUG" /d "_AFXDLL"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 /nologo /subsystem:windows /dll /machine:I386
+# ADD LINK32 /nologo /subsystem:windows /dll /machine:I386
+# Begin Custom Build - Registering ActiveX Control...
+OutDir=.\..\..\..\Bin\SharedRelease\Ocx
+TargetPath=\SrcNow\SEM\Bin\SharedRelease\Ocx\SemCoreCtrlPanel_Stand1.ocx
+InputPath=\SrcNow\SEM\Bin\SharedRelease\Ocx\SemCoreCtrlPanel_Stand1.ocx
+SOURCE="$(InputPath)"
+
+"$(OutDir)\regsvr32.trg" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	regsvr32 /s /c "$(TargetPath)" 
+	echo regsvr32 exec. time > "$(OutDir)\regsvr32.trg" 
+	
+# End Custom Build
+
+!ELSEIF  "$(CFG)" == "SemCoreCtrlPanel_Stand1 - Win32 Debug"
+
+# PROP BASE Use_MFC 2
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "Debug"
+# PROP BASE Intermediate_Dir "Debug"
+# PROP BASE Target_Ext "ocx"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 2
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "..\..\Bin\Ocx"
+# PROP Intermediate_Dir "..\..\Bin\SharedDebug\Ocx\1"
+# PROP Target_Ext "ocx"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /Yu"stdafx.h" /FD /GZ /c
+# ADD CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\COMMON\Template" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Yu"stdafx.h" /FD /GZ /c
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
+# ADD BASE RSC /l 0x804 /d "_DEBUG" /d "_AFXDLL"
+# ADD RSC /l 0x804 /d "_DEBUG" /d "_AFXDLL"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 /nologo /subsystem:windows /dll /debug /machine:I386 /pdbtype:sept
+# ADD LINK32 /nologo /subsystem:windows /dll /debug /machine:I386 /pdbtype:sept
+# Begin Custom Build - Registering ActiveX Control...
+OutDir=.\..\..\Bin\Ocx
+TargetPath=\SrcNow\SEM\New_International\Bin\Ocx\SemCoreCtrlPanel_Stand1.ocx
+InputPath=\SrcNow\SEM\New_International\Bin\Ocx\SemCoreCtrlPanel_Stand1.ocx
+SOURCE="$(InputPath)"
+
+"$(OutDir)\regsvr32.trg" : $(SOURCE) "$(INTDIR)" "$(OUTDIR)"
+	regsvr32 /s /c "$(TargetPath)" 
+	echo regsvr32 exec. time > "$(OutDir)\regsvr32.trg" 
+	
+# End Custom Build
+
+!ENDIF 
+
+# Begin Target
+
+# Name "SemCoreCtrlPanel_Stand1 - Win32 Release"
+# Name "SemCoreCtrlPanel_Stand1 - Win32 Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=.\MySpinButtonCtrl.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1.def
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1.odl
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1.rc
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1Ctl.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1Ppg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.cpp
+# ADD CPP /Yc"stdafx.h"
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=.\MySpinButtonCtrl.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1Ctl.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1Ppg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.h
+# End Source File
+# End Group
+# Begin Group "Resource Files"
+
+# PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# Begin Source File
+
+SOURCE=.\aboutdll.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_add.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_add_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_addex.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_addex2.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_addex2_d.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_addex2_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_addex2_f.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_addex2_u.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_addex2_x.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_addex_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_des.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_des_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_desex.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_desex2.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_desex2_d.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_desex2_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_desex2_f.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_desex2_u.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_desex2_x.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_desex_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_add.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_add_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_addex.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_addex2.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_addex2_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_addex_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_des.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_des_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_desex.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_desex2.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_desex2_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\bmp_dis_desex_en.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\icon_addex2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\icon_addex2_en.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\icon_desex2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\icon_desex2_en.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\semcorec.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\SemCoreCtrlPanel_Stand1Ctl.bmp
+# End Source File
+# End Group
+# Begin Source File
+
+SOURCE=.\ReadMe.txt
+# End Source File
+# End Target
+# End Project

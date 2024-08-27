@@ -1,0 +1,1833 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\AutoTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AutoTest DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AutoTest\0"
+            VALUE "LegalCopyright", "∞Ê»®À˘”– (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AutoTest.DLL\0"
+            VALUE "ProductName", "AutoTest Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AutoTest_Main DIALOG DISCARDABLE  0, 0, 510, 414
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Auto Test"
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,453,7,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,453,24,50,14,NOT WS_VISIBLE
+    LTEXT           "",IDC_STATIC_AT_Cali_Main_TabPos,7,7,496,400,WS_BORDER
+END
+
+IDD_AutoTest_TabDlg DIALOG DISCARDABLE  0, 0, 404, 162
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,354,0,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,354,24,50,14,NOT WS_VISIBLE
+END
+
+IDD_AutoTest_Power DIALOG DISCARDABLE  0, 0, 500, 386
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,489,9,8,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,489,23,8,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Start",IDC_BUTTON_AT_Cali_Power_Start,8,9,54,22
+    CTEXT           "Vadc",IDC_STATIC,78,25,30,12
+    CTEXT           "Vadc Expected",IDC_STATIC,125,17,30,19
+    CTEXT           "Vadc Calc",IDC_STATIC,167,17,30,19
+    CTEXT           "Vadc Calc Expected",IDC_STATIC,209,9,30,28
+    CTEXT           "Vadc",IDC_STATIC,328,25,30,12
+    CTEXT           "Vadc Expected",IDC_STATIC,375,17,30,19
+    CTEXT           "Vadc Calc",IDC_STATIC,417,17,30,19
+    CTEXT           "Vadc Calc Expected",IDC_STATIC,459,9,30,28
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SCN10,8,39,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN10_Vadc,78,40,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN10_Vadc2,120,40,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN10_Vadc3,162,40,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN10_Vadc4,204,40,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SCN11,8,54,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN11_Vadc,78,55,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN11_Vadc2,120,55,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN11_Vadc3,162,55,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN11_Vadc4,204,55,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SCN12,8,69,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN12_Vadc,78,70,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN12_Vadc2,120,70,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN12_Vadc3,162,70,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN12_Vadc4,204,70,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SCN13,8,84,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN13_Vadc,78,85,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN13_Vadc2,120,85,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN13_Vadc3,162,85,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN13_Vadc4,204,85,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SCN14,8,99,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN14_Vadc,78,100,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN14_Vadc2,120,100,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN14_Vadc3,162,100,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN14_Vadc4,204,100,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SCN15,8,114,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN15_Vadc,78,115,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN15_Vadc2,120,115,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN15_Vadc3,162,115,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SCN15_Vadc4,204,115,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_LNS4,8,142,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS4_Vadc,78,141,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS4_Vadc2,120,141,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS4_Vadc3,162,141,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS4_Vadc4,204,141,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_LNS5,8,157,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS5_Vadc,78,157,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS5_Vadc2,120,157,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS5_Vadc3,162,157,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS5_Vadc4,204,157,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_LNS6,8,172,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS6_Vadc,78,173,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS6_Vadc2,120,173,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS6_Vadc3,162,173,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS6_Vadc4,204,173,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_LNS7,8,187,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS7_Vadc,78,189,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS7_Vadc2,120,189,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS7_Vadc3,162,189,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_LNS7_Vadc4,204,189,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_VAC10,8,212,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC10_Vadc,78,213,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC10_Vadc2,120,213,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC10_Vadc3,162,213,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC10_Vadc4,204,213,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_VAC11,8,228,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC11_Vadc,78,229,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC11_Vadc2,120,229,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC11_Vadc3,162,229,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC11_Vadc4,204,229,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_VAC12,8,244,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC12_Vadc,78,245,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC12_Vadc2,120,245,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC12_Vadc3,162,245,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC12_Vadc4,204,245,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_VAC13,8,260,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC13_Vadc,78,261,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC13_Vadc2,120,261,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC13_Vadc3,162,261,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC13_Vadc4,204,261,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_VAC14,8,276,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC14_Vadc,78,277,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC14_Vadc2,120,277,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC14_Vadc3,162,277,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC14_Vadc4,204,277,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_VAC15,8,292,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC15_Vadc,78,293,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC15_Vadc2,120,293,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC15_Vadc3,162,293,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_VAC15_Vadc4,204,293,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR8,259,40,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR8_Vadc,328,40,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR8_Vadc2,370,40,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR8_Vadc3,412,40,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR8_Vadc4,454,40,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR0,259,152,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR0_Vadc,328,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR0_Vadc2,370,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR0_Vadc3,412,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR0_Vadc4,454,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR9,259,55,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR9_Vadc,328,55,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR9_Vadc2,370,55,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR9_Vadc3,412,55,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR9_Vadc4,454,55,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR1,259,167,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR1_Vadc,328,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR1_Vadc2,370,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR1_Vadc3,412,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR1_Vadc4,454,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR10,259,70,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR10_Vadc,328,70,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR10_Vadc2,370,70,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR10_Vadc3,412,70,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR10_Vadc4,454,70,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR2,259,182,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR2_Vadc,328,182,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR2_Vadc2,370,182,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR2_Vadc3,412,182,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR2_Vadc4,454,182,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR11,259,85,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR11_Vadc,328,85,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR11_Vadc2,370,85,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR11_Vadc3,412,85,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR11_Vadc4,454,85,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR3,259,197,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR3_Vadc,328,197,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR3_Vadc2,370,197,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR3_Vadc3,412,197,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR3_Vadc4,454,197,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR12,259,100,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR12_Vadc,328,100,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR12_Vadc2,370,100,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR12_Vadc3,412,100,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR12_Vadc4,454,100,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR4,259,212,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR4_Vadc,328,212,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR4_Vadc2,370,212,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR4_Vadc3,412,212,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR4_Vadc4,454,212,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR13,259,115,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR13_Vadc,328,115,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR13_Vadc2,370,115,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR13_Vadc3,412,115,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR13_Vadc4,454,115,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR5,259,227,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR5_Vadc,328,227,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR5_Vadc2,370,227,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR5_Vadc3,412,227,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR5_Vadc4,454,227,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR14,259,130,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR14_Vadc,328,130,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR14_Vadc2,370,130,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR14_Vadc3,412,130,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR14_Vadc4,454,130,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR6,259,242,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR6_Vadc,328,242,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR6_Vadc2,370,242,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR6_Vadc3,412,242,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR6_Vadc4,454,242,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR15,166,1,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR15_Vadc,235,1,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR15_Vadc2,277,1,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR15_Vadc3,319,1,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR15_Vadc4,361,1,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR7,166,16,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR7_Vadc,235,16,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR7_Vadc2,277,16,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR7_Vadc3,319,16,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR7_Vadc4,361,16,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR16,259,264,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR16_Vadc,328,264,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR16_Vadc2,370,264,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR16_Vadc3,412,264,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR16_Vadc4,454,264,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR17,259,279,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR17_Vadc,328,279,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR17_Vadc2,370,279,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR17_Vadc3,412,279,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR17_Vadc4,454,279,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_SPR18,259,294,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR18_Vadc,328,294,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR18_Vadc2,370,294,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR18_Vadc3,412,294,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_SPR18_Vadc4,454,294,41,12,
+                    ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear",IDC_BUTTON_AT_Cali_Power_Clear,7,363,54,22
+    PUSHBUTTON      "Report",IDC_BUTTON_AT_Cali_Power_Report,78,363,54,22
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_MCI0,7,314,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI0,120,316,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI02,162,316,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI03,204,316,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_MCI1,7,330,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI1,120,331,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI12,162,331,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI13,204,331,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_MCI2,7,345,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI2,120,346,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI22,162,346,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI23,204,346,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_MCI5,259,314,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI5,370,316,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI52,412,316,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI53,454,316,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_MCI6,259,330,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI6,370,331,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI62,412,331,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI63,454,331,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_AT_Cali_Power_MCI7,259,345,68,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI7,370,346,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI72,412,346,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_Power_MCI73,454,346,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_AutoTest_VAC DIALOG DISCARDABLE  0, 0, 500, 370
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,487,3,9,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,486,18,10,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Start",IDC_BUTTON_AT_Cali_VAC_Start,8,9,54,22
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_0,8,152,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_1,8,167,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_2,8,182,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_3,8,197,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_4,8,212,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_5,8,227,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_6,8,242,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_7,8,257,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_8,8,41,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_9,8,56,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_10,8,71,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_11,8,86,64,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_12,8,101,64,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_13,8,116,64,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_14,259,41,64,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_0_15,259,56,64,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_1_0,259,71,64,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_1_1,259,86,64,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_1_2,259,101,64,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_1_3,259,116,64,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_1_4,259,152,64,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_STATIC_AT_Cali_VAC_1_5,259,167,64,15,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC00_Vadc,77,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC01_Vadc,77,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC02_Vadc,77,182,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC03_Vadc,77,197,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC04_Vadc,77,212,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC05_Vadc,77,227,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC06_Vadc,77,243,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC07_Vadc,77,259,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC08_Vadc,77,41,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC09_Vadc,77,56,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC010_Vadc,77,72,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC011_Vadc,77,88,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC012_Vadc,77,104,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC013_Vadc,77,120,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC014_Vadc,328,41,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC015_Vadc,328,56,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC10_Vadc,328,72,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC11_Vadc,328,88,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC12_Vadc,328,104,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC13_Vadc,328,120,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC14_Vadc,328,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC15_Vadc,328,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC00_Vadc2,119,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC01_Vadc2,119,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC02_Vadc2,119,182,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC03_Vadc2,119,197,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC04_Vadc2,119,212,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC05_Vadc2,119,227,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC06_Vadc2,119,243,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC07_Vadc2,119,259,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC08_Vadc2,119,41,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC09_Vadc2,119,56,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC010_Vadc2,119,72,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC011_Vadc2,119,88,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC012_Vadc2,119,104,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC013_Vadc2,119,120,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC014_Vadc2,370,41,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC015_Vadc2,370,56,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC10_Vadc2,370,72,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC11_Vadc2,370,88,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC12_Vadc2,370,104,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC13_Vadc2,370,120,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC14_Vadc2,370,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC15_Vadc2,370,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC00_Vadc3,161,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC01_Vadc3,161,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC02_Vadc3,161,182,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC03_Vadc3,161,197,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC04_Vadc3,161,212,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC05_Vadc3,161,227,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC06_Vadc3,161,243,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC07_Vadc3,161,259,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC08_Vadc3,161,41,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC09_Vadc3,161,56,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC010_Vadc3,161,72,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC011_Vadc3,161,88,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC012_Vadc3,161,104,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC013_Vadc3,161,120,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC014_Vadc3,412,41,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC015_Vadc3,412,56,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC10_Vadc3,412,72,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC11_Vadc3,412,88,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC12_Vadc3,412,104,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC13_Vadc3,412,120,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC14_Vadc3,412,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC15_Vadc3,412,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC00_Vadc4,203,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC01_Vadc4,203,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC02_Vadc4,203,182,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC03_Vadc4,203,197,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC04_Vadc4,203,212,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC05_Vadc4,203,227,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC06_Vadc4,203,243,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC07_Vadc4,203,259,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC08_Vadc4,203,41,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC09_Vadc4,203,56,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC010_Vadc4,203,72,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC011_Vadc4,203,88,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC012_Vadc4,203,104,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC013_Vadc4,203,120,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC014_Vadc4,454,41,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC015_Vadc4,454,56,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC10_Vadc4,454,72,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC11_Vadc4,454,88,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC12_Vadc4,454,104,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC13_Vadc4,454,120,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC14_Vadc4,454,152,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AT_Cali_VAC_VAC15_Vadc4,454,167,41,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    CTEXT           "Vadc",IDC_STATIC,77,25,30,11
+    CTEXT           "Vadc Expected",IDC_STATIC,124,17,30,19
+    CTEXT           "Vadc Calc",IDC_STATIC,166,17,30,19
+    CTEXT           "Vadc Calc Expected",IDC_STATIC,208,8,30,28
+    CTEXT           "Vadc",IDC_STATIC,328,25,30,11
+    CTEXT           "Vadc Expected",IDC_STATIC,375,17,30,19
+    CTEXT           "Vadc Calc",IDC_STATIC,417,17,30,19
+    CTEXT           "Vadc Calc Expected",IDC_STATIC,459,8,30,28
+    PUSHBUTTON      "Clear",IDC_BUTTON_AT_Cali_VAC_Clear,263,9,54,22
+END
+
+IDD_AutoTest_LNS DIALOG DISCARDABLE  0, 0, 500, 370
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,489,1,10,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,489,17,10,14,NOT WS_VISIBLE
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph1,7,38,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph2,7,151,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph3,7,264,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph4,7,284,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    CONTROL         "Start",IDC_CHECK_AT_Cali_Start,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | NOT WS_VISIBLE | WS_TABSTOP,8,9,
+                    17,22
+    CONTROL         "CL",IDC_CHECK_AT_Cali_Start_11,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,23,9,38,22
+    CONTROL         "OL",IDC_CHECK_AT_Cali_Start_21,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,127,9,38,22
+    CONTROL         "ALX",IDC_CHECK_AT_Cali_Start_31,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,230,
+                    9,38,22
+    CONTROL         "ALY",IDC_CHECK_AT_Cali_Start_41,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,332,
+                    9,38,22
+    CONTROL         "CL Rev",IDC_CHECK_AT_Cali_Start_12,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,65,
+                    9,53,22
+    CONTROL         "OL Rev",IDC_CHECK_AT_Cali_Start_22,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,169,
+                    9,53,22
+    CONTROL         "ALX Rev",IDC_CHECK_AT_Cali_Start_32,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,272,
+                    9,53,22
+    CONTROL         "ALY Rev",IDC_CHECK_AT_Cali_Start_42,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,374,
+                    9,53,22
+    PUSHBUTTON      "SaveGraph",IDC_BUTTON_AT_Cali_SaveGraph,435,9,45,22
+END
+
+IDD_AutoTest_SCN DIALOG DISCARDABLE  0, 0, 500, 370
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,493,1,6,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,493,17,6,14,NOT WS_VISIBLE
+    CONTROL         "StigX",IDC_CHECK_AT_Cali_Start_11,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,23,
+                    9,38,22
+    CONTROL         "StigY",IDC_CHECK_AT_Cali_Start_21,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,127,
+                    9,38,22
+    CONTROL         "ShiftX",IDC_CHECK_AT_Cali_Start_31,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,230,
+                    9,38,22
+    CONTROL         "ShiftY",IDC_CHECK_AT_Cali_Start_41,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,332,
+                    9,38,22
+    CONTROL         "StigX Rev",IDC_CHECK_AT_Cali_Start_12,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,65,
+                    9,53,22
+    CONTROL         "StigY Rev",IDC_CHECK_AT_Cali_Start_22,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,169,
+                    9,53,22
+    CONTROL         "ShiftX Rev",IDC_CHECK_AT_Cali_Start_32,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,272,
+                    9,53,22
+    CONTROL         "ShiftY Rev",IDC_CHECK_AT_Cali_Start_42,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,374,
+                    9,53,22
+    PUSHBUTTON      "SaveGraph",IDC_BUTTON_AT_Cali_SaveGraph,435,9,45,22
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph1,7,38,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph2,7,151,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph3,7,264,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph4,7,284,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+END
+
+IDD_AutoTest_MCI DIALOG DISCARDABLE  0, 0, 500, 370
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,489,1,10,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,489,18,10,14,NOT WS_VISIBLE
+    CONTROL         "FineMagX",IDC_CHECK_AT_Cali_Start_11,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,23,
+                    9,38,22
+    CONTROL         "FineMagY",IDC_CHECK_AT_Cali_Start_21,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,127,
+                    9,38,22
+    CONTROL         "ShiftX",IDC_CHECK_AT_Cali_Start_31,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,230,
+                    9,38,22
+    CONTROL         "ShiftY",IDC_CHECK_AT_Cali_Start_41,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,332,
+                    9,38,22
+    CONTROL         "FineMagX Rev",IDC_CHECK_AT_Cali_Start_12,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,65,
+                    9,53,22
+    CONTROL         "FineMagY Rev",IDC_CHECK_AT_Cali_Start_22,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,169,
+                    9,53,22
+    CONTROL         "ShiftX Rev",IDC_CHECK_AT_Cali_Start_32,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,272,
+                    9,53,22
+    CONTROL         "ShiftY Rev",IDC_CHECK_AT_Cali_Start_42,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,374,
+                    9,53,22
+    PUSHBUTTON      "SaveGraph",IDC_BUTTON_AT_Cali_SaveGraph,435,9,45,22
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph1,7,38,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph2,7,151,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph3,7,264,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph4,7,284,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+END
+
+IDD_AutoTest_SPR DIALOG DISCARDABLE  0, 0, 500, 370
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,489,1,10,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,489,18,10,14,NOT WS_VISIBLE
+    CONTROL         "Contrast",IDC_CHECK_AT_Cali_Start_11,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,23,
+                    9,38,22
+    CONTROL         "Contrast Rev",IDC_CHECK_AT_Cali_Start_12,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,65,
+                    9,53,22
+    PUSHBUTTON      "SaveGraph",IDC_BUTTON_AT_Cali_SaveGraph,435,9,45,22
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph1,7,38,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph2,7,151,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph3,7,264,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph4,7,284,486,98,NOT WS_VISIBLE | 
+                    WS_BORDER
+END
+
+IDD_Auto_Sum DIALOG DISCARDABLE  0, 0, 146, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Summary"
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,69,49,13,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,69,66,13,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Auto Test",IDC_BUTTON_AT_Cali_Main_Tab_Power,7,7,60,16
+    PUSHBUTTON      "Auto Calibration",IDC_BUTTON_AT_Cali_Main_Tab_MCI,7,26,
+                    60,16
+    PUSHBUTTON      "Auto Diagnose",IDC_BUTTON_AT_Cali_Main_Tab_SCN,7,45,60,
+                    16
+    PUSHBUTTON      "Logging",IDC_BUTTON_AT_Cali_Main_Tab_LNS,7,64,60,16,
+                    BS_MULTILINE
+    PUSHBUTTON      "AutoDiag Setup",IDC_BUTTON_AT_Cali_Main_Tab_VAC,79,45,
+                    60,16,BS_MULTILINE
+    PUSHBUTTON      "HV to 30",IDC_BUTTON_AT_Cali_Main_Tab_SPR,106,64,33,16
+    PUSHBUTTON      "Start Scan",IDC_BUTTON_Scan_Start,79,7,60,16
+    PUSHBUTTON      "Stop Scan",IDC_BUTTON_Scan_Stop,79,26,60,16
+END
+
+IDD_Diagnose_Logging_Setup DIALOG DISCARDABLE  0, 0, 679, 385
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Diagnose / Data Logging"
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,594,188,34,14
+    PUSHBUTTON      "Cancel",IDCANCEL,638,188,34,14
+    GROUPBOX        "changning value",IDC_STATIC,7,7,665,176
+    GROUPBOX        "Logging data",IDC_STATIC,7,205,665,173
+    LTEXT           "Items",IDC_STATIC,20,18,18,9
+    LTEXT           "Min",IDC_STATIC,67,18,18,9
+    LTEXT           "Max",IDC_STATIC,92,18,18,9
+    LTEXT           "Step",IDC_STATIC,118,18,18,9
+    LTEXT           "Intv.(ms)",IDC_STATIC,150,18,28,9,NOT WS_VISIBLE
+    CONTROL         "Stig. X",IDC_CHECK_Stig_X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,31,43,8
+    CONTROL         "Stig. Y",IDC_CHECK_Stig_Y,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,43,43,8
+    CONTROL         "Shift X",IDC_CHECK_Shift_X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,55,43,8
+    CONTROL         "Shift Y",IDC_CHECK_Shift_Y,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,67,43,8
+    CONTROL         "xover X",IDC_CHECK_XOver_X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,79,43,8
+    CONTROL         "xover Y",IDC_CHECK_XOver_Y,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,91,43,8
+    CONTROL         "CL",IDC_CHECK_Cond_Lens,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,103,43,8
+    CONTROL         "OL",IDC_CHECK_Obj_Lens,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,115,43,8
+    CONTROL         "Align X",IDC_CHECK_Align_X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,127,43,8
+    CONTROL         "Align Y",IDC_CHECK_Align_Y,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,139,43,8
+    CONTROL         "Wobbler",IDC_CHECK_Wobbler,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,151,43,8
+    EDITTEXT        IDC_EDIT_XstigDAC,63,31,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YstigDAC,63,43,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XshiftDAC,63,55,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YshiftDAC,63,67,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XxoverDAC,63,79,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YxoverDAC,63,91,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_L1DAC,63,103,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_L2SDAC,63,115,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XalDAC,63,127,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YalDAC,63,139,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WobDAC,63,151,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XstigDAC2,88,31,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YstigDAC2,88,43,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XshiftDAC2,88,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YshiftDAC2,88,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XxoverDAC2,88,79,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YxoverDAC2,88,91,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_L1DAC2,88,103,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_L2SDAC2,88,115,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XalDAC2,88,127,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YalDAC2,88,139,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WobDAC2,88,151,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XstigDAC3,113,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YstigDAC3,113,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XshiftDAC3,113,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YshiftDAC3,113,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XxoverDAC3,113,79,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YxoverDAC3,113,91,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_L1DAC3,113,103,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_L2SDAC3,113,115,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XalDAC3,113,127,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YalDAC3,113,139,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WobDAC3,113,151,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XstigDAC4,144,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_YstigDAC4,144,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_XshiftDAC4,144,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_YshiftDAC4,144,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_XxoverDAC4,144,79,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_YxoverDAC4,144,91,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_L1DAC4,144,103,24,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_L2SDAC4,144,115,24,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_XalDAC4,144,127,24,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_YalDAC4,144,139,24,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_WobDAC4,144,151,24,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    LTEXT           "Items",IDC_STATIC,187,18,18,9
+    LTEXT           "Min",IDC_STATIC,235,18,18,9
+    LTEXT           "Max",IDC_STATIC,260,18,18,9
+    LTEXT           "Step",IDC_STATIC,288,18,18,9
+    LTEXT           "Intv.(ms)",IDC_STATIC,314,18,28,9,NOT WS_VISIBLE
+    CONTROL         "TC0 Cal I",IDC_CHECK_CalI_TC0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,31,43,8
+    CONTROL         "TC1 Cal I",IDC_CHECK_CalI_TC1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,43,43,8
+    CONTROL         "TC2 Cal I",IDC_CHECK_CalI_TC2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,55,43,8
+    CONTROL         "TC3 Cal I",IDC_CHECK_CalI_TC3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,67,43,8
+    CONTROL         "TC4 Cal I",IDC_CHECK_CalI_TC4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,127,43,8
+    CONTROL         "TC5 Cal I",IDC_CHECK_CalI_TC5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,139,43,8
+    CONTROL         "TC0 SP",IDC_CHECK_Setpoint_TC0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,79,43,8
+    CONTROL         "TC1 SP",IDC_CHECK_Setpoint_TC1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,91,43,8
+    CONTROL         "TC2 SP",IDC_CHECK_Setpoint_TC2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,103,43,8
+    CONTROL         "TC3 SP",IDC_CHECK_Setpoint_TC3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,115,43,8
+    CONTROL         "TC4 SP",IDC_CHECK_Setpoint_TC4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,151,43,8
+    CONTROL         "TC5 SP",IDC_CHECK_Setpoint_TC5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,163,43,8
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHA,231,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHB,231,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHC,231,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHD,231,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHA,231,79,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHB,231,91,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHC,231,103,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHD,231,115,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHA,231,127,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHB,231,139,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHC,231,151,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHD,231,163,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHA2,256,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHB2,256,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHC2,256,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHD2,256,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHA2,256,79,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHB2,256,91,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHC2,256,103,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHD2,256,115,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHA2,256,127,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHB2,256,139,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHC2,256,151,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHD2,256,163,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHA3,282,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHB3,282,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHC3,282,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHD3,282,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHA3,282,79,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHB3,282,91,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHC3,282,103,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHD3,282,115,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHA3,282,127,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHB3,282,139,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHC3,282,151,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHD3,282,163,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHA4,307,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHB4,307,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHC4,307,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U44_CHD4,307,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHA4,307,79,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHB4,307,91,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHC4,307,103,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U45_CHD4,307,115,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHA4,307,127,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHB4,307,139,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHC4,307,151,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_VACDAC_U46_CHD4,307,163,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Items",IDC_STATIC,350,18,18,9
+    LTEXT           "Min",IDC_STATIC,397,18,18,9
+    LTEXT           "Max",IDC_STATIC,422,18,18,9
+    LTEXT           "Step",IDC_STATIC,446,18,18,9
+    LTEXT           "Intv.(ms)",IDC_STATIC,471,18,28,9,NOT WS_VISIBLE
+    CONTROL         "DAC 1",IDC_CHECK_SPR_DAC_CHA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,347,31,43,8
+    CONTROL         "DAC 2",IDC_CHECK_SPR_DAC_CHB,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,347,43,43,8
+    CONTROL         "DAC 3",IDC_CHECK_SPR_DAC_CHC,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,347,55,43,8
+    CONTROL         "DAC 4",IDC_CHECK_SPR_DAC_CHD,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,347,67,43,8
+    EDITTEXT        IDC_EDIT_SPRDAC_CHA,392,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SPRDAC_CHB,392,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHC,392,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHD,392,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHA2,417,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SPRDAC_CHB2,417,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHC2,417,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHD2,417,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHA3,441,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SPRDAC_CHB3,441,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHC3,441,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHD3,441,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHA4,466,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHB4,466,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHC4,466,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SPRDAC_CHD4,466,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Items",IDC_STATIC,506,18,18,9
+    LTEXT           "Min",IDC_STATIC,554,18,18,9
+    LTEXT           "Max",IDC_STATIC,578,18,18,9
+    LTEXT           "Step",IDC_STATIC,602,18,18,9
+    LTEXT           "Intv.(ms)",IDC_STATIC,628,18,28,9,NOT WS_VISIBLE
+    CONTROL         "Offset 0",IDC_CHECK_Offset_0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,503,31,43,8
+    CONTROL         "Offset 1",IDC_CHECK_Offset_1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,503,43,43,8
+    CONTROL         "Offset 2",IDC_CHECK_Offset_2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,503,55,43,8
+    CONTROL         "Offset 3",IDC_CHECK_Offset_3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,503,67,43,8
+    CONTROL         "Offset 4",IDC_CHECK_Offset_4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,503,79,43,8
+    CONTROL         "Offset 5",IDC_CHECK_Offset_5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,503,91,43,8
+    CONTROL         "FineMagX",IDC_CHECK_FineMag_X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,503,103,43,8
+    CONTROL         "FineMagY",IDC_CHECK_FineMag_Y,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,503,115,43,8
+    CONTROL         "PosX",IDC_CHECK_Pos_X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,503,127,43,8
+    CONTROL         "PosY",IDC_CHECK_Pos_Y,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,503,139,43,8
+    EDITTEXT        IDC_EDIT_Offset_0,551,31,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_1,551,43,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_2,551,55,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_3,551,67,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_4,551,79,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_5,551,91,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FineMag_X,551,103,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FineMag_Y,551,115,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Pos_X,551,127,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Pos_Y,551,139,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_02,576,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_12,576,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_22,576,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_32,576,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_42,576,79,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_52,576,91,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FineMag_X2,576,103,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FineMag_Y2,576,115,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Pos_X2,576,127,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Pos_Y2,576,139,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_03,600,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_13,600,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_23,600,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_33,600,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_43,600,79,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_53,600,91,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FineMag_X3,600,103,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FineMag_Y3,600,115,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Pos_X3,600,127,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Pos_Y3,600,139,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Offset_04,624,31,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_Offset_14,624,43,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_Offset_24,624,55,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_Offset_34,624,67,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_Offset_44,624,79,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_Offset_54,624,91,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_FineMag_X4,624,103,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_FineMag_Y4,624,115,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_Pos_X4,624,127,24,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_Pos_Y4,624,139,24,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    RTEXT           "Changing Interval:",IDC_STATIC,401,97,66,11,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_ChangingParam_nElapse,471,94,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    RTEXT           "Logging Interval:",IDC_STATIC,401,113,66,11,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_LoggingParam_nElapse,471,110,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "Clear All",IDC_BUTTON_Diag_ClearAll,15,188,49,14
+    RTEXT           "Interval ( ms ):",IDC_STATIC,74,191,66,11
+    EDITTEXT        IDC_EDIT_Elapse,144,189,24,12,ES_RIGHT | ES_AUTOHSCROLL
+    RTEXT           "Average Counts:",IDC_STATIC,170,191,66,11
+    EDITTEXT        IDC_EDIT_Ave_Counts,240,189,24,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    CONTROL         "Gauge Compr",IDC_CHECK_GaugeCompr,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,375,192,71,9
+    CONTROL         "Graph",IDC_CHECK_Graph,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,450,192,42,9
+    CONTROL         "Debug",IDC_CHECK_Debug,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,496,192,42,9
+    LTEXT           "SCN ADC",IDC_STATIC,17,217,52,11
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,231,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,240,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,248,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,257,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,266,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,274,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,283,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,291,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,300,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,309,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,317,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,326,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,335,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,343,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,352,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SCNADC_Ch15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,360,100,9
+    CONTROL         "S.E.",IDC_CHECK_SCNADC_SE,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,409,161,100,9
+    LTEXT           "LNS ADC",IDC_STATIC,125,217,52,11
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,231,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,240,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,248,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,257,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,266,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,274,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,283,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,291,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch8,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,124,300,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch9,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,124,309,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch10,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,124,317,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch11,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,124,326,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch12,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,124,335,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch13,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,124,343,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch14,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,124,352,100,9
+    CONTROL         "Ch 0",IDC_CHECK_LNSADC_Ch15,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,124,360,100,9
+    CONTROL         "CL",IDC_CHECK_PARAM_LNS_L1DAC,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,334,87,100,9
+    CONTROL         "OL",IDC_CHECK_PARAM_LNS_L2SDAC,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,334,97,100,9
+    CONTROL         "Xal",IDC_CHECK_PARAM_LNS_XalDAC,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,334,106,
+                    100,9
+    CONTROL         "Yal",IDC_CHECK_PARAM_LNS_YalDAC,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,334,116,
+                    100,9
+    CONTROL         "Wob",IDC_CHECK_PARAM_LNS_WobDAC,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,334,127,
+                    100,9
+    CONTROL         "CL comp",IDC_CHECK_PARAM_LNS_Comp_L1DAC,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,334,137,
+                    100,9
+    CONTROL         "OL comp",IDC_CHECK_PARAM_LNS_Comp_L2SDAC,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,334,146,
+                    100,9
+    CONTROL         "Xal comp",IDC_CHECK_PARAM_LNS_Comp_XalDAC,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,334,156,
+                    100,9
+    CONTROL         "Yal comp",IDC_CHECK_PARAM_LNS_Comp_YalDAC,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,334,167,
+                    100,9
+    LTEXT           "VAC ADC #0",IDC_STATIC,232,217,52,11
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,231,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,240,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,248,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,257,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,266,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,274,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,283,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,291,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,300,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,309,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,317,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,326,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,335,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,343,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,352,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC0_Ch15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,360,100,9
+    LTEXT           "VAC ADC #1",IDC_STATIC,340,217,52,11
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,231,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,240,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,248,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,257,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,266,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,274,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,283,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,291,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,300,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,309,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,317,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,326,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,335,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,343,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,352,100,9
+    CONTROL         "Ch 0",IDC_CHECK_VACADC1_Ch15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,340,360,100,9
+    LTEXT           "SPR ADC #0",IDC_STATIC,450,217,52,11
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,231,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,240,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,248,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,257,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,266,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,274,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,283,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,291,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,300,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,309,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,317,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,326,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,335,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,343,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,352,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC0_Ch15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,448,360,100,9
+    LTEXT           "SPR ADC #1",IDC_STATIC,558,217,52,11
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,231,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,240,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,248,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,257,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,266,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,274,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,283,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,291,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,300,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,309,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,317,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,326,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,335,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,343,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,352,100,9
+    CONTROL         "Ch 0",IDC_CHECK_SPRADC1_Ch15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,556,360,100,9
+END
+IDD_Cali_Main DIALOG DISCARDABLE  0, 0, 510, 484
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calibration"
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,453,7,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,453,24,50,14,NOT WS_VISIBLE
+    LTEXT           "",IDC_STATIC_AT_Cali_Main_TabPos,7,7,496,470,WS_BORDER
+END
+
+IDD_Cali_TabDlg DIALOG DISCARDABLE  0, 0, 404, 162
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,354,0,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,354,24,50,14,NOT WS_VISIBLE
+END
+
+IDD_Cali_LNS DIALOG DISCARDABLE  0, 0, 500, 448
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,489,1,10,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,489,17,10,14,NOT WS_VISIBLE
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph1,7,30,486,100,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph2,7,135,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph3,7,241,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph4,7,347,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+    CONTROL         "CL",IDC_CHECK_AT_Cali_Start_11,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,81,5,39,22
+    CONTROL         "OL",IDC_CHECK_AT_Cali_Start_21,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,154,5,39,22
+    CONTROL         "ALX",IDC_CHECK_AT_Cali_Start_31,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,227,
+                    5,39,22
+    CONTROL         "ALY",IDC_CHECK_AT_Cali_Start_41,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,300,
+                    5,39,22
+    PUSHBUTTON      "SaveGraph",IDC_BUTTON_AT_Cali_SaveGraph,439,5,45,22
+END
+
+IDD_Cali_SCN DIALOG DISCARDABLE  0, 0, 500, 448
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,493,1,6,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,493,17,6,14,NOT WS_VISIBLE
+    CONTROL         "StigX",IDC_CHECK_AT_Cali_Start_11,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,81,
+                    5,39,22
+    CONTROL         "StigY",IDC_CHECK_AT_Cali_Start_21,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,154,
+                    5,39,22
+    CONTROL         "ShiftX",IDC_CHECK_AT_Cali_Start_31,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,227,
+                    5,39,22
+    CONTROL         "ShiftY",IDC_CHECK_AT_Cali_Start_41,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,300,
+                    5,39,22
+    PUSHBUTTON      "SaveGraph",IDC_BUTTON_AT_Cali_SaveGraph,439,5,45,22
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph1,7,30,486,100,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph2,7,135,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph3,7,241,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph4,7,347,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+END
+
+IDD_Cali_MCI DIALOG DISCARDABLE  0, 0, 500, 448
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,489,1,10,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,489,18,10,14,NOT WS_VISIBLE
+    CONTROL         "FineMagX",IDC_CHECK_AT_Cali_Start_11,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,81,
+                    5,39,22
+    CONTROL         "FineMagY",IDC_CHECK_AT_Cali_Start_21,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,154,
+                    5,39,22
+    CONTROL         "ShiftX",IDC_CHECK_AT_Cali_Start_31,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,227,
+                    5,39,22
+    CONTROL         "ShiftY",IDC_CHECK_AT_Cali_Start_41,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,300,
+                    5,39,22
+    PUSHBUTTON      "SaveGraph",IDC_BUTTON_AT_Cali_SaveGraph,439,5,45,22
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph1,7,30,486,100,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph2,7,135,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph3,7,241,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph4,7,347,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+END
+
+IDD_Cali_SPR DIALOG DISCARDABLE  0, 0, 500, 448
+STYLE WS_CHILD
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,489,1,10,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,489,18,10,14,NOT WS_VISIBLE
+    CONTROL         "Contrast",IDC_CHECK_AT_Cali_Start_11,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,81,
+                    5,39,22
+    PUSHBUTTON      "SaveGraph",IDC_BUTTON_AT_Cali_SaveGraph,439,5,45,22
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph1,7,30,486,100,NOT WS_VISIBLE | 
+                    WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph2,7,135,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph3,7,241,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+    LTEXT           "",IDC_STATIC_AT_Cali_Graph4,7,347,486,100,NOT 
+                    WS_VISIBLE | WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_AutoTest_Main, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 503
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 407
+    END
+
+    IDD_AutoTest_Power, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 499
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 385
+    END
+
+    IDD_AutoTest_VAC, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 499
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 369
+    END
+
+    IDD_AutoTest_LNS, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 499
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 369
+    END
+
+    IDD_AutoTest_SCN, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 499
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 369
+    END
+
+    IDD_AutoTest_MCI, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 499
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 369
+    END
+
+    IDD_AutoTest_SPR, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 499
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 369
+    END
+
+    IDD_Auto_Sum, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_Diagnose_Logging_Setup, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 672
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 378
+    END
+
+    IDD_Cali_Main, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 503
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 477
+    END
+
+    IDD_Cali_LNS, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 499
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 447
+    END
+
+    IDD_Cali_SCN, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 499
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 447
+    END
+
+    IDD_Cali_MCI, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 499
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 447
+    END
+
+    IDD_Cali_SPR, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 499
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 447
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\AutoTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

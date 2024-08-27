@@ -1,0 +1,133 @@
+
+===============================================================
+H2Z80.cpp
+===============================================================
+
+extern unsigned char  z80_data[15];//={8,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+
+------------------------------------------------------------------------------
+Synopsis: void check_comm_port()
+Description: check the application from Z80.
+Notes: 
+------------------------------------------------------------------------------
+void check_comm_port()
+{
+	... ... ..........
+	communication with Z80
+	... ... ..........
+
+	if (z80_data[0] !=0)	// received MSG
+	{
+		hz80((unsigned char *)z80_data);
+	}
+	z80_data[0] = 0;
+
+   return;
+}
+
+------------------------------------------------------------------------------
+Synopsis:     VIOD hz80((unsigned char huge *)bb)
+Description:  According the received instruction to do some tasks.
+------------------------------------------------------------------------------
+void hz80 (unsigned char *bb)
+{
+	... ... ..........
+
+	if (bb[0]==0xb4) {
+		... ... ..........
+		enter_auto_focus();        // Auto Focus 
+	}
+
+	... ... ..........
+
+}
+
+
+-----------------------------------------------------------------------
+Synopsis: void enter_auto_focus()
+Description:
+Notes:
+------------------------------------------------------------------------
+void enter_auto_focus()
+{
+	... ... ..........
+	initialize scanner
+	... ... ..........
+	
+	aufs(z80_data);
+
+	... ... ..........
+	recover scanner
+	... ... ..........
+}
+
+===============================================================
+AUFSOK.CPP
+===============================================================
+
+void aufs(unsigned char bb[16])
+{
+	... ... ..........
+	initialize ObjectLens & MAG. CTL DATA
+	... ... ..........
+
+	... ... ..........
+
+	// Send a set of new CTL DATA
+	
+	cc[0] = 0xA4;		// AF control Z80-MSG. ID
+	cc[1] = bb[1];		// cc[1]=OL0;		ObjectLens		low 8 bit
+	cc[2] = bb[2];		// cc[2]=OL1;		ObjectLens		high 8 bit
+	cc[3] = bb[3];		// cc[3]=MAG0;		magnify rate    low 8 bit  
+	cc[4] = bb[4];		// cc[4]=MAG1;		magnify rate    high 8 bit 
+	send_lens(cc);
+
+	... ... ..........
+
+	// Stop AF		
+	cc[0] = 0xC8;
+	send_lens(cc);
+
+	... ... ..........
+
+	// AF complete
+	cc[0] = 0xA8;
+	send_lens(cc);
+
+	... ... ..........
+
+	return;
+}
+
+///////////////////////////////////////////////////////////////////////
+MAG KVS-EK D_SEM.C
+///////////////////////////////////////////////////////////////////////
+
+/******* M.H. Luo  December 28, 1995 *********/
+void dis_mag(unsigned short mag_new_value, unsigned short display)
+{
+	unsigned char       high1, high2, low1, low2;
+	unsigned char       flag0, flag1;
+	double              mag_double_value, mag;
+
+	... ... ..........
+
+	low1  =  mag_new_value&(0x000f);
+	low2  = (mag_new_value&0x00f0) >> 4;
+	high1 = (mag_new_value&(0x0f00)) >> 8;
+	high2 = (mag_new_value&(0xf000)) >> 12;
+
+	flag0 = low1&(0x3);
+	flag1 = (low1&(0xC)) >> 2;
+
+	mag_double_value = high2*100. + high1*10. + low2;
+	if (flag1 == 2)			mag_double_value = mag_double_value/100.;
+	else if (flag1 == 1)	mag_double_value = mag_double_value/10.;
+
+	if (flag0 == 2)
+		mag_double_value = mag_double_value*1000.;
+
+	... ... ..........
+
+    return;
+}

@@ -1,0 +1,752 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BoardVAC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+BoardVAC.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HVPower_CPS3603 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP6AE4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\HVPower_CPS3603/HVPower_CPS3603.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\HVPower_CPS3603/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\HVPower_CPS3603/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\HVPower_CPS3603\Comm3603.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP6AE4.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP6AE5.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/HVPower_CPS3603.pdb" /debug /machine:I386 /def:".\HVPower_CPS3603.def" /out:"..\..\Bin/HVPower_CPS3603.dll" /implib:"..\..\Bin/HVPower_CPS3603.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\HVPower_CPS3603\c3601win.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\HVPower_CPS3603\Comm3603.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\HVPower_CPS3603\HVPower_CPS3603.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\HVPower_CPS3603\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\HVPower_CPS3603\HVPower_CPS3603.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP6AE5.tmp"
+<h3>Output Window</h3>
+Compiling...
+Comm3603.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+HVPower_CPS3603.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HVPower_Spellman2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP6F1A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\HVPower_Spellman2/HVPower_Spellman2.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\HVPower_Spellman2/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\HVPower_Spellman2/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\HVPower_Spellman2\CommSpellman.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP6F1A.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP6F1B.tmp" with contents
+[
+hid.lib setupapi.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/HVPower_Spellman2.pdb" /debug /machine:I386 /def:".\HVPower_Spellman2.def" /out:"..\..\Bin/HVPower_Spellman2.dll" /implib:"..\..\Bin/HVPower_Spellman2.lib" /pdbtype:sept /libpath:"..\..\Bin" 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\HVPower_Spellman2\CommSpellman.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\HVPower_Spellman2\HIDInterface.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\HVPower_Spellman2\HVPower_Spellman2.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\HVPower_Spellman2\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\HVPower_Spellman2\HVPower_Spellman2.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP6F1B.tmp"
+<h3>Output Window</h3>
+Compiling...
+CommSpellman.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+HVPower_Spellman2.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_BSD - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_BSD.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_Camera - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP7341.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include" /I "DirectShow/Include" /I "C:\Program Files (x86)\OpenCV\cv\include" /I "C:\Program Files (x86)\OpenCV\cxcore\include" /I "C:\Program Files (x86)\OpenCV\otherlibs\highgui" /I "C:\Program Files (x86)\OpenCV\otherlibs\cvcam\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\CtrlLayer\Camera/Options_Camera.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\Camera/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\Camera/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_Camera\CameraWnd.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP7341.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP7342.tmp" with contents
+[
+cxcore.lib cv.lib highgui.lib cvcam.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/Options_Camera.pdb" /debug /machine:I386 /def:".\Options_Camera.def" /out:"..\..\Bin/Options_Camera.dll" /implib:"..\..\Bin/Options_Camera.lib" /pdbtype:sept /libpath:"DirectShow/Lib" /libpath:"C:\Program Files (x86)\OpenCV\lib" 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\Camera\CameraDS.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\Camera\CameraWnd.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\Camera\ExportCameraFunc.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\Camera\Options_Camera.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\Camera\PanelCamera.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\Camera\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\Camera\Options_Camera.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP7342.tmp"
+<h3>Output Window</h3>
+Compiling...
+CameraWnd.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Options_Camera.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC600 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC600.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageMC600Wnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageMC600Wnd.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_StageVince - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+Options_StageVince.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Options_XYStage - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP797A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include" /I "..\..\Common\Include\Stage" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\..\Bin\SharedDebug\CtrlLayer\XYStage/Options_XYStage.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\XYStage/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\XYStage/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\DlgProgress.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\ExportXYStageFunc.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\Options_XYStage.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\PanelStage.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP797A.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP797B.tmp" with contents
+[
+dmc32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/Options_XYStage.pdb" /debug /machine:I386 /def:".\Options_XYStage.def" /out:"..\..\Bin/Options_XYStage.dll" /implib:"..\..\Bin/Options_XYStage.lib" /pdbtype:sept /libpath:"..\..\Bin" 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\XYStage\DlgProgress.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\XYStage\DMCWIN.OBJ"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\XYStage\ExportXYStageFunc.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\XYStage\Options_XYStage.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\XYStage\PanelStage.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\XYStage\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\XYStage\Options_XYStage.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP797B.tmp"
+<h3>Output Window</h3>
+Compiling...
+DlgProgress.cpp
+Generating Code...
+Compiling...
+ExportXYStageFunc.cpp
+Options_XYStage.cpp
+PanelStage.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\PanelStage.cpp(908) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\PanelStage.cpp(913) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\PanelStage.cpp(926) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\PanelStage.cpp(931) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\PanelStage.cpp(1008) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\PanelStage.cpp(1013) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\PanelStage.cpp(1026) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\PanelStage.cpp(1031) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\Options_XYStage\PanelStage.cpp(2826) : warning C4101: 'szBuffer' : unreferenced local variable
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Options_XYStage.dll - 0 error(s), 9 warning(s)
+<h3>
+--------------------Configuration: SEMServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SEMServer.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemControl - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP7E6C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\VirtualMCICard" /I "..\SemControlCardAdapter" /I "..\SemCoreMsgComm" /I "..\SemCore" /I "..\SemScan" /I "..\VACStateMachine" /I "..\..\Common\Include" /I "..\..\Common\Include\USB" /I "..\..\Language\LanguageManager" /I "..\..\Common\Include\CPS" /I "..\..\Common\Include\MCB" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\SemControl/SemControl.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\SemControl/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\SemControl/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemControl\SemCtrl.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP7E6C.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP7E6D.tmp" with contents
+[
+winmm.lib SemControlCardAdapter.lib SemCoreMsgComm.lib SemCore.lib SemScan.lib VirtualMCICard.lib VACStateMachine.lib LanguageManager.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/SemControl.pdb" /map:"..\..\Bin\SharedDebug\CtrlLayer\SemControl/SemControl.map" /debug /machine:I386 /def:".\SemControl.def" /out:"..\..\Bin/SemControl.dll" /implib:"..\..\Bin/SemControl.lib" /pdbtype:sept /libpath:"..\..\Bin" /libpath:"..\..\Common\Lib" 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemControl\SemControl.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemControl\SemCtrl.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemControl\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemControl\SemControl.res"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SemCore.lib"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SemCoreMsgComm.lib"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SemScan.lib"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP7E6D.tmp"
+<h3>Output Window</h3>
+Compiling...
+SemCtrl.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+SemControl.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemControlCardAdapter - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP82A2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Template" /I "..\..\Common\Include" /I "..\..\Common\Include\USB" /I "..\..\Common\Include\CPS" /I "..\..\Common\Include\MCB" /I "..\..\Common\Include\FTDI" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /D "PCI_CODE" /D "LITTLE_ENDIAN" /Fp"..\..\Bin\SharedDebug\CtrlLayer\SemControlCardAdapter/SemControlCardAdapter.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\SemControlCardAdapter/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\SemControlCardAdapter/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemControlCardAdapter\UsbDI16A\COMMAPI_Serial.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemControlCardAdapter\UsbDI16A\COMMAPI_USB.CPP"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP82A2.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP82A3.tmp" with contents
+[
+VCAIOUSB.lib c3601.lib hid.lib setupapi.lib winusb.lib FTD2XX.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/SemControlCardAdapter.pdb" /map:"..\..\Bin\SharedDebug\CtrlLayer\SemControlCardAdapter/SemControlCardAdapter.map" /debug /machine:I386 /def:".\SemControlCardAdapter.def" /out:"..\..\Bin/SemControlCardAdapter.dll" /implib:"..\..\Bin/SemControlCardAdapter.lib" /pdbtype:sept /libpath:"..\..\Common\Lib" 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemControlCardAdapter\COMMAPI_Serial.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemControlCardAdapter\COMMAPI_USB.OBJ"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemControlCardAdapter\SemControlCardAdapter.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemControlCardAdapter\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemControlCardAdapter\UsbDI16A.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemControlCardAdapter\SemControlCardAdapter.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP82A3.tmp"
+<h3>Output Window</h3>
+Compiling...
+COMMAPI_Serial.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemControlCardAdapter\UsbDI16A\COMMAPI_Serial.cpp(316) : warning C4018: '>' : signed/unsigned mismatch
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemControlCardAdapter\UsbDI16A\COMMAPI_Serial.cpp(1446) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+Generating Code...
+Compiling...
+COMMAPI_USB.CPP
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemControlCardAdapter\UsbDI16A\COMMAPI_USB.CPP(1504) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemControlCardAdapter\UsbDI16A\COMMAPI_USB.CPP(2059) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemControlCardAdapter\UsbDI16A\COMMAPI_USB.CPP(2222) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemControlCardAdapter\UsbDI16A\COMMAPI_USB.CPP(2288) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SemControlCardAdapter.dll - 0 error(s), 6 warning(s)
+<h3>
+--------------------Configuration: SemCore - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP8801.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\SemControlCardAdapter" /I "..\SemCoreMsgComm" /I "..\..\Common\Include" /I "..\..\Common\Include\CPS" /I "Coadjustment" /I "..\..\Language\LanguageManager" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\SemCore/SemCore.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\SemCore/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\SemCore/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\Coadjustment\CoadjustParam.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\MyProfileFunc.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemBasisCtrl.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCore.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCoreAssemble.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_AutoFocus.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_AutoStigmator.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_AuxiliaryStigmation.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_BeemAlignmentX.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_BeemAlignmentY.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_Brightness.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_BseBySeDetectorSwitch.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_Channel2AB.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_Channel2C.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_Channel2D.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_Channel2E.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_CondenserLens.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_CondenserLensReverse.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_Contrast.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_CPS_Bias.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_CPS_FilamentCurrent.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_CPS_HV.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_DCondenserLens.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_DFocus.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_DObjectiveLens.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_FilamentCurrent.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_GunCurrent.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_GunCurrentAccelerate.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_HV.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_HVAccelerate.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_ImageInvert.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_InquirerZ80A.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_InquirerZ80B.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_Magnifier.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_MCB.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_ObjectiveLens.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_ObjectiveLensReverse.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_OSE.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_PC10SE1.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_PC10SE6.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_RobinsonDetectorSwitch.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_RotationScan.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_SACP.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_ScanRotate.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_ScanShiftX.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_ScanShiftY.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_Signal2Brightness.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_Signal2Contrast.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_SignalProcesser.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_SP_Bias.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_SP_Heater.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_SP_HV.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_SP_PMT.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_StigmatorX.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_StigmatorY.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_WD.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\SemCtrl_YAdjust.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP8801.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP8802.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\SemControlCardAdapter" /I "..\SemCoreMsgComm" /I "..\..\Common\Include" /I "..\..\Common\Include\CPS" /I "Coadjustment" /I "..\..\Language\LanguageManager" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\SemCore/SemCore.pch" /Yc"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\SemCore/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\SemCore/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCore\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP8802.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP8803.tmp" with contents
+[
+SemCoreMsgComm.lib LanguageManager.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/SemCore.pdb" /map:"..\..\Bin\SharedDebug\CtrlLayer\SemCore/SemCore.map" /debug /machine:I386 /def:".\SemCore.def" /out:"..\..\Bin/SemCore.dll" /implib:"..\..\Bin/SemCore.lib" /pdbtype:sept /libpath:"..\..\Bin" /libpath:"..\..\Common\Lib" 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\CoadjustParam.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\MyProfileFunc.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemBasisCtrl.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCore.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCoreAssemble.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_AutoFocus.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_AutoStigmator.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_AuxiliaryStigmation.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_BeemAlignmentX.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_BeemAlignmentY.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_Brightness.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_BseBySeDetectorSwitch.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_Channel2AB.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_Channel2C.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_Channel2D.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_Channel2E.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_CondenserLens.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_CondenserLensReverse.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_Contrast.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_CPS_Bias.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_CPS_FilamentCurrent.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_CPS_HV.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_DCondenserLens.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_DFocus.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_DObjectiveLens.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_FilamentCurrent.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_GunCurrent.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_GunCurrentAccelerate.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_HV.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_HVAccelerate.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_ImageInvert.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_InquirerZ80A.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_InquirerZ80B.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_Magnifier.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_MCB.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_ObjectiveLens.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_ObjectiveLensReverse.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_OSE.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_PC10SE1.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_PC10SE6.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_RobinsonDetectorSwitch.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_RotationScan.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_SACP.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_ScanRotate.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_ScanShiftX.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_ScanShiftY.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_Signal2Brightness.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_Signal2Contrast.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_SignalProcesser.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_SP_Bias.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_SP_Heater.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_SP_HV.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_SP_PMT.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_StigmatorX.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_StigmatorY.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_WD.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCtrl_YAdjust.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemCore\SemCore.res"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SemCoreMsgComm.lib"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP8803.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+CoadjustParam.cpp
+MyProfileFunc.cpp
+SemBasisCtrl.cpp
+SemCore.cpp
+SemCoreAssemble.cpp
+SemCtrl_AutoFocus.cpp
+SemCtrl_AutoStigmator.cpp
+SemCtrl_AuxiliaryStigmation.cpp
+SemCtrl_BeemAlignmentX.cpp
+SemCtrl_BeemAlignmentY.cpp
+SemCtrl_Brightness.cpp
+SemCtrl_BseBySeDetectorSwitch.cpp
+SemCtrl_Channel2AB.cpp
+SemCtrl_Channel2C.cpp
+SemCtrl_Channel2D.cpp
+SemCtrl_Channel2E.cpp
+SemCtrl_CondenserLens.cpp
+SemCtrl_CondenserLensReverse.cpp
+SemCtrl_Contrast.cpp
+SemCtrl_CPS_Bias.cpp
+Generating Code...
+Compiling...
+SemCtrl_CPS_FilamentCurrent.cpp
+SemCtrl_CPS_HV.cpp
+SemCtrl_DCondenserLens.cpp
+SemCtrl_DFocus.cpp
+SemCtrl_DObjectiveLens.cpp
+SemCtrl_FilamentCurrent.cpp
+SemCtrl_GunCurrent.cpp
+SemCtrl_GunCurrentAccelerate.cpp
+SemCtrl_HV.cpp
+SemCtrl_HVAccelerate.cpp
+SemCtrl_ImageInvert.cpp
+SemCtrl_InquirerZ80A.cpp
+SemCtrl_InquirerZ80B.cpp
+SemCtrl_Magnifier.cpp
+SemCtrl_MCB.cpp
+SemCtrl_ObjectiveLens.cpp
+SemCtrl_ObjectiveLensReverse.cpp
+SemCtrl_OSE.cpp
+SemCtrl_PC10SE1.cpp
+SemCtrl_PC10SE6.cpp
+Generating Code...
+Compiling...
+SemCtrl_RobinsonDetectorSwitch.cpp
+SemCtrl_RotationScan.cpp
+SemCtrl_SACP.cpp
+SemCtrl_ScanRotate.cpp
+SemCtrl_ScanShiftX.cpp
+SemCtrl_ScanShiftY.cpp
+SemCtrl_Signal2Brightness.cpp
+SemCtrl_Signal2Contrast.cpp
+SemCtrl_SignalProcesser.cpp
+SemCtrl_SP_Bias.cpp
+SemCtrl_SP_Heater.cpp
+SemCtrl_SP_HV.cpp
+SemCtrl_SP_PMT.cpp
+SemCtrl_StigmatorX.cpp
+SemCtrl_StigmatorY.cpp
+SemCtrl_WD.cpp
+SemCtrl_YAdjust.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SemCore.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanelManager - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP91C4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\SemControlCardAdapter" /I "..\SemCore" /I "..\..\Common\Include" /I "..\..\Language\LanguageManager" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\PanelManager/SemCoreCtrlPanelManager.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\PanelManager/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\PanelManager/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemCoreCtrlPanelManager\SemCtrlPanelManager.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP91C4.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP91C5.tmp" with contents
+[
+SemCore.lib LanguageManager.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/SemCoreCtrlPanelManager.pdb" /map:"..\..\Bin\SharedDebug\CtrlLayer\PanelManager/SemCoreCtrlPanelManager.map" /debug /machine:I386 /def:".\SemCoreCtrlPanelManager.def" /out:"..\..\Bin/SemCoreCtrlPanelManager.dll" /implib:"..\..\Bin/SemCoreCtrlPanelManager.lib" /pdbtype:sept /libpath:"..\..\Bin" 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\PanelManager\SemCoreCtrlPanelCommonMap.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\PanelManager\SemCoreCtrlPanelList.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\PanelManager\SemCoreCtrlPanelManager.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\PanelManager\SemCtrlPanelManager.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\PanelManager\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\PanelManager\SemCoreCtrlPanelManager.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP91C5.tmp"
+<h3>Output Window</h3>
+Compiling...
+SemCtrlPanelManager.cpp
+Linking...
+   Creating library ..\..\Bin/SemCoreCtrlPanelManager.lib and object ..\..\Bin/SemCoreCtrlPanelManager.exp
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanelManager.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreMsgComm - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreMsgComm.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemScan - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP9771.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\Common\Include" /I "..\..\Common\Template" /I "..\..\Common\Include\USB" /I "..\SemControlCardAdapter" /I "..\SemCoreMsgComm" /I "..\VirtualMCICard" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\SemScan/SemScan.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\SemScan/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\SemScan/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemScan\AnalogPhoto.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemScan\BasisScan.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemScan\DigitalPhoto.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemScan\LineScan.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemScan\RasterScan.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemScan\Scan.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemScan\SyncScan.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP9771.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP9772.tmp" with contents
+[
+winmm.lib SemControlCardAdapter.lib SemCoreMsgComm.lib VirtualMCICard.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/SemScan.pdb" /map:"..\..\Bin\SharedDebug\CtrlLayer\SemScan/SemScan.map" /debug /machine:I386 /def:".\SemScan.def" /out:"..\..\Bin/SemScan.dll" /implib:"..\..\Bin/SemScan.lib" /pdbtype:sept /libpath:"..\..\Bin" /libpath:"..\..\Common\Lib" 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemScan\AnalogPhoto.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemScan\BasisScan.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemScan\DigitalPhoto.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemScan\LineScan.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemScan\RasterScan.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemScan\Scan.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemScan\SemScan.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemScan\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemScan\SyncScan.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SemScan\SemScan.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP9772.tmp"
+<h3>Output Window</h3>
+Compiling...
+AnalogPhoto.cpp
+DigitalPhoto.cpp
+LineScan.cpp
+RasterScan.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\SemScan\RasterScan.cpp(253) : warning C4018: '>' : signed/unsigned mismatch
+Scan.cpp
+SyncScan.cpp
+Generating Code...
+Compiling...
+BasisScan.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SemScan.dll - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: VACObtain - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+VACObtain.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VACStateMachine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP9C91.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\SemCoreMsgComm" /I "..\..\Common\Include" /I "..\..\Common\Include\USB" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\SMvac/VACStateMachine.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\SMvac/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\SMvac/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VACStateMachine\SMvac.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VACStateMachine\Vac.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSP9C91.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSP9C92.tmp" with contents
+[
+SemControlCardAdapter.lib SemCoreMsgComm.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/VACStateMachine.pdb" /debug /machine:I386 /def:".\VACStateMachine.def" /out:"..\..\Bin/VACStateMachine.dll" /implib:"..\..\Bin/VACStateMachine.lib" /pdbtype:sept /libpath:"..\..\Bin" /libpath:"..\..\Common\Lib" 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SMvac\SMvac.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SMvac\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SMvac\Vac.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SMvac\VACStateMachine.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\SMvac\VACStateMachine.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSP9C92.tmp"
+<h3>Output Window</h3>
+Compiling...
+SMvac.cpp
+Generating Code...
+Compiling...
+Vac.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+VACStateMachine.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: VirtualMCICard - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPA1C1.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\SemCoreMsgComm" /I "..\..\Common\Include" /I "..\..\Common\Include\USB" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\..\Bin\SharedDebug\CtrlLayer\VirtualMCICard/VirtualMCICard.pch" /Yu"stdafx.h" /Fo"..\..\Bin\SharedDebug\CtrlLayer\VirtualMCICard/" /Fd"..\..\Bin\SharedDebug\CtrlLayer\VirtualMCICard/" /FD /GZ /c 
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2nd.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICard.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardGraphLay.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardImageProcess.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardInfo.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardLabelLay.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardOscillograph.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardUScale.cpp"
+"D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\SemVirtualMCICard.cpp"
+]
+Creating command line "cl.exe @C:\Users\EM\AppData\Local\Temp\RSPA1C1.tmp" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPA1D2.tmp" with contents
+[
+ddraw.lib dxguid.lib winmm.lib vfw32.lib SemCoreMsgComm.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin/VirtualMCICard.pdb" /map:"..\..\Bin\SharedDebug\CtrlLayer\VirtualMCICard/VirtualMCICard.map" /debug /machine:I386 /def:".\VirtualMCICard.def" /out:"..\..\Bin/VirtualMCICard.dll" /implib:"..\..\Bin/VirtualMCICard.lib" /pdbtype:sept /libpath:"..\..\Bin" /libpath:"..\..\Common\Lib" 
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\AnalyseDispXYZ.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2nd.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\Ddutil.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\DIBAPI.OBJ"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\MCICard.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\MCICardGraphLay.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\MCICardImageProcess.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\MCICardInfo.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\MCICardLabelLay.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\MCICardOscillograph.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\MCICardUScale.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\MYFILE.OBJ"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\RectManager.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\SemVirtualMCICard.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\VirtualMCICard.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-Std\Bin\SharedDebug\CtrlLayer\VirtualMCICard\VirtualMCICard.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPA1D2.tmp"
+<h3>Output Window</h3>
+Compiling...
+AnalyseDispXYZ.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ.cpp(187) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ.cpp(190) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ.cpp(192) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ.cpp(195) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ.cpp(823) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ.cpp(826) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ.cpp(828) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ.cpp(831) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+AnalyseDispXYZ2.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(212) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(213) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(234) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(255) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(648) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(649) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(670) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(691) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(1048) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(1049) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(1070) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2.cpp(1091) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+AnalyseDispXYZ2nd.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2nd.cpp(209) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2nd.cpp(212) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2nd.cpp(214) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2nd.cpp(217) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2nd.cpp(887) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2nd.cpp(890) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2nd.cpp(892) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2nd.cpp(895) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+AnalyseDispXYZ2ndMix.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(208) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(209) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(229) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(230) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(250) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(251) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(581) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(582) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(602) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(603) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(623) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(624) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(947) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(948) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(968) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(969) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(989) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\AnalyseDispXYZ2ndMix.cpp(990) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+MCICardGraphLay.cpp
+MCICardImageProcess.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardImageProcess.cpp(40) : warning C4101: 'pOldBuffer' : unreferenced local variable
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardImageProcess.cpp(44) : warning C4101: 'nNumColors' : unreferenced local variable
+MCICardInfo.cpp
+MCICardLabelLay.cpp
+MCICardOscillograph.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardOscillograph.cpp(557) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardOscillograph.cpp(623) : warning C4018: '>' : signed/unsigned mismatch
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardOscillograph.cpp(719) : warning C4244: '=' : conversion from 'double' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardOscillograph.cpp(735) : warning C4244: '=' : conversion from 'double' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardOscillograph.cpp(750) : warning C4244: '=' : conversion from 'double' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardOscillograph.cpp(917) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+MCICardUScale.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardUScale.cpp(474) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardUScale.cpp(475) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardUScale.cpp(488) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardUScale.cpp(489) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardUScale.cpp(493) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardUScale.cpp(494) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardUScale.cpp(507) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICardUScale.cpp(508) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+SemVirtualMCICard.cpp
+Generating Code...
+Compiling...
+MCICard.cpp
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICard.cpp(2128) : warning C4018: '<' : signed/unsigned mismatch
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICard.cpp(2128) : warning C4018: '<' : signed/unsigned mismatch
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICard.cpp(2132) : warning C4018: '>' : signed/unsigned mismatch
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICard.cpp(2169) : warning C4018: '<' : signed/unsigned mismatch
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICard.cpp(2169) : warning C4018: '<' : signed/unsigned mismatch
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICard.cpp(2172) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICard.cpp(2173) : warning C4244: '=' : conversion from 'long' to 'unsigned short', possible loss of data
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICard.cpp(2178) : warning C4018: '>' : signed/unsigned mismatch
+D:\ASrcNow\SEM\6X00\Src\MainFace-Std\CtrlLayer\VirtualMCICard\MCICard.cpp(2183) : warning C4018: '>' : signed/unsigned mismatch
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+VirtualMCICard.dll - 0 error(s), 71 warning(s)
+</pre>
+</body>
+</html>

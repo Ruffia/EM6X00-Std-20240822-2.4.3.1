@@ -1,0 +1,144 @@
+
+2800   FinalLens_LED_display = ObjectLensCtrl / 64
+		(e.g.   F = 0, OL = 0; F = 511, OL = 65536/2 )
+
+Generally, F [300-700]	=>  AF Scanning from F=250 to F=750
+
+Means	AF Scanning from OL=250*64 to OL=750*64
+
+And		We have tested OL_Step = 2048 is OK
+
+Then	AF Scanning from OL=250*64 to OL=750*64, OL_Step = 64 * 25 < 2048 ( All Steps = 20 )
+															2000                        16
+		Fine_AF Scanning from OL= - 64 * 16 to OL= 64 * 16	OL_Step = 64 * 4 ( All Steps = 8 )
+
+
+
+void aufs( unsigned char bb[16] )
+{
+   static    BYTE   fff=0;
+   MSG       msg;
+   DWORD     most[40],lar,first,total;  //sum,  /*int-4*/
+
+   total = 0;
+
+     bb[1]=162;                         /* ol0=162; */
+     bb[2]=151;                         /* 108  128  ol1=151; */
+	 
+//	 F = 606	OL = 38818(97A2)
+//	 D_F = 48	D_OL = 3072
+
+//	 F = 600 - 660
+
+     bb[3]=188;                         /* ma0=188; */
+     bb[4]=9;                           /* ma1=9;   */
+
+//	 M = 500
+     
+	 center= bb[2]*256 + bb[1];         /* center=ol1*256+ol0; */
+	 if (center<=0)  center = 65536L + center;
+	 
+	 first = center;                      /*setup center current*/
+
+start:  ;
+
+	send_lens(cc);
+
+	/*  FIRST DATA HAVE moved  */
+	/*  grab 6 frame image with 6 current value     */
+	for ( m=1; m<7; m++ )
+	{
+
+		rload_data(192,192,128,128,ibfb);
+
+		current = first + m * 256 ;
+
+		send_lens(cc);
+		if (m==6) break;
+
+		most[m-1] = calfs(total,ibfb);
+	}
+
+	/*  find 6 minute maxume value */
+	lar=most[0];
+	for (k=0;k<5;k++)                /*   k<6  */
+	{
+	  if (most[k]>=lar)
+		{
+		 xx=k;
+		 lar=most[k];
+		}
+	}
+	
+	/* focus current toward raise-continue search most current */
+	if ((5-xx)<=1)         
+	{
+		for (m=5;m<12;m++)
+		{
+			rload_data(192,192,128,128,ibfb);
+			current=first+m*256;
+			send_lens(cc);
+			most[m-1]=calfs(total,ibfb);
+		}
+
+		lar=most[0] ;
+		for (k=0;k<11;k++)
+		{
+			if (most[k]>=lar)
+			{
+				xx=k;
+				lar=most[k];
+			}
+		}
+	}
+
+	send_lens(cc);
+
+	first=center-128;
+
+	send_lens(cc);
+
+	for (i=1;i<7;i++)
+	{
+		rload_data(192,192,128,128,ibfb);
+
+		current=first+i*64;
+
+		send_lens(cc);
+
+		lar=most[0];
+		for (k=0;k<6;k++)
+		{
+			if (most[k]>=lar)
+			{
+				xx=k;
+				lar=most[k];
+			}
+		}
+		send_lens(cc);
+	}
+
+/*    THE SECOND AUTO_FOCUS HAVE FINISHED       */
+/*    third focus start                         */
+	first=center-32;
+
+	for (i=1;i<6;i++)
+	{
+		current=first+i*16;
+		
+		send_lens(cc);
+
+		lar=most[0];
+		for (k=0;k<6;k++)
+		{
+		  if (most[k]>=lar)
+			 {
+			  xx=k;
+			  lar=most[k];
+			 }
+		}
+	}
+
+	return;
+}
+

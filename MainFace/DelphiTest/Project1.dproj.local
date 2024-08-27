@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.015,C:\Users\EM\Documents\RAD Studio\Projects\Project1.dproj=D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\MainFace\DllTest\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.661,D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\MainFace\DllTest\Unit1.dfm=D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\MainFace\DelphiTest\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.661,D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\MainFace\DllTest\Unit1.pas=D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\MainFace\DelphiTest\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.330,C:\Users\EM\Documents\RAD Studio\Projects\Unit1.dfm=D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\MainFace\DllTest\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.630,=C:\Users\EM\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.330,C:\Users\EM\Documents\RAD Studio\Projects\Unit1.pas=D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\MainFace\DllTest\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.303,D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\MainFace\DllTest\Project1.dproj=D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\MainFace\DelphiTest\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,311 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Options_StageTMCMWnd.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 7,1,0,1
+ PRODUCTVERSION 7,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "Options_StageTMCMWnd DLL"
+            VALUE "FileVersion", "7.1.0.1"
+            VALUE "InternalName", "Options_StageTMCMWnd"
+            VALUE "LegalCopyright", "版权所有 (C) 2023 - 2024"
+            VALUE "OriginalFilename", "Options_StageTMCMWnd.DLL"
+            VALUE "ProductName", "Options_StageTMCMWnd Dynamic Link Library"
+            VALUE "ProductVersion", "7.1.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_Stage DIALOGEX 0, 0, 135, 340
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自动台"
+FONT 8, "Microsoft Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST_Position,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,170,120,72
+    PUSHBUTTON      "X",IDC_BUTTON_HomeX,7,9,9,9,NOT WS_VISIBLE
+    PUSHBUTTON      "Y",IDC_BUTTON_HomeY,7,33,9,9,NOT WS_VISIBLE
+    PUSHBUTTON      "Z",IDC_BUTTON_HomeZ,7,57,9,9,NOT WS_VISIBLE
+    PUSHBUTTON      "R",IDC_BUTTON_HomeR,7,81,9,9,NOT WS_VISIBLE
+    PUSHBUTTON      "T",IDC_BUTTON_HomeT,7,105,9,9,NOT WS_VISIBLE
+    PUSHBUTTON      "X",IDC_BUTTON_ZeroX,7,19,9,9,NOT WS_VISIBLE
+    PUSHBUTTON      "Y",IDC_BUTTON_ZeroY,7,43,9,9,NOT WS_VISIBLE
+    PUSHBUTTON      "Z",IDC_BUTTON_ZeroZ,7,67,9,9,NOT WS_VISIBLE
+    PUSHBUTTON      "R",IDC_BUTTON_ZeroR,7,91,9,9,NOT WS_VISIBLE
+    PUSHBUTTON      "T",IDC_BUTTON_ZeroT,7,115,9,9,NOT WS_VISIBLE
+    PUSHBUTTON      "<-",IDC_BUTTON_X_Move_Minus,16,16,16,12,BS_ICON
+    PUSHBUTTON      "^",IDC_BUTTON_Y_Move_Minus,16,40,16,12,BS_ICON
+    PUSHBUTTON      "↓",IDC_BUTTON_Z_Move_Minus,16,64,16,12,BS_ICON
+    PUSHBUTTON      "R",IDC_BUTTON_R_Move_Minus,16,86,16,12,BS_ICON
+    PUSHBUTTON      "T",IDC_BUTTON_T_Move_Minus,16,112,16,12,BS_ICON
+    PUSHBUTTON      "->",IDC_BUTTON_X_Move_Plus,38,16,16,12,BS_ICON
+    PUSHBUTTON      "v",IDC_BUTTON_Y_Move_Plus,38,40,16,12,BS_ICON
+    PUSHBUTTON      "↑",IDC_BUTTON_Z_Move_Plus,38,64,16,12,BS_ICON
+    PUSHBUTTON      "R",IDC_BUTTON_R_Move_Plus,38,86,16,12,BS_ICON
+    PUSHBUTTON      "T",IDC_BUTTON_T_Move_Plus,38,112,16,12,BS_ICON
+    PUSHBUTTON      "-",IDC_BUTTON_X_Move_Minus2,16,9,16,7
+    PUSHBUTTON      "-",IDC_BUTTON_Y_Move_Minus2,16,33,16,7
+    PUSHBUTTON      "-",IDC_BUTTON_Z_Move_Minus2,16,57,16,7
+    PUSHBUTTON      "-",IDC_BUTTON_R_Move_Minus2,16,79,16,7,NOT WS_VISIBLE
+    PUSHBUTTON      "-",IDC_BUTTON_T_Move_Minus2,16,105,16,7
+    PUSHBUTTON      "+",IDC_BUTTON_X_Move_Plus2,38,9,16,7
+    PUSHBUTTON      "+",IDC_BUTTON_Y_Move_Plus2,38,33,16,7
+    PUSHBUTTON      "+",IDC_BUTTON_Z_Move_Plus2,38,57,16,7
+    PUSHBUTTON      "+",IDC_BUTTON_R_Move_Plus2,38,79,16,7,NOT WS_VISIBLE
+    PUSHBUTTON      "+",IDC_BUTTON_T_Move_Plus2,38,105,16,7
+    LTEXT           "X",IDC_STATIC,59,16,8,8
+    LTEXT           "Y",IDC_STATIC,59,40,8,8
+    LTEXT           "Z",IDC_STATIC,59,64,8,8
+    LTEXT           "R",IDC_STATIC,59,88,8,8
+    LTEXT           "T",IDC_STATIC,59,112,8,8
+    EDITTEXT        IDC_EDIT_X_UserDisp,66,14,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y_UserDisp,66,38,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z_UserDisp,66,62,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_R_UserDisp,66,86,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_T_UserDisp,66,110,40,14,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,109,18,12,8
+    LTEXT           "mm",IDC_STATIC,109,44,12,8
+    LTEXT           "mm",IDC_STATIC,109,65,12,8
+    LTEXT           "deg",IDC_STATIC,109,90,13,8
+    LTEXT           "deg",IDC_STATIC,109,114,13,8
+    RTEXT           "x",IDC_EDIT_X_CurStep,61,6,63,8
+    RTEXT           "Y",IDC_EDIT_Y_CurStep,61,30,63,8
+    RTEXT           "Z",IDC_EDIT_Z_CurStep,61,54,63,8
+    RTEXT           "R",IDC_EDIT_R_CurStep,61,78,63,8
+    RTEXT           "T",IDC_EDIT_T_CurStep,61,102,63,8
+    PUSHBUTTON      "Zero",IDC_BUTTON_Zero,7,134,31,14
+    PUSHBUTTON      "Move",IDC_BUTTON_MoveTo,40,134,31,14
+    PUSHBUTTON      "Stop",IDC_BUTTON_Stop,73,134,31,14
+    CONTROL         "Relative",IDC_CHECK_Relative,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,154,31,14
+    PUSHBUTTON      "Setup",IDC_BUTTON_Setup,40,154,31,14
+    PUSHBUTTON      "O",IDC_BUTTON_SetUserOrigin,105,154,11,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Add",IDC_BUTTON_ListAdd,7,245,33,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_ListDel,50,245,33,14
+    PUSHBUTTON      "Change",IDC_BUTTON_ListChange,93,245,33,14
+    EDITTEXT        IDC_EDIT_Report,8,262,119,71,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "",IDC_STATIC_Rect,7,7,121,118,NOT WS_VISIBLE
+    CONTROL         ">>",IDC_CHECK_Advance,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,112,134,15,14
+    LTEXT           "",IDC_STATIC_Rect3,7,151,121,182
+    EDITTEXT        IDC_Stage_Mag,59,142,29,14,ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_VISIBLE
+    PUSHBUTTON      "高级",IDC_BUTTON_LimitParam,73,154,31,14,NOT WS_VISIBLE
+    PUSHBUTTON      "H",IDC_BUTTON_Home,117,154,11,14,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_Setup DIALOGEX 0, 0, 143, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 8, "Microsoft Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,86,157,50,14
+    LTEXT           "CommPort:",IDC_STATIC_CommPort,8,13,36,8
+    COMBOBOX        IDC_COMBO_CommPort,56,11,48,160,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "双击移动时消间隙",IDC_CHECK_Backlash_Click,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,31,118,13
+    CONTROL         "跟踪移动时消间隙",IDC_CHECK_Backlash_Track,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,48,118,13
+    GROUPBOX        "放气前",IDC_STATIC_Group_Vent,7,67,129,67
+    CONTROL         "回机械中心",IDC_RADIO_Vent_GoHome,"Button",BS_AUTORADIOBUTTON,20,83,96,10
+    CONTROL         "回扫描中心",IDC_RADIO_Vent_GoOrigin,"Button",BS_AUTORADIOBUTTON,20,101,96,10
+    CONTROL         "不移动",IDC_RADIO_Vent_NoMove,"Button",BS_AUTORADIOBUTTON,20,118,96,10
+    PUSHBUTTON      "重新连接",IDC_BUTTON_Relink,6,157,68,14
+    CONTROL         "软限位",IDC_CHECK_SoftLimit,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,139,57,13
+    CONTROL         "双击",IDC_CHECK_DbClick,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,74,139,57,13
+END
+
+IDD_DIALOG_Input DIALOGEX 0, 0, 139, 28
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input"
+FONT 8, "Microsoft Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_Input,7,7,65,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,82,7,50,14
+END
+
+IDD_DIALOG_LimitParam DIALOGEX 0, 0, 207, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "限位参数设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,154,154,39,14
+    RTEXT           "轴向",IDC_STATIC_Axis,16,23,23,8
+    COMBOBOX        IDC_COMBO_Axis,43,20,33,52,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "限位禁用、交换",IDC_STATIC_Group,6,6,194,90
+    CONTROL         "左限位禁用",IDC_CHECK_LeftLimitDisable,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,43,132,10
+    CONTROL         "右限位禁用",IDC_CHECK_RightLimitDisable,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,58,132,10
+    CONTROL         "限位交换",IDC_CHECK_LimitExchange,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,73,132,10
+    GROUPBOX        "限位电平反转",IDC_STATIC_LevelGroup,6,106,194,46
+    CONTROL         "左限位电平反转",IDC_CHECK_LeftLimitLevelReversal,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,121,132,10
+    CONTROL         "右限位电平反转",IDC_CHECK_RightLimitLevelReversal,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,137,132,10
+    PUSHBUTTON      "设置",IDC_BUTTON_LimitChange,154,72,39,14
+    PUSHBUTTON      "设置",IDC_BUTTON_LimitLevelReversal,154,118,39,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_Stage, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 333
+    END
+
+    IDD_DIALOG_Setup, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_DIALOG_Input, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+
+    IDD_DIALOG_LimitParam, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 200
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_Stage_Left     ICON                    "res\\icon_stage_l.ico"
+IDI_ICON_Stage_Right    ICON                    "res\\icon_stage_r.ico"
+IDI_ICON_Stage_RLeft    ICON                    "res\\icon_stage_rl.ico"
+IDI_ICON_Stage_RRight   ICON                    "res\\icon_stage_rr.ico"
+IDI_ICON_Stage_TDown    ICON                    "res\\icon_stage_td.ico"
+IDI_ICON_Stage_TUp      ICON                    "res\\icon_stage_tu.ico"
+IDI_ICON_Stage_Up       ICON                    "res\\icon_stage_u.ico"
+IDI_ICON_Stage_ZDown    ICON                    "res\\icon_stage_zd.ico"
+IDI_ICON_Stage_ZUp      ICON                    "res\\icon_stage_zu.ico"
+IDI_ICON_Stage_Down     ICON                    "res\\icon_stage_d.ico"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Options_StageTMCMWnd.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

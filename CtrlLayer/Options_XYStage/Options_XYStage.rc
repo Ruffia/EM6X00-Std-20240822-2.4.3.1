@@ -1,0 +1,260 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Options_XYStage.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Options_XYStage DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Options_XYStage\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Options_XYStage.DLL\0"
+            VALUE "ProductName", "Options_XYStage Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PANEL_Stage DIALOG DISCARDABLE  0, 0, 130, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自动台"
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,89,82,18,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,104,82,18,14,NOT WS_VISIBLE
+    PUSHBUTTON      "<",IDC_Stage_XLeft,8,21,15,13,BS_ICON
+    PUSHBUTTON      ">",IDC_Stage_XRight,25,21,15,13,BS_ICON
+    PUSHBUTTON      "^",IDC_Stage_YTop,17,7,15,13,BS_ICON
+    PUSHBUTTON      "v",IDC_Stage_YBottom,17,35,15,13,BS_ICON
+    LTEXT           "X",IDC_STATIC,48,17,14,10
+    EDITTEXT        IDC_Stage_X,62,17,42,12,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,106,17,14,10
+    LTEXT           "Y",IDC_STATIC,48,32,14,10
+    EDITTEXT        IDC_Stage_Y,62,32,42,12,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,106,33,14,10
+    CONTROL         "A",IDC_Stage_Absolute,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,63,59,45,10
+    CONTROL         "R",IDC_Stage_Relative,"Button",BS_AUTORADIOBUTTON,63,72,
+                    45,10
+    PUSHBUTTON      "G",IDC_Stage_Pos_Goto,35,54,26,15,WS_GROUP
+    CONTROL         "List1",IDC_Stage_Positions,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_EDITLABELS | LVS_NOCOLUMNHEADER | 
+                    WS_BORDER | WS_TABSTOP,8,90,52,61
+    PUSHBUTTON      "+",IDC_Stage_Pos_Add,8,151,14,13
+    PUSHBUTTON      "-",IDC_Stage_Pos_Delete,36,151,14,13
+    PUSHBUTTON      "U",IDC_Stage_Pos_Update,22,151,14,13,NOT WS_VISIBLE
+    PUSHBUTTON      "H",IDC_Stage_Reset,8,54,26,15
+    PUSHBUTTON      "C",IDC_Stage_Calibrate,35,70,26,15,NOT WS_VISIBLE
+    PUSHBUTTON      "DP 0,0",IDC_Stage_DP,65,82,26,15,NOT WS_VISIBLE
+    EDITTEXT        IDC_Stage_Log,28,43,89,21,ES_MULTILINE | WS_VSCROLL
+    EDITTEXT        IDC_Stage_Mag,71,150,37,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_Stage_Mag_Adj,"msctls_updown32",
+                    UDS_ARROWKEYS,108,147,14,16
+    CONTROL         ">>",IDC_Stage_Advance,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,8,70,26,15
+    CONTROL         "",IDC_Stage_Group,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,7,7,116,158
+    CONTROL         "",IDC_Stage_View,"Static",SS_BLACKFRAME,63,98,54,48
+END
+
+IDD_DLG_PROGRESS DIALOG DISCARDABLE  0, 0, 227, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,179,28,41,14
+    CTEXT           "正在调整灯丝电流 ... ...",IDC_STATIC_MSG_PROGRESS,7,31,
+                    170,8
+    CONTROL         "Progress1",IDC_PROGRESS_RATE,"msctls_progress32",
+                    WS_BORDER,7,8,213,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PANEL_Stage, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DLG_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 42
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_Stage_Left     ICON    DISCARDABLE     "res\\icon_stage_l.ico"
+IDI_ICON_Stage_Right    ICON    DISCARDABLE     "res\\icon_stage_r.ico"
+IDI_ICON_Stage_Up       ICON    DISCARDABLE     "res\\icon_stage_u.ico"
+IDI_ICON_Stage_Down     ICON    DISCARDABLE     "res\\icon_stage_d.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OK                  "确定(&O)"
+    IDS_CANCEL              "取消(&C)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_Stage_Absolute      "绝对"
+    IDS_Stage_Relative      "相对"
+    IDS_Stage_Pos_Add       "增加"
+    IDS_Stage_Pos_Delete    "删除"
+    IDS_Stage_Pos_Update    "刷新"
+    IDS_Stage_Pos_Goto      "跳转"
+    IDS_Stage_Calibrate     "校准"
+    IDS_Stage_Group         "X-Y向自动样品台"
+    IDS_Stage_Reset         "复位"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_Stage_Device_NOT_Found "无法对X-Y向自动样品台控制卡进行操作！"
+    IDS_Stage_SD_TITLE_AUTO_FindIndex "自动找自动台原点"
+    IDS_Stage_STRING_AUTO_FindIndex "正在自动寻找自动台原点，请稍候..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Options_XYStage.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

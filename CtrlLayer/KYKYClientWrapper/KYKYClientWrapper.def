@@ -1,0 +1,15 @@
+; KYKYClientWrapper.def : Declares the module parameters for the DLL.
+
+LIBRARY      "KYKYClientWrapper"
+DESCRIPTION  'KYKYClientWrapper Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	KYKYSEM_Init           @1
+	KYKYSEM_Connect        @2
+	KYKYSEM_Disconnect     @3
+	KYKYSEM_QueryMagnification	@4
+	KYKYSEM_QueryWorkDistance	@5
+	KYKYSEM_QueryScanRotAngle	@6
+	KYKYSEM_QueryHighVoltage	@7
+	KYKYSEM_QueryEMI			@8

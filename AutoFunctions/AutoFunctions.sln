@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoBC", "AutoBC\AutoBC.vcxproj", "{5562C319-8051-4DAA-BD9D-2812EAEF3E67}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoFilament", "AutoFilament\AutoFilament.vcxproj", "{7E4F0FF3-19B9-4211-A77C-92174EFEEBFC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoFocus", "AutoFocus\AutoFocus.vcxproj", "{B407EEC9-7C6D-4DE0-B2BA-32033D02F882}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoStigmator", "AutoStigmator\AutoStigmator.vcxproj", "{716DAB72-0E39-4A72-9683-C65E3BCC7839}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoTest", "AutoTest\AutoTest.vcxproj", "{6447FA47-E8C6-4280-9FE1-3B0E16DE587F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OrthogonalTransform", "OrthogonalTransform\OrthogonalTransform.vcxproj", "{996EEA34-EA33-4FC3-9DA3-315C30103867}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5562C319-8051-4DAA-BD9D-2812EAEF3E67}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5562C319-8051-4DAA-BD9D-2812EAEF3E67}.Debug|Win32.Build.0 = Debug|Win32
+		{5562C319-8051-4DAA-BD9D-2812EAEF3E67}.Release|Win32.ActiveCfg = Release|Win32
+		{5562C319-8051-4DAA-BD9D-2812EAEF3E67}.Release|Win32.Build.0 = Release|Win32
+		{5562C319-8051-4DAA-BD9D-2812EAEF3E67}.Template|Win32.ActiveCfg = Release|Win32
+		{5562C319-8051-4DAA-BD9D-2812EAEF3E67}.Template|Win32.Build.0 = Release|Win32
+		{7E4F0FF3-19B9-4211-A77C-92174EFEEBFC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E4F0FF3-19B9-4211-A77C-92174EFEEBFC}.Debug|Win32.Build.0 = Debug|Win32
+		{7E4F0FF3-19B9-4211-A77C-92174EFEEBFC}.Release|Win32.ActiveCfg = Release|Win32
+		{7E4F0FF3-19B9-4211-A77C-92174EFEEBFC}.Release|Win32.Build.0 = Release|Win32
+		{7E4F0FF3-19B9-4211-A77C-92174EFEEBFC}.Template|Win32.ActiveCfg = Template|Win32
+		{7E4F0FF3-19B9-4211-A77C-92174EFEEBFC}.Template|Win32.Build.0 = Template|Win32
+		{B407EEC9-7C6D-4DE0-B2BA-32033D02F882}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B407EEC9-7C6D-4DE0-B2BA-32033D02F882}.Debug|Win32.Build.0 = Debug|Win32
+		{B407EEC9-7C6D-4DE0-B2BA-32033D02F882}.Release|Win32.ActiveCfg = Release|Win32
+		{B407EEC9-7C6D-4DE0-B2BA-32033D02F882}.Release|Win32.Build.0 = Release|Win32
+		{B407EEC9-7C6D-4DE0-B2BA-32033D02F882}.Template|Win32.ActiveCfg = Template|Win32
+		{B407EEC9-7C6D-4DE0-B2BA-32033D02F882}.Template|Win32.Build.0 = Template|Win32
+		{716DAB72-0E39-4A72-9683-C65E3BCC7839}.Debug|Win32.ActiveCfg = Debug|Win32
+		{716DAB72-0E39-4A72-9683-C65E3BCC7839}.Debug|Win32.Build.0 = Debug|Win32
+		{716DAB72-0E39-4A72-9683-C65E3BCC7839}.Release|Win32.ActiveCfg = Release|Win32
+		{716DAB72-0E39-4A72-9683-C65E3BCC7839}.Release|Win32.Build.0 = Release|Win32
+		{716DAB72-0E39-4A72-9683-C65E3BCC7839}.Template|Win32.ActiveCfg = Template|Win32
+		{716DAB72-0E39-4A72-9683-C65E3BCC7839}.Template|Win32.Build.0 = Template|Win32
+		{6447FA47-E8C6-4280-9FE1-3B0E16DE587F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6447FA47-E8C6-4280-9FE1-3B0E16DE587F}.Debug|Win32.Build.0 = Debug|Win32
+		{6447FA47-E8C6-4280-9FE1-3B0E16DE587F}.Release|Win32.ActiveCfg = Release|Win32
+		{6447FA47-E8C6-4280-9FE1-3B0E16DE587F}.Release|Win32.Build.0 = Release|Win32
+		{6447FA47-E8C6-4280-9FE1-3B0E16DE587F}.Template|Win32.ActiveCfg = Template|Win32
+		{6447FA47-E8C6-4280-9FE1-3B0E16DE587F}.Template|Win32.Build.0 = Template|Win32
+		{996EEA34-EA33-4FC3-9DA3-315C30103867}.Debug|Win32.ActiveCfg = Debug|Win32
+		{996EEA34-EA33-4FC3-9DA3-315C30103867}.Debug|Win32.Build.0 = Debug|Win32
+		{996EEA34-EA33-4FC3-9DA3-315C30103867}.Release|Win32.ActiveCfg = Release|Win32
+		{996EEA34-EA33-4FC3-9DA3-315C30103867}.Release|Win32.Build.0 = Release|Win32
+		{996EEA34-EA33-4FC3-9DA3-315C30103867}.Template|Win32.ActiveCfg = Template|Win32
+		{996EEA34-EA33-4FC3-9DA3-315C30103867}.Template|Win32.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

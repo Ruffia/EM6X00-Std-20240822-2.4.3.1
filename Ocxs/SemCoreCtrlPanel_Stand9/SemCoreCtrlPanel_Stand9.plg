@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand1.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand3 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand3.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand6 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\6/SemCoreCtrlPanel_Stand6.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Ocxs_New\SemCoreCtrlPanel_Stand6\SemCoreCtrlPanel_Stand6.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPD353.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand6.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand6.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand6.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand6.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\6\GradeDlg.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\6\SemCoreCtrlPanel_Stand6.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\6\SemCoreCtrlPanel_Stand6Ctl.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\6\SemCoreCtrlPanel_Stand6Ppg.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\6\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\6\SemCoreCtrlPanel_Stand6.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPD353.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPD354.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\Ocx\SemCoreCtrlPanel_Stand6.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSPD354.bat"
+Compiling resources...
+Linking...
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand6.ocx - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SemCoreCtrlPanel_Stand9 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"..\..\Bin\SharedDebug\Ocx\9/SemCoreCtrlPanel_Stand9.res" /i "..\..\Bin\Ocx" /d "_DEBUG" /d "_AFXDLL" "D:\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Ocxs_New\SemCoreCtrlPanel_Stand9\SemCoreCtrlPanel_Stand9.rc"" 
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPD558.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand9.pdb" /debug /machine:I386 /def:".\SemCoreCtrlPanel_Stand9.def" /out:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand9.ocx" /implib:"..\..\Bin\Ocx/SemCoreCtrlPanel_Stand9.lib" /pdbtype:sept 
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\9\MySpinButtonCtrl.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\9\SemCoreCtrlPanel_Stand9.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\9\SemCoreCtrlPanel_Stand9Ctl.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\9\SemCoreCtrlPanel_Stand9Ppg.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\9\StdAfx.obj"
+"\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\SharedDebug\Ocx\9\SemCoreCtrlPanel_Stand9.res"
+]
+Creating command line "link.exe @C:\Users\EM\AppData\Local\Temp\RSPD558.tmp"
+Creating temporary file "C:\Users\EM\AppData\Local\Temp\RSPD559.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\ASrcNow\SEM\6X00\Src\MainFace-150915-new\Bin\Ocx\SemCoreCtrlPanel_Stand9.ocx"
+echo regsvr32 exec. time > ".\..\..\Bin\Ocx\regsvr32.trg"
+]
+Creating command line "C:\Users\EM\AppData\Local\Temp\RSPD559.bat"
+Compiling resources...
+Linking...
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+SemCoreCtrlPanel_Stand9.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
