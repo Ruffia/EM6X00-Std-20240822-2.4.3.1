@@ -37,6 +37,8 @@ protected:
 
 	void _DrawCircle();
 
+	bool _IsRectInCircle(CPoint circleCenter, int circleRadius, CPoint rectCenter, int rectWidth, int rectHeight);
+
 	//改变上一次点击按钮的颜色
 	void _ChangeCliekedButtonColor(UINT uID);
 

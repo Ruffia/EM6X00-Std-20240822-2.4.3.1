@@ -141,88 +141,60 @@ void CAutoImageDlg::OnButtonClick(UINT uID)
 	pButton->MoveStage();
 }
 
+
 void CAutoImageDlg::_CreateLayout()
 {
-	const float fButtonWidth = 28;
-	const float fButtonHeight = 23;
-
-	//按照晶圆形状，每行有多少个Fill
-	const int nRow[Fill_RowCount] = {6,8,14,14,16,18,20,20,22,22,22,22,22,22,22,22,22,22,22,22,20,20,18,16,14,14};
-
+	// 获取屏幕宽度和高度
 	CRect rect;
 	GetClientRect(&rect);
+	int nWidth = min(rect.Width(),rect.Height()) - 20;
+	int nXCenter = nWidth/2 - 22 + 28;
+	int nYCenter = nWidth/2 - 20 + 23;
 
-	//晶圆直径
-	int nTotalWidth = min(rect.Width(),rect.Height()) - 20;
+	const double screenRatio = 10; //屏幕比例
 
-	//晶圆中心坐标(x,y)
-	int nXCenter = nTotalWidth/2 - 22;
-	int nYCenter = nTotalWidth/2 - 20;
+	const double circleRadius = 30; // 25mm 直径
+	const double rectWidth = 3;     // 0.8mm 宽度
+	const double rectHeight = 3;    // 0.8mm 高度
+	CPoint circleCenter(nWidth/2, nWidth/2); // 圆心在屏幕上的位置
 
-	//Button 编号
-	int nButtonSeq = 0;
 
-	//逐行创建Button
-	for (int i = 0; i < Fill_RowCount;i++)
+	// 存储矩形位置的变量
+	std::vector<CPoint> positions;
+
+	double y = -circleRadius + rectHeight / 2;
+	double x_start = -circleRadius + rectWidth / 2;
+
+	while (y + rectHeight / 2 <= circleRadius)
 	{
-		int nButtonCount = nRow[i];
-		//本行Y(高度)值
-		float fRowY = nYCenter - (Fill_RowCount/2 - i)* fButtonHeight;
-
-		int nColumnIndex = 0;
-
-		//创建左半部分晶圆
-		for (int j = nButtonCount/2 - 1; j >= 0;j--)
+		double x = x_start;
+		while (x + rectWidth / 2 <= circleRadius)
 		{
-			CRect rectButton;
-			rectButton.left = nXCenter - j * fButtonWidth;
-			rectButton.top = fRowY;
-			rectButton.right = nXCenter - j * fButtonWidth + fButtonWidth;
-			rectButton.bottom = fRowY + fButtonHeight;
-
-			//根据 位置和ID 创建 Button
-			CFillButton* btn = _CreateButton(rectButton,nButtonSeq);
-			//设置在UI界面上所处的行，列
-			btn->SetPosition(i,nColumnIndex);
-			//计算对应的样品台坐标
-			btn->CalculateStagePosition(CPoint(nXCenter,nYCenter));
-
-			//CHvVAC_StageDlg* pParent = dynamic_cast<CHvVAC_StageDlg*>(GetParent());
-			//if(pParent)
-			//{
-			//	btn->SetStageClient(&pParent->m_Client);
-			//}
-		
-			nColumnIndex++;
-			nButtonSeq++;
+			if (_IsRectInCircle(circleCenter, circleRadius * screenRatio, CPoint((int)(circleCenter.x + x * screenRatio), (int)(circleCenter.y + y * screenRatio)), (int)(rectWidth * screenRatio), (int)(rectHeight * screenRatio)))
+			{
+				positions.push_back(CPoint((int)(circleCenter.x + x * screenRatio), (int)(circleCenter.y + y * screenRatio)));
+			}
+			x += rectWidth;
 		}
-
-		//创建右半部分晶圆
-		for (int j = 0; j < nButtonCount/2;j++)
-		{
-			CRect rectButton;
-			rectButton.left = nXCenter + (j+1) * fButtonWidth;
-			rectButton.top = fRowY;
-			rectButton.right = nXCenter + (j+1) * fButtonWidth + fButtonWidth;
-			rectButton.bottom = fRowY + fButtonHeight;
-
-			//根据 位置和ID 创建 Button
-			CFillButton* btn = _CreateButton(rectButton,nButtonSeq);
-			//设置在UI界面上所处的行，列
-			btn->SetPosition(i,nColumnIndex);
-			//计算对应的样品台坐标
-			btn->CalculateStagePosition(CPoint(nXCenter,nYCenter));
-
-			//CHvVAC_StageDlg* pParent = dynamic_cast<CHvVAC_StageDlg*>(GetParent());
-			//if(pParent)
-			//{
-			//	btn->SetStageClient(&pParent->m_Client);
-			//}
-
-			nColumnIndex++;
-			nButtonSeq++;
-		}
+		y += rectHeight;
 	}
+
+
+	// 绘制矩形并编号
+	for (size_t i = 0; i < positions.size(); ++i)
+	{
+		CRect rect(positions[i].x - (int)(rectWidth * 5),
+			positions[i].y - (int)(rectHeight * 5),
+			positions[i].x + (int)(rectWidth * 5),
+			positions[i].y + (int)(rectHeight * 5));
+		
+		CFillButton* pBtn = _CreateButton(rect,i);
+
+		double autoPlatform_X = ((positions[i].x- nWidth / 2) * 12.5) / nWidth;
+		double autoPlatform_y = ((positions[i].y - nWidth / 2) * 12.5) / nWidth;
+	}
+
+
 }
 
 CFillButton*  CAutoImageDlg::_CreateButton(const CRect& rectButton,int nButtonSeq)
@@ -247,28 +219,48 @@ CFillButton*  CAutoImageDlg::_CreateButton(const CRect& rectButton,int nButtonSe
 }
 
 
+bool CAutoImageDlg::_IsRectInCircle(CPoint circleCenter, int circleRadius, CPoint rectCenter, int rectWidth, int rectHeight)
+{
+	CPoint rectCorners[4] = {
+		CPoint(rectCenter.x - rectWidth / 2, rectCenter.y - rectHeight / 2),
+		CPoint(rectCenter.x + rectWidth / 2, rectCenter.y - rectHeight / 2),
+		CPoint(rectCenter.x - rectWidth / 2, rectCenter.y + rectHeight / 2),
+		CPoint(rectCenter.x + rectWidth / 2, rectCenter.y + rectHeight / 2),
+	};
+
+	for (int i = 0; i < 4; ++i)
+	{
+		if (sqrt(pow((rectCorners[i].x - circleCenter.x), 2) + pow((rectCorners[i].y - circleCenter.y), 2)) > circleRadius)
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+
 void CAutoImageDlg::_DrawCircle()
 {
 	CRect rect;
 	GetClientRect(&rect);
 	int nWidth = min(rect.Width(),rect.Height()) - 20;
-	int nXCenter = nWidth/2 - 22 + 28;
-	int nYCenter = nWidth/2 - 20 + 23;
+	int nXCenter = nWidth/2 ;
+	int nYCenter = nWidth/2 ;
 
 	CClientDC dcClient(this);
 	dcClient.SelectStockObject(NULL_BRUSH);
-	dcClient.Ellipse(10,10,nWidth,nWidth);
-	//dcClient.MoveTo(159,rect.Height() - 102);
-	//dcClient.LineTo(159 + 388,rect.Height() - 102);
-
-	//CRect rectErase(159,rect.Height() - 101,159 + 400,rect.Height() - 36);
-	//CBrush brush;
-	//brush.CreateSolidBrush(RGB(240,240,240));
-	//dcClient.FillRect(&rectErase,&brush); //用FillRect成员函数利用笔刷填充指定区域
-	//brush.DeleteObject();
 
 	CPen pen(PS_SOLID, 1, RGB(0, 0, 255));
 	CPen *pOldPen = dcClient.SelectObject(&pen);
+
+	
+	// 获取屏幕宽度和高度
+	const double screenRatio = 10; //屏幕比例
+
+	const double circleRadius = 30; // 25mm 直径
+	const double rectWidth = 3;     // 0.8mm 宽度
+	const double rectHeight = 3;    // 0.8mm 高度
+	CPoint circleCenter(nWidth/2, nWidth/2); // 圆心在屏幕上的位置
 
 	dcClient.MoveTo(nXCenter,0);
 	dcClient.LineTo(nXCenter,rect.Height() - 72);
@@ -288,7 +280,12 @@ void CAutoImageDlg::_DrawCircle()
 
 	dcClient.TextOut(rect.Width() - 17,nYCenter - 25,"Y");
 
+	// 画圆
+	dcClient.Ellipse(circleCenter.x - (int)circleRadius * screenRatio, circleCenter.y - (int)circleRadius * screenRatio,
+		circleCenter.x + (int)circleRadius * screenRatio, circleCenter.y + (int)circleRadius * screenRatio);
 	dcClient.SelectObject(&pOldPen);
+
+
 }
 
 
