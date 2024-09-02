@@ -101,6 +101,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SemCoreCtrlPanel_Stand9", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SemCoreCtrlPanel_StandA", "Ocxs\SemCoreCtrlPanel_StandA\SemCoreCtrlPanel_StandA.vcxproj", "{5C4840AB-D889-4AB0-A73E-CEBD4007C895}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommTestJson", "MainFace\CommTestJson\CommTestJson.vcxproj", "{6B53E175-050E-4EEA-9EBD-9EEA7D5E8715}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		ChartCtrlLibS|Win32 = ChartCtrlLibS|Win32
@@ -509,6 +511,14 @@ Global
 		{5C4840AB-D889-4AB0-A73E-CEBD4007C895}.Release|Win32.Build.0 = Release|Win32
 		{5C4840AB-D889-4AB0-A73E-CEBD4007C895}.Template|Win32.ActiveCfg = Template|Win32
 		{5C4840AB-D889-4AB0-A73E-CEBD4007C895}.Template|Win32.Build.0 = Template|Win32
+		{6B53E175-050E-4EEA-9EBD-9EEA7D5E8715}.ChartCtrlLibS|Win32.ActiveCfg = Release|Win32
+		{6B53E175-050E-4EEA-9EBD-9EEA7D5E8715}.ChartCtrlLibS|Win32.Build.0 = Release|Win32
+		{6B53E175-050E-4EEA-9EBD-9EEA7D5E8715}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B53E175-050E-4EEA-9EBD-9EEA7D5E8715}.Debug|Win32.Build.0 = Debug|Win32
+		{6B53E175-050E-4EEA-9EBD-9EEA7D5E8715}.Release|Win32.ActiveCfg = Release|Win32
+		{6B53E175-050E-4EEA-9EBD-9EEA7D5E8715}.Release|Win32.Build.0 = Release|Win32
+		{6B53E175-050E-4EEA-9EBD-9EEA7D5E8715}.Template|Win32.ActiveCfg = Release|Win32
+		{6B53E175-050E-4EEA-9EBD-9EEA7D5E8715}.Template|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

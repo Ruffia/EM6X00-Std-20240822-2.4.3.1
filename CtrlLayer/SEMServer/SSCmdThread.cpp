@@ -1249,8 +1249,6 @@ DWORD WINAPI ThreadAnalyzeClient(LPVOID lpParam)
 
 		EnterCriticalSection(&csFifoRecvClientMsg);
 		CFIFO<KYKYComm_Recv_Package, KYKYComm_Recv_Package&>& m_fifoRecvClientMsg = CommFIFO::Instance().GetRecvClientMsgFIFO();
-		sprintf_s( szBuf, "m_fifoRecvClientMsg.GetFIFOCount() = %d \r\n", m_fifoRecvClientMsg.GetFIFOCount() );
-		OutputDebugString(szBuf);
 
 		if( !m_fifoRecvClientMsg.IsFIFOEmpty() )
 		{
@@ -1416,8 +1414,6 @@ void CSSCmdThread::OnMsgRead(WPARAM wParam,LPARAM lParam)
 //		EnterCriticalSection(&csFifoRecvClientMsg);
 		CFIFO<KYKYComm_Recv_Package, KYKYComm_Recv_Package&>& m_fifoRecvClientMsg = CommFIFO::Instance().GetRecvClientMsgFIFO();
 		m_fifoRecvClientMsg.Input(msg);
-		char sz[1024] = {0};
-		sprintf_s( sz, "m_fifoRecvClientMsg.GetFIFOCount() = %d, Server: MsgRead = %s\r\n", m_fifoRecvClientMsg.GetFIFOCount(),msg.szRecv );
 //		DeleteCriticalSection(&csFifoRecvClientMsg);
 	}
 	char output[1024] = {0};

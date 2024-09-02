@@ -148,14 +148,14 @@ void CAutoImageDlg::_CreateLayout()
 	CRect rect;
 	GetClientRect(&rect);
 	int nWidth = min(rect.Width(),rect.Height()) - 20;
-	int nXCenter = nWidth/2 - 22 + 28;
-	int nYCenter = nWidth/2 - 20 + 23;
+	int nXCenter = nWidth/2;
+	int nYCenter = nWidth/2;
 
 	const double screenRatio = 10; //屏幕比例
 
-	const double circleRadius = 30; // 25mm 直径
-	const double rectWidth = 3;     // 0.8mm 宽度
-	const double rectHeight = 3;    // 0.8mm 高度
+	const double circleRadius = 45; // 25mm 直径
+	const double rectWidth = 4.5;     // 0.8mm 宽度
+	const double rectHeight = 4.5;    // 0.8mm 高度
 	CPoint circleCenter(nWidth/2, nWidth/2); // 圆心在屏幕上的位置
 
 
@@ -189,6 +189,8 @@ void CAutoImageDlg::_CreateLayout()
 			positions[i].y + (int)(rectHeight * 5));
 		
 		CFillButton* pBtn = _CreateButton(rect,i);
+		//pBtn->SetStagePosition();
+		//pBtn->CalculateStagePosition();
 
 		double autoPlatform_X = ((positions[i].x- nWidth / 2) * 12.5) / nWidth;
 		double autoPlatform_y = ((positions[i].y - nWidth / 2) * 12.5) / nWidth;
@@ -257,9 +259,9 @@ void CAutoImageDlg::_DrawCircle()
 	// 获取屏幕宽度和高度
 	const double screenRatio = 10; //屏幕比例
 
-	const double circleRadius = 30; // 25mm 直径
-	const double rectWidth = 3;     // 0.8mm 宽度
-	const double rectHeight = 3;    // 0.8mm 高度
+	const double circleRadius = 45; // 25mm 直径
+	const double rectWidth = 4.5;     // 0.8mm 宽度
+	const double rectHeight = 4.5;    // 0.8mm 高度
 	CPoint circleCenter(nWidth/2, nWidth/2); // 圆心在屏幕上的位置
 
 	dcClient.MoveTo(nXCenter,0);
