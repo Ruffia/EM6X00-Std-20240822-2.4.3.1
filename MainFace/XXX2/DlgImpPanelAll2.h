@@ -263,6 +263,8 @@ protected:
 	afx_msg LRESULT OnUpdateStagePod(WPARAM wParam, LPARAM lParam);
 	afx_msg LRESULT OnNAVUpdate(WPARAM wParam, LPARAM lParam);
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedButtonDiatomdetect();
 };
 
 //{{AFX_INSERT_LOCATION}}

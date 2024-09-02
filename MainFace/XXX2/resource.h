@@ -232,6 +232,7 @@
 #define IDB_BITMAP_Toolbar01            451
 #define IDB_BITMAP_Toolbar02            452
 #define IDB_BITMAP_Toolbar03            453
+#define IDD_DLG_AutoImage               453
 #define IDB_BITMAP_Toolbar04            454
 #define IDB_BITMAP_Toolbar05            455
 #define IDB_BITMAP_Toolbar06            456
@@ -2711,6 +2712,7 @@
 #define IDS_DLG_STATIC_BeamAligmentX    6667
 #define IDS_DLG_STATIC_BeamAligmentY    6668
 #define IDS_DLG_STATIC_StigmatorX       6669
+#define IDC_BUTTON_DiatomDetect         6669
 #define IDS_DLG_STATIC_StigmatorY       6670
 #define IDS_DLG_Scenario_Caption        6671
 #define ID_BTN_Scenario_Load            6701
@@ -4322,9 +4324,9 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_3D_CONTROLS                     1
-#define _APS_NEXT_RESOURCE_VALUE        453
+#define _APS_NEXT_RESOURCE_VALUE        454
 #define _APS_NEXT_COMMAND_VALUE         33013
-#define _APS_NEXT_CONTROL_VALUE         6669
+#define _APS_NEXT_CONTROL_VALUE         6670
 #define _APS_NEXT_SYMED_VALUE           110
 #endif
 #endif

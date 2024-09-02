@@ -339,6 +339,7 @@ HIDD_DLG_Tab                            0x201B9
 HIDD_DLG_SEMLog_CCG                     0x201BA
 HIDD_DLG_SEMLog_HistoryTrend            0x201BA
 HIDD_DLG_AutoContrast                   0x201BD
+HIDD_DLG_AutoImage                      0x201C5
 HIDD_DLG_BeamAperture                   0x201E7
 HIDD_DLG_SetImageData                   0x201E9
 HIDD_IMP_PANEL_VACUUM_CTRL              0x201F4

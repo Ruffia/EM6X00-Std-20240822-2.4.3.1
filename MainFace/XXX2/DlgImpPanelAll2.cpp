@@ -37,6 +37,7 @@
 #include "TrackStatusDetector.h"
 #include "DlgSetImageData.h"
 #include "CommBSD.h"
+#include "DiatomDetection/AutoImageDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -169,6 +170,7 @@ BEGIN_MESSAGE_MAP(CDlgImpPanelAll2, CDialog)
 	ON_MESSAGE(WM_USER_BSD_Update, OnBSDmsgChanged)
 	ON_MESSAGE(WM_USER_StagePod_Update, OnUpdateStagePod)
 	ON_MESSAGE(WM_USER_NAV_Update, OnNAVUpdate)
+	ON_BN_CLICKED(IDC_BUTTON_DiatomDetect, &CDlgImpPanelAll2::OnBnClickedButtonDiatomdetect)
 END_MESSAGE_MAP()
 
 BEGIN_EVENTSINK_MAP(CDlgImpPanelAll2, CDialog)
@@ -7158,4 +7160,12 @@ LRESULT CDlgImpPanelAll2::OnUpdateStagePod(WPARAM wParam, LPARAM lParam)
 	}
 
 	return 0;
+}
+
+
+void CDlgImpPanelAll2::OnBnClickedButtonDiatomdetect()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	CAutoImageDlg dlg;
+	dlg.DoModal();
 }

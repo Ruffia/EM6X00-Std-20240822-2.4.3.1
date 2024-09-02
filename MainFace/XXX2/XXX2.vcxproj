@@ -167,6 +167,10 @@
     <ClCompile Include="..\..\Common\Public Classes\Digistring.cpp" />
     <ClCompile Include="..\..\Common\Public Classes\DigiUtil.cpp" />
     <ClCompile Include="DiagPicoammeterD22.cpp" />
+    <ClCompile Include="DiatomDetection\AutoImageDlg.cpp" />
+    <ClCompile Include="DiatomDetection\CustomButton.cpp" />
+    <ClCompile Include="DiatomDetection\FillButton.cpp" />
+    <ClCompile Include="DiatomDetection\WaferRatioRuler.cpp" />
     <ClCompile Include="DlgAngleOptions.cpp" />
     <ClCompile Include="DlgAutoTestLNS.cpp" />
     <ClCompile Include="DlgAutoTestMain.cpp" />
@@ -364,6 +368,10 @@
     <ClInclude Include="Communicator.h" />
     <ClInclude Include="Curves.h" />
     <ClInclude Include="CvvImage.h" />
+    <ClInclude Include="DiatomDetection\AutoImageDlg.h" />
+    <ClInclude Include="DiatomDetection\CustomButton.h" />
+    <ClInclude Include="DiatomDetection\FillButton.h" />
+    <ClInclude Include="DiatomDetection\WaferRatioRuler.h" />
     <ClInclude Include="DlgAngleOptions.h" />
     <ClInclude Include="DlgAutoTestLNS.h" />
     <ClInclude Include="DlgAutoTestMain.h" />

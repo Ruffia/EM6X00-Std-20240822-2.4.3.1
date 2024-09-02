@@ -22,6 +22,9 @@
     <Filter Include="Tools">
       <UniqueIdentifier>{3c75bbf3-f949-4af6-bbfd-476da72fba60}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DiatomDetection">
+      <UniqueIdentifier>{9edb5f64-6aed-4437-b7c7-42df059d1f3a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Calc.cpp">
@@ -567,6 +570,18 @@
     <ClCompile Include="DlgSetImageData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DiatomDetection\AutoImageDlg.cpp">
+      <Filter>DiatomDetection</Filter>
+    </ClCompile>
+    <ClCompile Include="DiatomDetection\CustomButton.cpp">
+      <Filter>DiatomDetection</Filter>
+    </ClCompile>
+    <ClCompile Include="DiatomDetection\FillButton.cpp">
+      <Filter>DiatomDetection</Filter>
+    </ClCompile>
+    <ClCompile Include="DiatomDetection\WaferRatioRuler.cpp">
+      <Filter>DiatomDetection</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="XXX2.odl">
@@ -1106,6 +1121,18 @@
     </ClInclude>
     <ClInclude Include="DlgSetImageData.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiatomDetection\AutoImageDlg.h">
+      <Filter>DiatomDetection</Filter>
+    </ClInclude>
+    <ClInclude Include="DiatomDetection\CustomButton.h">
+      <Filter>DiatomDetection</Filter>
+    </ClInclude>
+    <ClInclude Include="DiatomDetection\FillButton.h">
+      <Filter>DiatomDetection</Filter>
+    </ClInclude>
+    <ClInclude Include="DiatomDetection\WaferRatioRuler.h">
+      <Filter>DiatomDetection</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
